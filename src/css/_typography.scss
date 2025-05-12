@@ -1,0 +1,87 @@
+h1, .h1 {
+  @apply text-h1 md:text-Top1
+}
+
+h2, .h2 {
+  @apply text-h2 md:text-Top3
+}
+
+h3, .h3 {
+  @apply text-h3 md:text-base
+}
+
+h4, .h4 {
+  @apply text-h4 md:text-body
+}
+
+h5, .h5 {
+  @apply text-Top1
+}
+
+h6, .h6 {
+  @apply text-Top3
+}
+
+p {
+  @apply text-body md:text-body
+}
+
+.main-ul {
+  @apply list-disc pl-6 text-Text flex flex-col gap-y-2
+}
+
+.text-block {
+  h1, .h1 {
+    @apply text-Top4 md:text-h2Mob
+  }
+
+  h2, .h2 {
+    @apply text-Top5 md:text-Top1
+  }
+
+  h3, .h3 {
+    @apply text-Top2 md:text-Top3
+  }
+
+  h4, .h4 {
+    @apply text-Top3 md:text-base
+  }
+
+  h5, .h5 {
+    @apply text-body
+  }
+
+  h6, .h6 {
+    @apply text-body2
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    @apply mb-4 font-medium
+  }
+
+  a {
+    @apply italic underline text-blue100
+  }
+
+  ul {
+    @apply list-disc font-medium pl-6 mb-4
+  }
+
+  p {
+    @apply mb-4
+  }
+}
+
+.text-block2 {
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    @apply mb-2 font-medium
+  }
+
+  a {
+    @apply underline
+  }
+
+  ul {
+    @apply list-disc pl-6 text-body
+  }
+}
