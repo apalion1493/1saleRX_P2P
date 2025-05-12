@@ -98,6 +98,7 @@ module.exports = {
                 LightGrey: '#E1E9F5',
                 LightBlue: '#F1F7FC',
                 Grey: '#E6ECEE',
+                Grey2: '#A9B1B3',
                 Error: '#F25F5F',
                 Error2: '#FFE1E1',
                 Error3: '#DD00001A',
