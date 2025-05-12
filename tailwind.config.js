@@ -93,10 +93,11 @@ module.exports = {
                 bgLight: '#F6F9FF',
                 blue100: '#004ED5',
                 blue101: '#0053E2',
-                DarkBlue100: '#060B52',
+                DarkBlue100: '#0E2B4C',
                 DarkBlue50: '#1B3C7480',
                 LightGrey: '#E1E9F5',
-                Grey: '#7B8BB3',
+                LightBlue: '#F1F7FC',
+                Grey: '#E6ECEE',
                 Error: '#F25F5F',
                 Error2: '#FFE1E1',
                 Error3: '#DD00001A',
@@ -106,6 +107,7 @@ module.exports = {
                 Title: '#14142B',
                 Yellow: '#FFBF16',
                 Brown: 'rgba(221, 0, 0, 0.20)',
+                Green1: '#58C19B',
             },
             letterSpacing: {
                 '04': '-0.4px', //tracking
