@@ -76,7 +76,7 @@ module.exports = {
         },
         extend: {
             lineHeight: {
-                '100': '100%'
+                '100': '100%' //leading
             },
             boxShadow: {
                 'v1': '0px 0px 16px 0px rgba(37, 51, 126, 0.05)',
