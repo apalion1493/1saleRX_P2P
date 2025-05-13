@@ -44,6 +44,7 @@ module.exports = {
             Top3: ['20px', '130%'],
             Top4: ['36px', '100%'],
             Top5: ['28px', '100%'],
+            Top6: ['60px', '100%'],
             body: ['16px', '120%'],
             body2: ['14px', '120%'],
             body3: ['8px', '120%'],
@@ -109,6 +110,8 @@ module.exports = {
                 Yellow: '#FFBF16',
                 Brown: 'rgba(221, 0, 0, 0.20)',
                 Green1: '#58C19B',
+                Green2: '#38A57E',
+                Gradient1: 'radial-gradient(137.44% 141.05% at 0% 0%, #58C19B 0%, #225186 100%)',
             },
             letterSpacing: {
                 '04': '-0.4px', //tracking

@@ -14,6 +14,10 @@
 
 .button {
 
+  &.big-1 {
+    @apply h-[85px] min-h-[85px] px-[55px] text-Top3
+  }
+
   &.disabled {
     @apply bg-Grey hover:bg-Text;
   }
@@ -26,8 +30,8 @@
     @apply min-w-[0px]
   }
 
-  @apply h-[52px] min-h-[52px] px-5 min-w-[130px] w-fit flex items-center justify-center rounded-lg
-  text-white text-body text-center whitespace-nowrap font-medium bg-blue100 transition-all hover:bg-Text disabled:bg-Grey disabled:cursor-not-allowed;
+  @apply px-5 h-[65px] min-w-[130px] w-fit flex items-center justify-center rounded-full
+  text-white text-Top3 text-center whitespace-nowrap font-bold bg-Green1 transition-all hover:bg-Green2 disabled:bg-Grey2 disabled:cursor-not-allowed;
 }
 
 // Button with arrow Style End
@@ -87,7 +91,7 @@
 }
 
 .section {
-  @apply py-12 lg:py-10
+  @apply py-24 lg:py-10
 }
 
 .Border-wave {
@@ -556,4 +560,8 @@
 .bg-6 {
   background: url("__IMAGE_PATH__bg-6.png") no-repeat center bottom;
   background-size: cover;
+}
+
+.bg-gradient-1 {
+  background: radial-gradient(137.44% 141.05% at 0% 0%, #58C19B 0%, #225186 100%);
 }

@@ -6,7 +6,7 @@
 })
 
 <body class="">
-<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+<main id="content" class="flex flex-col min-h-screen overflow-hidden">
     <section class="">
       @@include('components/Header.html', {
       'commonStyle': ' ',
@@ -17,7 +17,41 @@
       </div>
     </section>
 
+    <section class="bg-gradient-1 text-white section">
+        <div class="container">
+            <div class="row gap-x-6">
+                <div class="col-span-6">
+                    <div class="flex flex-col">
+                        <h3 class="text-Top6 font-extrabold block mb-5">Ready to <br> Transform Your <br> Pharmacy?</h3>
+                        <p class="text-Top1 font-medium">Join the fastest-growing network of pharmacies optimizing their business with 1SaleRx.</p>
+                        <ul class="flex flex-col gap-y-5 my-12">
+                            <li class="flex items-center">
+                                <i class="list-icon-check block mr-7"></i>
+                                No upfront fees.
+                            </li>
+                            <li class="flex items-center">
+                                <i class="list-icon-check block mr-7"></i>
+                                No commitment.
+                            </li>
+                            <li class="flex items-center">
+                                <i class="list-icon-check block mr-7"></i>
+                                Just smarter operations.
+                            </li>
+                        </ul>
 
+                        @@include('components/Link-arrow.html', {
+                        'STYLE_LINK': 'big-1',
+                        'URL_LINK': '#',
+                        'TITLE_LINK': 'Join Now — It’s Free'
+                        })
+                    </div>
+                </div>
+                <div class="col-span-6">
+                    <img class="max-w-full object-cover mt-6" src="__IMAGE_PATH__Ready_to_Transform_Your_Pharmacy.png" alt="Ready to Transform Your Pharmacy?">
+                </div>
+            </div>
+        </div>
+    </section>
     @@include('components/Footer.html')
 </main>
 
