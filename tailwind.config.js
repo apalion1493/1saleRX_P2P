@@ -42,7 +42,7 @@ module.exports = {
             Top1: ['24px', '130%'],
             Top2: ['22px', '130%'],
             Top3: ['20px', '130%'],
-            Top4: ['36px', '100%'],
+            Top4: ['36px', 'normal'],
             Top5: ['28px', '100%'],
             Top6: ['60px', '100%'],
             body: ['16px', '120%'],
@@ -97,15 +97,14 @@ module.exports = {
                 DarkBlue100: '#0E2B4C',
                 DarkBlue50: '#1B3C7480',
                 LightGrey: '#E1E9F5',
+                LightGrey2: '#F6FAFA',
                 LightBlue: '#F1F7FC',
                 Grey: '#E6ECEE',
                 Grey2: '#A9B1B3',
                 Error: '#F25F5F',
                 Error2: '#FFE1E1',
                 Error3: '#DD00001A',
-                Text: '#001E60',
-                Text2: '#7B8BB3CC',
-                Text3: '#A6AFBF',
+                Text: '#202020',
                 Title: '#14142B',
                 Yellow: '#FFBF16',
                 Brown: 'rgba(221, 0, 0, 0.20)',
@@ -115,7 +114,8 @@ module.exports = {
             },
             letterSpacing: {
                 '04': '-0.4px', //tracking
-                '12': '-1.2px' //tracking
+                '12': '-1.2px', //tracking
+                '24': '2.4px' //tracking
             },
             padding: {
                 '1/4': '25%',

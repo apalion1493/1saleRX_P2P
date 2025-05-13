@@ -17,6 +17,41 @@
       </div>
     </section>
 
+    <section class="section bg-LightGrey2">
+        <div class="container">
+            <div class="row gap-x-6">
+                <div class="col-span-4">
+                    <div class="flex flex-col relative pb-[264px]">
+                        <div class="flex flex-col relative z-[1]">
+                            <span class="text-body4 tracking-24 uppercase text-Green1 font-bold mb-1 block">Testimonials</span>
+                            <h3 class="text-Top4 font-extrabold text-DarkBlue100">Trusted by <br> Independent <br> Pharmacies <br> Nationwide</h3>
+                        </div>
+                        <span class="World-img-1 absolute left-0 bottom-[29px] opacity-10"></span>
+                    </div>
+                </div>
+                <div class="col-span-8 relative z-[1]">
+                    <div class="row gap-x-6">
+                        <div class="col-span-6">
+                            @@include('components/Testimonial-card.html', {
+                            'Text': 'Love how clean and easy the platform is. It feels built for my pharmacy, not a giant chain.',
+                            'Avatar': '__IMAGE_PATH__avatar-1.png',
+                            'Name': 'Brian L.,',
+                            'Position': 'Pharmacist & Buyer, TX',
+                            })
+                        </div>
+                        <div class="col-span-6">
+                            @@include('components/Testimonial-card.html', {
+                            'Text': '1SaleRx helped us cut monthly purchasing costs by 18%. Plus, we recovered $3K just from overstock sales. It’s game-changing.',
+                            'Avatar': '__IMAGE_PATH__avatar-2.png',
+                            'Name': 'Rachel D.,',
+                            'Position': 'Owner of Midtown Pharmacy',
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="bg-gradient-1 text-white section">
         <div class="container">
             <div class="row gap-x-6">
