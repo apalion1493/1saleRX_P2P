@@ -2191,6 +2191,10 @@ html {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -2321,6 +2325,9 @@ html {
 }
 .w-full{
   width: 100%;
+}
+.w-\[60px\]{
+  width: 60px;
 }
 .min-w-10{
   min-width: 2.5rem;
