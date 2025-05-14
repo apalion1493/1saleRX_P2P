@@ -2191,6 +2191,10 @@ html {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -2210,6 +2214,9 @@ html {
 .mb-5{
   margin-bottom: 1.25rem;
 }
+.mb-9{
+  margin-bottom: 2.25rem;
+}
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -2221,6 +2228,9 @@ html {
 }
 .ml-\[20px\]{
   margin-left: 20px;
+}
+.ml-auto{
+  margin-left: auto;
 }
 .mr-7{
   margin-right: 1.75rem;
@@ -2323,11 +2333,11 @@ html {
 .w-\[50px\]{
   width: 50px;
 }
-.w-full{
-  width: 100%;
-}
 .w-\[60px\]{
   width: 60px;
+}
+.w-full{
+  width: 100%;
 }
 .min-w-10{
   min-width: 2.5rem;
@@ -2444,6 +2454,9 @@ html {
 }
 .rounded{
   border-radius: 0.25rem;
+}
+.rounded-2xl{
+  border-radius: 1rem;
 }
 .rounded-\[10px\]{
   border-radius: 10px;
@@ -2578,6 +2591,13 @@ html {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-\[35px\]{
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.pb-\[20px\]{
+  padding-bottom: 20px;
+}
 .pb-\[264px\]{
   padding-bottom: 264px;
 }
@@ -2586,6 +2606,12 @@ html {
 }
 .pl-\[100px\]{
   padding-left: 100px;
+}
+.pl-\[30px\]{
+  padding-left: 30px;
+}
+.pr-\[40px\]{
+  padding-right: 40px;
 }
 .pt-\[50px\]{
   padding-top: 50px;
@@ -2605,6 +2631,10 @@ html {
 .text-Top6{
   font-size: 60px;
   line-height: 100%;
+}
+.text-Top7{
+  font-size: 25px;
+  line-height: normal;
 }
 .text-base{
   font-size: 18px;
@@ -3222,6 +3252,39 @@ p{
   height: 30px;
   width: 30px;
   min-width: 30px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Buy-Smarter {
+  background: url("../img/Buy-Smarter.png");
+  display: block;
+  height: 105px;
+  width: 100px;
+  min-width: 100px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Sell-Excess {
+  background: url("../img/Sell-Excess.png");
+  display: block;
+  height: 105px;
+  width: 100px;
+  min-width: 100px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Gain-Total-Control {
+  background: url("../img/Gain-Total-Control.png");
+  display: block;
+  height: 105px;
+  width: 100px;
+  min-width: 100px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;

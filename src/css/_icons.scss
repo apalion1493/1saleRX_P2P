@@ -47,3 +47,18 @@
   background: url("__IMAGE_PATH__security.svg");
   @apply block h-[30px] w-[30px] min-w-[30px] bg-100-auto bg-center bg-no-repeat;
 }
+
+.Buy-Smarter {
+  background: url("__IMAGE_PATH__Buy-Smarter.png");
+  @apply block h-[105px] w-[100px] min-w-[100px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.Sell-Excess {
+  background: url("__IMAGE_PATH__Sell-Excess.png");
+  @apply block h-[105px] w-[100px] min-w-[100px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.Gain-Total-Control {
+  background: url("__IMAGE_PATH__Gain-Total-Control.png");
+  @apply block h-[105px] w-[100px] min-w-[100px] bg-100-auto bg-center bg-no-repeat;
+}

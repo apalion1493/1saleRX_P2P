@@ -45,6 +45,7 @@ module.exports = {
             Top4: ['36px', 'normal'],
             Top5: ['28px', '100%'],
             Top6: ['60px', '100%'],
+            Top7: ['25px', 'normal'],
             body: ['16px', '120%'],
             body2: ['14px', '120%'],
             body3: ['8px', '120%'],
