@@ -62,3 +62,8 @@
   background: url("__IMAGE_PATH__Gain-Total-Control.png");
   @apply block h-[105px] w-[100px] min-w-[100px] bg-100-auto bg-center bg-no-repeat;
 }
+
+.bg-icon-1 {
+  background: url("__IMAGE_PATH__bg-icon-1.svg");
+  @apply block h-[258px] w-[151px] min-w-[151px] bg-100-auto bg-center bg-no-repeat;
+}

@@ -2160,6 +2160,12 @@ html {
 .top-\[50px\]{
   top: 50px;
 }
+.-left-1\/2{
+  left: -50%;
+}
+.left-1\/2{
+  left: 50%;
+}
 .z-10{
   z-index: 10;
 }
@@ -2168,6 +2174,9 @@ html {
 }
 .z-\[1\]{
   z-index: 1;
+}
+.col-span-1{
+  grid-column: span 1 / span 1;
 }
 .col-span-12{
   grid-column: span 12 / span 12;
@@ -2198,6 +2207,10 @@ html {
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 .mb-1{
   margin-bottom: 0.25rem;
@@ -2359,6 +2372,14 @@ html {
 }
 .flex-shrink-0{
   flex-shrink: 0;
+}
+.translate-x-1\/2{
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rotate-180{
   --tw-rotate: 180deg;
@@ -2590,6 +2611,10 @@ html {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.py-\[100px\]{
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .py-\[35px\]{
   padding-top: 35px;
@@ -3285,6 +3310,17 @@ p{
   height: 105px;
   width: 100px;
   min-width: 100px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-icon-1 {
+  background: url("../img/bg-icon-1.svg");
+  display: block;
+  height: 258px;
+  width: 151px;
+  min-width: 151px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
