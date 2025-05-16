@@ -86,6 +86,10 @@
   background: linear-gradient(0deg, rgba(5, 9, 62, 0.40) 0%, rgba(5, 9, 62, 0.40) 100%);
 }
 
+.bg-gradient-main-2 {
+  background: radial-gradient(137.44% 141.05% at 0% 0%, #58C19B 0%, #225186 100%);
+}
+
 .main-title {
   @apply text-h2 font-bold md:text-h2Mob
 }

@@ -67,3 +67,18 @@
   background: url("__IMAGE_PATH__bg-icon-1.svg");
   @apply block h-[258px] w-[151px] min-w-[151px] bg-100-auto bg-center bg-no-repeat;
 }
+
+.thumbs-up {
+  background: url("__IMAGE_PATH__thumbs-up.svg");
+  @apply block h-[30px] w-[30px] min-w-[30px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.money-icon {
+  background: url("__IMAGE_PATH__money-icon.svg");
+  @apply block h-[30px] w-[30px] min-w-[30px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.pill {
+  background: url("__IMAGE_PATH__pill.svg");
+  @apply block h-[30px] w-[30px] min-w-[30px] bg-100-auto bg-center bg-no-repeat;
+}
