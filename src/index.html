@@ -16,10 +16,11 @@
         <div class="row gap-x-6">
           <div class="col-span-6 flex items-center">
             <div class="flex flex-col text-white">
-              <h1 class="text-h1 font-extrabold">Smarter Sourcing. <br>
-                Bigger Margins. <br>
-                Less Waste.</h1>
-              <span class="border-b-2 w-[60px] border-Green1 my-10"></span>
+              @@include('components/Title-component.html', {
+              'Style': '',
+              'LineStyle': 'my-10',
+              'Title': 'Smarter Sourcing. <br> Bigger Margins. <br> Less Waste.',
+              })
               <p class="text-white text-Top1 font-semibold block mb-5">Welcome to the Future of Pharmacy Procurement</p>
               <p class="text-LightBlue text-Top3">1SaleRx is the ultimate B2B marketplace built exclusively for independent pharmacies. We help you source medications at competitive prices, resell overstock with ease, and optimize your inventory like never before — all from one powerful, easy-to-use platform.</p>
               <div class="flex items-center gap-x-5 mt-10">
