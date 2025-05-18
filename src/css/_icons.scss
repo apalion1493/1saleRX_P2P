@@ -82,3 +82,13 @@
   background: url("__IMAGE_PATH__pill.svg");
   @apply block h-[30px] w-[30px] min-w-[30px] bg-100-auto bg-center bg-no-repeat;
 }
+
+.fi-rr-user-add {
+  background: url("__IMAGE_PATH__fi-rr-user-add.svg");
+  @apply block h-[20px] w-[20px] min-w-[20px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.fi-rr-play {
+  background: url("__IMAGE_PATH__fi-rr-play.svg");
+  @apply block h-[20px] w-[20px] min-w-[20px] bg-100-auto bg-center bg-no-repeat;
+}

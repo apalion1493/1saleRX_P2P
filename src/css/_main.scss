@@ -14,6 +14,10 @@
 
 .button {
 
+  &.btn-white {
+    @apply bg-white text-DarkBlue100 hover:bg-Grey
+  }
+
   &.big-1 {
     @apply h-[85px] min-h-[85px] px-[55px] text-Top3
   }
@@ -30,7 +34,7 @@
     @apply min-w-[0px]
   }
 
-  @apply px-5 h-[65px] min-w-[130px] w-fit flex items-center justify-center rounded-full
+  @apply h-[65px] min-w-[130px] w-fit flex items-center justify-center rounded-full
   text-white text-Top3 text-center whitespace-nowrap font-bold bg-Green1 transition-all hover:bg-Green2 disabled:bg-Grey2 disabled:cursor-not-allowed;
 }
 
