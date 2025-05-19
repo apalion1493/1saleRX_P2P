@@ -94,6 +94,10 @@
   background: radial-gradient(137.44% 141.05% at 0% 0%, #58C19B 0%, #225186 100%);
 }
 
+.bg-gradient-main-3 {
+  background: linear-gradient(102deg, #0E2B4C 0%, #13477F 100%);
+}
+
 .main-title {
   @apply text-h2 font-bold md:text-h2Mob
 }
@@ -572,4 +576,9 @@
 
 .bg-gradient-1 {
   background: radial-gradient(137.44% 141.05% at 0% 0%, #58C19B 0%, #225186 100%);
+}
+
+.outlined-text {
+  color: white;
+  -webkit-text-stroke: 1px #58C19B;
 }
