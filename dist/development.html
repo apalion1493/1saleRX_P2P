@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Site in development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+
+
+<body class="">
+<main id="content" class="flex flex-col min-h-screen overflow-hidden bg-gradient-main-2">
+  <section class="my-auto">
+    <div class="container mt-14 pb-20">
+      <div class="row">
+        <div class="col-span-12">
+          <div class="flex flex-col items-center text-white">
+            <h1 class="text-center text-white font-extrabold text-Top4">Website is under construction...</h1>
+            <span class="border-b-2 w-[60px] border-Green1 my-5"></span>
+            <p class="text-Top3 text-LightBlue text-center leading-[150%]">We are currently working on this site. <br> Our website is coming soon.</p>
+          </div>
+        </div>
+        <div class="col-span-12">
+          <img class="max-w-[730px] mx-auto object-cover mt-6" src="img/banner-dev.png" alt="Site in development">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/scripts.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+        }))
+    })
+
+    function clearInput() {
+        document.getElementById('inputField').value = '';
+    }
+</script>
+</body>
+
+</html>
