@@ -64,11 +64,11 @@ p {
   }
 
   ul {
-    @apply list-disc font-medium pl-6 mb-4
+    @apply list-disc font-medium pl-6 text-body text-Text leading-[24px]
   }
 
   p {
-    @apply mb-4
+    @apply text-body text-Text leading-[24px] mb-0
   }
 }
 

@@ -104,6 +104,7 @@ module.exports = {
         LightBlue: '#F1F7FC',
         Grey: '#E6ECEE',
         Grey2: '#A9B1B3',
+        DarkGrey: '#596D7F',
         Error: '#F25F5F',
         Error2: '#FFE1E1',
         Error3: '#DD00001A',
