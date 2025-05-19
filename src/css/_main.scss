@@ -22,6 +22,10 @@
     @apply h-[85px] min-h-[85px] px-[55px] text-Top3
   }
 
+  &.medium-btn {
+    @apply h-[50px] text-body
+  }
+
   &.disabled {
     @apply bg-Grey hover:bg-Text;
   }
