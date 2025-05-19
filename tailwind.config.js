@@ -51,6 +51,7 @@ module.exports = {
             body2: ['14px', '120%'],
             body3: ['8px', '120%'],
             body4: ['12px', '120%'],
+            body5: ['10px', 'normal'],
         },
         screens: {
             '2xl': {max: '1312px'},

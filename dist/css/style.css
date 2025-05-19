@@ -2142,6 +2142,9 @@ html {
 .-bottom-\[100px\]{
   bottom: -100px;
 }
+.-left-9{
+  left: -2.25rem;
+}
 .-top-5{
   top: -1.25rem;
 }
@@ -2174,12 +2177,6 @@ html {
 }
 .top-\[50px\]{
   top: 50px;
-}
-.-left-2{
-  left: -0.5rem;
-}
-.-left-9{
-  left: -2.25rem;
 }
 .z-10{
   z-index: 10;
@@ -2316,11 +2313,11 @@ html {
 .mt-8{
   margin-top: 2rem;
 }
-.mt-auto{
-  margin-top: auto;
-}
 .mt-\[30px\]{
   margin-top: 30px;
+}
+.mt-auto{
+  margin-top: auto;
 }
 .block{
   display: block;
@@ -2495,9 +2492,6 @@ html {
 .justify-between{
   justify-content: space-between;
 }
-.gap-1{
-  gap: 0.25rem;
-}
 .gap-2{
   gap: 0.5rem;
 }
@@ -2522,6 +2516,10 @@ html {
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+.gap-x-\[10px\]{
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 .gap-y-1{
   row-gap: 0.25rem;
@@ -2691,6 +2689,10 @@ html {
   padding-left: 50px;
   padding-right: 50px;
 }
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .py-2\.5{
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2723,17 +2725,9 @@ html {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.py-\[60px\]{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .py-\[90px\]{
   padding-top: 90px;
   padding-bottom: 90px;
-}
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 .pb-16{
   padding-bottom: 4rem;
@@ -2808,6 +2802,10 @@ html {
   font-size: 12px;
   line-height: 120%;
 }
+.text-body5{
+  font-size: 10px;
+  line-height: normal;
+}
 .text-h1{
   font-size: 60px;
   line-height: 120%;
@@ -2852,6 +2850,9 @@ html {
 .tracking-24{
   letter-spacing: 2.4px;
 }
+.tracking-\[2px\]{
+  letter-spacing: 2px;
+}
 .text-DarkBlue100{
   --tw-text-opacity: 1;
   color: rgb(14 43 76 / var(--tw-text-opacity, 1));
@@ -2883,10 +2884,6 @@ html {
 .text-Text{
   --tw-text-opacity: 1;
   color: rgb(32 32 32 / var(--tw-text-opacity, 1));
-}
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 .text-gray-500{
   --tw-text-opacity: 1;
@@ -4291,11 +4288,6 @@ p{
 .hover\:text-Green1:hover{
   --tw-text-opacity: 1;
   color: rgb(88 193 155 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-gray-700:hover{
