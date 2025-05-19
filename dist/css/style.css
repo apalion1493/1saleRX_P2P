@@ -2319,6 +2319,9 @@ html {
 .mt-auto{
   margin-top: auto;
 }
+.mt-14{
+  margin-top: 3.5rem;
+}
 .block{
   display: block;
 }
@@ -2437,6 +2440,9 @@ html {
 }
 .max-w-xs{
   max-width: 20rem;
+}
+.max-w-\[1075px\]{
+  max-width: 1075px;
 }
 .flex-shrink-0{
   flex-shrink: 0;
@@ -2761,6 +2767,9 @@ html {
 }
 .pt-\[50px\]{
   padding-top: 50px;
+}
+.text-center{
+  text-align: center;
 }
 .text-Top1{
   font-size: 24px;

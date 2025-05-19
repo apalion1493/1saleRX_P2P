@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Contact Us'
+})
+
+<body class="">
+<main id="content" class="flex flex-col min-h-screen overflow-hidden">
+  <section class="bg-gradient-main-2">
+    @@include('components/Header.html', {
+    'commonStyle': ' ',
+    })
+
+    <div class="container mt-10 pb-16">
+      <div class="row gap-x-6">
+        <div class="col-span-6 flex items-center">
+          <div class="flex flex-col text-white">
+            @@include('components/Title-component.html', {
+            'Style': '',
+            'LineStyle': 'my-10',
+            'Title': 'Contact Us',
+            })
+            <p class="text-white text-Top1 font-semibold block mb-2">Tired of overpriced meds, excess inventory, and limited supplier options?</p>
+            <p class="text-white text-Top1 block">1SaleRx is here to change the game.</p>
+            <br>
+            <p class="text-white text-base">Join the only pharmacy marketplace where you can save big, resell fast, and stay compliant — all with just a few clicks.</p>
+            <br>
+            <p class="text-white text-base">Thousands of independent pharmacies are already increasing margins and cutting waste with 1SaleRx. You can too.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <img class="w-full object-cover" src="__IMAGE_PATH__contact-us-hero-1.png" alt="Contact Us">
+        </div>
+      </div>
+    </div>
+  </section>
+  @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
