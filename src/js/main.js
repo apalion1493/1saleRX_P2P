@@ -102,6 +102,27 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Testimonials slider
+    const testimonialSwiper = new Swiper(".swiper-main-block", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: false,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            769: {
+                slidesPerView: 1,
+            },
+            1025: {
+                slidesPerView: 2,
+            },
+            1346: {
+                slidesPerView: 2,
+            }
+        }
+    });
 })
 
 window.addEventListener('DOMContentLoaded', () => {
