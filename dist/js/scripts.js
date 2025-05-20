@@ -3594,6 +3594,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleMenu = () => {
         mobileMenu.classList.toggle('active');
         burgerButton.classList.toggle('open');
+        document.body.classList.toggle('overflow-hidden');
     };
 
     const closeMenu = () => {
