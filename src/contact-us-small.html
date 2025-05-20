@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Contact Us'
+})
+
+<body class="">
+<main id="content" class="flex flex-col min-h-screen overflow-hidden">
+    <section class="bg-gradient-main-2">
+        @@include('components/Header.html', {
+        'commonStyle': ' ',
+        })
+
+        <div class="container mt-10 pb-[109px]">
+            <div class="row gap-x-6">
+                <div class="col-span-6">
+                    <div class="flex flex-col text-white max-w-[526px]">
+                        @@include('components/Title-component.html', {
+                        'Style': '',
+                        'LineStyle': 'my-10',
+                        'Title': 'Contact Us',
+                        })
+                        <p class="text-Top7">1SaleRx is a smart B2B marketplace that helps independent pharmacies buy
+                            medications at
+                            better prices, sell excess inventory, and optimize purchasing — all in one simple, secure
+                            platform.</p>
+                        <br>
+                        <p class="text-Top7 font-bold">We’re built for busy pharmacy teams that want more control, more
+                            savings, and less
+                            hassle.</p>
+                        <span class="w-full border-b border-Green1 mt-[30px] mb-[50px]"></span>
+                        <div class="w-full flex flex-col gap-y-4">
+                            <span class="text-body4 tracking-24 uppercase text-Green1 font-bold block">1SaleRx LLC</span>
+                            <div class="flex items-center gap-x-4">
+                                  <span class="w-5 h-5 min-w-5 flex justify-center items-center mr-2">
+                                    <i class="fi-rs-marker"></i>
+                                  </span>
+                                <p class="text-base">13575 58th Street N, Suite 207
+                                    Clearwater, FL 33760</p>
+                            </div>
+                            <div class="flex items-center gap-x-4">
+                              <span class="w-5 h-5 min-w-5 flex justify-center items-center mr-2">
+                                <i class="fi-rr-phone-call"></i>
+                              </span>
+                                <div class="flex flex-col">
+                                    <span class="text-body4 tracking-24 uppercase text-Green1 font-bold block mb-1">Phone</span>
+                                    <a class="no-underline text-base" href="tel:+111111111"><p class="not-italic">
+                                        111-111-111</p></a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-x-4">
+                              <span class="w-5 h-5 min-w-5 flex justify-center items-center mr-2">
+                                <i class="fi-rr-envelope"></i>
+                              </span>
+                                <div class="flex flex-col">
+                                    <span class="text-body4 tracking-24 uppercase text-Green1 font-bold block mb-1">email</span>
+                                    <a class="no-underline text-base" href="mailto:info@1salerx.com"><p
+                                            class="not-italic">
+                                        info@1salerx.com</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 flex items-center">
+                    <div class="w-full bg-white p-[60px] px-[50px] flex flex-col rounded-2xl">
+                        <span class="text-body4 tracking-24 uppercase text-Green1 font-bold block">Whatever it is</span>
+                        <span class="text-Top4 font-extrabold text-DarkBlue100">We’re just one message away.</span>
+                        <form id="form3" class="mt-[30px] flex flex-col gap-y-4" action="">
+                            @@include('components/input.html', {
+                            'common-style': '',
+                            'StyleLabel': 'hidden',
+                            'idInput': 'NameID',
+                            'label': 'Name',
+                            'styleInput': '',
+                            'type': 'text',
+                            'placeholder': 'Name',
+                            'Name': 'name',
+                            'errorStyle': 'hidden',
+                            })
+
+                            @@include('components/input.html', {
+                            'common-style': '',
+                            'StyleLabel': 'hidden',
+                            'idInput': 'EmailID',
+                            'label': 'Email ',
+                            'styleInput': '',
+                            'type': 'email',
+                            'placeholder': 'Email',
+                            'Name': 'email',
+                            'errorStyle': 'hidden',
+                            })
+
+                            @@include('components/input.html', {
+                            'common-style': '',
+                            'StyleLabel': 'hidden',
+                            'idInput': 'PhoneID',
+                            'label': 'Phone ',
+                            'styleInput': '',
+                            'type': 'text',
+                            'placeholder': 'Phone (optional)',
+                            'Name': 'phone',
+                            'errorStyle': 'hidden',
+                            })
+
+                            @@include('components/Select.html', {
+                            'common-style': '',
+                            'StyleLabel': 'hidden',
+                            'idSelect': 'selectID',
+                            'NameSelect': 'listQuestions',
+                            })
+
+                            @@include('components/textarea.html', {
+                            'common-style': '',
+                            'StyleLabel': 'hidden',
+                            'idTextarea': 'PhoneID',
+                            'label': 'Phone ',
+                            'styleTextarea': '',
+                            'placeholder': 'Your Question / Message',
+                            'Name': 'comment',
+                            'rows': '4',
+                            })
+
+                            @@include('components/checkbox.html', {
+                            'styleText': '',
+                            'ID_Check': 'checkboxID',
+                            'text': 'I agree with <a class="" href="#">terms conditions</a> and <a class="" href="#">privacy policy</a>',
+                            'errorStyle': 'hidden',
+                            'errorText': 'Error',
+                            })
+
+                            @@include('components/Button-image-right.html', {
+                            'style': 'px-[60px] mx-auto',
+                            'type': 'submit',
+                            'ariaLabel': 'Send Message',
+                            'title': 'Send Message',
+                            'Icon': 'fi-rs-paper-plane',
+                            })
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal for form submission notification -->
+    <div id="formSubmitModal"
+         class="fixed inset-0 z-[10000] bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-2xl shadow-lg p-8 w-full max-w-[636px] relative">
+            <div class="flex justify-between items-center mb-5">
+                <button class="close-modal ml-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_1_2426)">
+                            <path d="M23.7068 0.292786C23.5193 0.105315 23.2649 0 22.9998 0C22.7346 0 22.4803 0.105315 22.2928 0.292786L11.9998 10.5858L1.70679 0.292786C1.51926 0.105315 1.26495 0 0.999786 0C0.734622 0 0.480314 0.105315 0.292786 0.292786C0.105315 0.480314 0 0.734622 0 0.999786C0 1.26495 0.105315 1.51926 0.292786 1.70679L10.5858 11.9998L0.292786 22.2928C0.105315 22.4803 0 22.7346 0 22.9998C0 23.2649 0.105315 23.5193 0.292786 23.7068C0.480314 23.8943 0.734622 23.9996 0.999786 23.9996C1.26495 23.9996 1.51926 23.8943 1.70679 23.7068L11.9998 13.4138L22.2928 23.7068C22.4803 23.8943 22.7346 23.9996 22.9998 23.9996C23.2649 23.9996 23.5193 23.8943 23.7068 23.7068C23.8943 23.5193 23.9996 23.2649 23.9996 22.9998C23.9996 22.7346 23.8943 22.4803 23.7068 22.2928L13.4138 11.9998L23.7068 1.70679C23.8943 1.51926 23.9996 1.26495 23.9996 0.999786C23.9996 0.734622 23.8943 0.480314 23.7068 0.292786Z"
+                                  fill="#596D7F"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_2426">
+                                <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col items-center text-center max-w-[416px] mx-auto">
+                <span class="modal-icon mb-[30px]"></span>
+                <div class="flex flex-col items-center mb-10">
+                    <span class="text-center text-body4 tracking-24 uppercase text-Green1 font-bold block">request send</span>
+                    <span class="text-center text-Top7 font-extrabold text-DarkBlue100">Thank you for request!</span>
+                    <span class="border-b-2 w-[60px] border-Green1 mt-5"></span>
+                </div>
+                <p class="text-base text-Text mb-[60px]">Ne per solum nihil utinam, sed ad doctus apeirian nominati. Eu tale
+                    augue vim. Vel an torquatos interesset, utamur intellegat ad pri. Vix dicta ridens euripidis in, duo
+                    latine adipiscing ex. Id reque mediocrem per, vis ne aperiri ponderum probatus, nec prima maiestatis
+                    ex.</p>
+                <button type="button"
+                        class="close-modal button px-10 hover:bg-Green2">
+                    <span class="font-bold">Check your inbox</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form3 = document.getElementById('form3');
+        const modal = document.getElementById('formSubmitModal');
+        const closeButtons = modal.querySelectorAll('.close-modal');
+
+        // Handle form3 submission
+        form3.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Here you would typically send the form data to your server
+            // For now, we'll just show the success modal
+
+            // Show the modal
+            modal.classList.remove('hidden');
+
+            // Reset the form
+            form3.reset();
+        });
+
+        // Close modal when clicking close buttons
+        closeButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                modal.classList.add('hidden');
+            });
+        });
+
+        // Close modal when clicking outside
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
+
+        // Handle checkbox click
+        const checkboxLabel = document.querySelector('.custom-checkbox');
+        if (checkboxLabel) {
+            const checkbox = checkboxLabel.querySelector('input[type="checkbox"]');
+            const checkmark = checkboxLabel.querySelector('.checkmark');
+
+            if (checkbox && checkmark) {
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        checkmark.classList.remove('hidden');
+                    } else {
+                        checkmark.classList.add('hidden');
+                    }
+                });
+            }
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -128,11 +128,12 @@ select.select {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
+  background: url('__IMAGE_PATH__fi-rs-paper-plane2.svg') no-repeat calc(100% - 20px) center;
   @apply text-DarkBlue50
 }
 
 .select option:first-child {
-  color: red;
+  color: #A9B1B3;
 }
 
 input[type='search']::-webkit-search-decoration,
@@ -148,7 +149,7 @@ input[type='search']::-webkit-search-results-decoration {
   cursor: pointer;
 
   a {
-    @apply text-Text hover:underline;
+    @apply text-Green1 hover:underline;
   }
 }
 
@@ -157,14 +158,14 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .custom-checkbox input[type='checkbox']:checked + .checkmark {
-  @apply flex;
+  @apply flex items-center justify-center;
 }
 
 .custom-checkbox .checkmark {
   position: absolute;
   display: none;
-  top: 0;
-  left: 0;
+  top: 4px;
+  left: 2px;
   align-items: center;
   justify-content: center;
   pointer-events: none;
