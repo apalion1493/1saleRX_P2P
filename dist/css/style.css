@@ -2566,6 +2566,9 @@ html {
 .mb-\[10px\]{
   margin-bottom: 10px;
 }
+.mb-\[60px\]{
+  margin-bottom: 60px;
+}
 .mb-auto{
   margin-bottom: auto;
 }
@@ -2629,6 +2632,9 @@ html {
 .mt-\[30px\]{
   margin-top: 30px;
 }
+.mt-\[60px\]{
+  margin-top: 60px;
+}
 .mt-auto{
   margin-top: auto;
 }
@@ -2687,6 +2693,9 @@ html {
 }
 .h-\[18px\]{
   height: 18px;
+}
+.h-\[196px\]{
+  height: 196px;
 }
 .h-\[270px\]{
   height: 270px;
@@ -2748,6 +2757,9 @@ html {
 .w-\[18px\]{
   width: 18px;
 }
+.w-\[196px\]{
+  width: 196px;
+}
 .w-\[40px\]{
   width: 40px;
 }
@@ -2774,6 +2786,9 @@ html {
 }
 .min-w-\[18px\]{
   min-width: 18px;
+}
+.min-w-\[196px\]{
+  min-width: 196px;
 }
 .min-w-\[40px\]{
   min-width: 40px;
@@ -3087,6 +3102,10 @@ html {
 .px-\[10px\]{
   padding-left: 10px;
   padding-right: 10px;
+}
+.px-\[110px\]{
+  padding-left: 110px;
+  padding-right: 110px;
 }
 .px-\[20px\]{
   padding-left: 20px;
@@ -4737,81 +4756,94 @@ input[type=search]::-webkit-search-results-decoration {
   text-decoration: none !important;
 }
 
+.pagination-btn{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  min-width: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(241 247 252 / var(--tw-border-opacity, 1));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.pagination-btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 193 155 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.pagination-btn.active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 193 155 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: white;
+}
 .hover\:bg-Green1:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(88 193 155 / var(--tw-bg-opacity, 1));
 }
-
 .hover\:bg-transparent:hover{
   background-color: transparent;
 }
-
 .hover\:text-Green1:hover{
   --tw-text-opacity: 1;
   color: rgb(88 193 155 / var(--tw-text-opacity, 1));
 }
-
 .hover\:text-Green2:hover{
   --tw-text-opacity: 1;
   color: rgb(56 165 126 / var(--tw-text-opacity, 1));
 }
-
 .hover\:text-gray-700:hover{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
-
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
 .focus-visible\:bg-slate-800\/5:focus-visible{
   background-color: rgb(30 41 59 / 0.05);
 }
-
 .focus-visible\:text-black:focus-visible{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
-
 .focus-visible\:outline-none:focus-visible{
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
 .disabled\:opacity-50:disabled{
   opacity: 0.5;
 }
-
 .group:hover .group-hover\:fill-white{
   fill: #fff;
 }
-
 .group.open .group-\[\.open\]\:-translate-y-2{
   --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 .group.open .group-\[\.open\]\:translate-y-2{
   --tw-translate-y: 0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 .group.open .group-\[\.open\]\:-rotate-45{
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 .group.open .group-\[\.open\]\:rotate-45{
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 .group.open .group-\[\.open\]\:opacity-0{
   opacity: 0;
 }
-
 @media (max-width: 1023px){
   .lg\:hidden{
     display: none;
@@ -4836,7 +4868,6 @@ input[type=search]::-webkit-search-results-decoration {
     padding-bottom: 100px;
   }
 }
-
 @media (max-width: 767px){
   .md\:col-span-12{
     grid-column: span 12 / span 12;
@@ -4866,7 +4897,6 @@ input[type=search]::-webkit-search-results-decoration {
     line-height: 120%;
   }
 }
-
 @media (max-width: 639px){
   .sm\:hidden{
     display: none;
@@ -4875,7 +4905,6 @@ input[type=search]::-webkit-search-results-decoration {
     flex-direction: column;
   }
 }
-
 @media (min-width: 1024px){
   .minlg\:hidden{
     display: none;
