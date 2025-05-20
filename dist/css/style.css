@@ -2772,6 +2772,10 @@ html {
 .w-full{
   width: 100%;
 }
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .min-w-10{
   min-width: 2.5rem;
 }
@@ -2801,6 +2805,9 @@ html {
 }
 .max-w-\[416px\]{
   max-width: 416px;
+}
+.max-w-\[524px\]{
+  max-width: 524px;
 }
 .max-w-\[536px\]{
   max-width: 536px;
@@ -3192,6 +3199,9 @@ html {
 .pb-\[60px\]{
   padding-bottom: 60px;
 }
+.pb-\[80px\]{
+  padding-bottom: 80px;
+}
 .pb-\[90px\]{
   padding-bottom: 90px;
 }
@@ -3206,6 +3216,9 @@ html {
 }
 .pl-\[46px\]{
   padding-left: 46px;
+}
+.pr-\[30px\]{
+  padding-right: 30px;
 }
 .pr-\[35px\]{
   padding-right: 35px;
@@ -3907,6 +3920,17 @@ input[type=search]::-webkit-search-results-decoration {
 
 .fi-rr-calendar {
   background: url("../img/fi-rr-calendar.svg");
+  display: block;
+  height: 20px;
+  width: 20px;
+  min-width: 20px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fi-rr-calendar-green {
+  background: url("../img/fi-rr-calendar-green.svg");
   display: block;
   height: 20px;
   width: 20px;
