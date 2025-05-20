@@ -311,13 +311,95 @@
     </div>
   </section>
 
-  <section>
+  <section class="pb-[60px]">
     <div class="container">
       <div class="row">
-        <div class="col-span-12"></div>
+        <div class="col-span-12">
+          <div class="flex flex-col mb-10">
+            <h2 class="text-Top4 font-bold text-DarkBlue100">Related Articles</h2>
+            <span class="border-b-2 w-[60px] border-Green1 mt-5"></span>
+          </div>
+        </div>
       </div>
-      <div class="row gap-x-6">
-        <div class="col-span-4"></div>
+    </div>
+    <div class="container">
+      <div class="swiper-blog-post swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="w-full h-full max-h-[540px] flex flex-col bg-white rounded-2xl overflow-hidden ">
+  <div class="h-[270px] w-full flex items-center justify-center">
+    <img class="w-full h-full object-cover" src="img/post-img-1.png" alt="">
+  </div>
+  <div class="flex flex-col gap-y-4 p-5 h-full">
+    <div class="flex items-center justify-between">
+      <span class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</span>
+      <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
+    </div>
+    <div class="flex flex-col gap-y-[10px]">
+      <p class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</p>
+      <p class="line-clamp-4 text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+    </div>
+    <div class="flex items-center gap-x-[10px] mt-auto">
+      <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
+           src="img/avatar-5.png" alt="avatar">
+      <span class="text-body text-Grey2 font-bold">Matthew Solan</span>
+    </div>
+  </div>
+</a>
+
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="w-full h-full max-h-[540px] flex flex-col bg-white rounded-2xl overflow-hidden ">
+  <div class="h-[270px] w-full flex items-center justify-center">
+    <img class="w-full h-full object-cover" src="img/post-img-1.png" alt="">
+  </div>
+  <div class="flex flex-col gap-y-4 p-5 h-full">
+    <div class="flex items-center justify-between">
+      <span class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</span>
+      <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
+    </div>
+    <div class="flex flex-col gap-y-[10px]">
+      <p class="text-base font-bold text-DarkBlue100">Supporting a loved one with prostate cancer: A guide for caregivers</p>
+      <p class="line-clamp-4 text-Text">Looking after a loved one who has prostate cancer can be overwhelming. Caregivers play crucial roles in supporting a patients physical and psychological ...</p>
+    </div>
+    <div class="flex items-center gap-x-[10px] mt-auto">
+      <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
+           src="img/avatar-5.png" alt="avatar">
+      <span class="text-body text-Grey2 font-bold">Charlie Schmidt</span>
+    </div>
+  </div>
+</a>
+
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="w-full h-full max-h-[540px] flex flex-col bg-white rounded-2xl overflow-hidden ">
+  <div class="h-[270px] w-full flex items-center justify-center">
+    <img class="w-full h-full object-cover" src="img/post-img-1.png" alt="">
+  </div>
+  <div class="flex flex-col gap-y-4 p-5 h-full">
+    <div class="flex items-center justify-between">
+      <span class="text-body4 uppercase text-Green1 font-bold">Mind & Mood</span>
+      <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
+    </div>
+    <div class="flex flex-col gap-y-[10px]">
+      <p class="text-base font-bold text-DarkBlue100">Life can be challenging: Build your own resilience plan</p>
+      <p class="line-clamp-4 text-Text">Resilience is a psychological response that helps you adapt to lifes difficulties and seek a path forward through challenges. While everyone has the ability to be resilient, life stresses can take ...</p>
+    </div>
+    <div class="flex items-center gap-x-[10px] mt-auto">
+      <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
+           src="img/avatar-5.png" alt="avatar">
+      <span class="text-body text-Grey2 font-bold">Howard E. LeWine</span>
+    </div>
+  </div>
+</a>
+
+          </div>
+        </div>
+        <!-- Add pagination for mobile -->
+        <div class="swiper-pagination"></div>
+        <!-- Add navigation arrows for mobile -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
@@ -437,6 +519,8 @@
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <script src="./js/scripts.js"></script>
 <script>
     document.addEventListener('alpine:init', () => {
@@ -447,7 +531,47 @@
     function clearInput() {
         document.getElementById('inputField').value = '';
     }
+
+    // Initialize Swiper for blog posts
+    document.addEventListener('DOMContentLoaded', function() {
+        const blogPostSwiper = new Swiper('.swiper-blog-post', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1199: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                    navigation: {
+                        enabled: false,
+                    },
+                    pagination: {
+                        enabled: false,
+                    }
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                    navigation: {
+                        enabled: false,
+                    },
+                    pagination: {
+                        enabled: false,
+                    }
+                }
+            }
+        });
+    });
 </script>
+
 </body>
 
 </html>

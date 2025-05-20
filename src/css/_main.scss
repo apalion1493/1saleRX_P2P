@@ -6,7 +6,38 @@
 
 // Blog Card Style Start
 
+.swiper-blog-post {
+  @apply py-5;
 
+  .swiper-slide {
+    height: auto;
+  }
+
+  .swiper-pagination {
+    @apply mt-6;
+
+    @screen lg {
+      @apply hidden;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply text-Green1;
+
+    &:hover {
+      @apply text-Green2;
+    }
+
+    @screen lg {
+      @apply hidden;
+    }
+  }
+
+  @screen lg {
+    @apply overflow-visible;
+  }
+}
 
 // Blog Card Style End
 

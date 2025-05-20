@@ -270,13 +270,62 @@
     </div>
   </section>
 
-  <section>
+  <section class="pb-[60px]">
     <div class="container">
       <div class="row">
-        <div class="col-span-12"></div>
+        <div class="col-span-12">
+          <div class="flex flex-col mb-10">
+            <h2 class="text-Top4 font-bold text-DarkBlue100">Related Articles</h2>
+            <span class="border-b-2 w-[60px] border-Green1 mt-5"></span>
+          </div>
+        </div>
       </div>
-      <div class="row gap-x-6">
-        <div class="col-span-4"></div>
+    </div>
+    <div class="container">
+      <div class="swiper-blog-post swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            @@include('components/Post-card.html', {
+            'LINK_URL': '#',
+            'COMMON_STYLE': '',
+            'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
+            'CATEGORY': 'Staying Healthy',
+            'TITLE': 'Should you be sleepmaxxing to boost health and happiness?',
+            'TEXT': 'Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...',
+            'AUTHOR_AVATAR': '__IMAGE_PATH__avatar-5.png',
+            'AUTHOR_NAME': 'Matthew Solan',
+            })
+          </div>
+          <div class="swiper-slide">
+            @@include('components/Post-card.html', {
+            'LINK_URL': '#',
+            'COMMON_STYLE': '',
+            'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
+            'CATEGORY': 'Staying Healthy',
+            'TITLE': 'Supporting a loved one with prostate cancer: A guide for caregivers',
+            'TEXT': 'Looking after a loved one who has prostate cancer can be overwhelming. Caregivers play crucial roles in supporting a patients physical and psychological ...',
+            'AUTHOR_AVATAR': '__IMAGE_PATH__avatar-5.png',
+            'AUTHOR_NAME': 'Charlie Schmidt',
+            })
+          </div>
+          <div class="swiper-slide">
+            @@include('components/Post-card.html', {
+            'LINK_URL': '#',
+            'COMMON_STYLE': '',
+            'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
+            'CATEGORY': 'Mind & Mood',
+            'TITLE': 'Life can be challenging: Build your own resilience plan',
+            'TEXT': 'Resilience is a psychological response that helps you adapt to lifes difficulties and seek a path forward through challenges. While everyone has the ability to be resilient, life stresses can take ...',
+            'AUTHOR_AVATAR': '__IMAGE_PATH__avatar-5.png',
+            'AUTHOR_NAME': 'Howard E. LeWine',
+            })
+          </div>
+        </div>
+        <!-- Add pagination for mobile -->
+        <div class="swiper-pagination"></div>
+        <!-- Add navigation arrows for mobile -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
