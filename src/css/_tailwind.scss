@@ -60,6 +60,10 @@ section {
   @apply text-Grey2 md:text-body2
 }
 
+.input-solo::placeholder {
+  @apply text-Grey2 text-body2 font-medium
+}
+
 .input {
   &.bg-input-1 {
     @apply bg-pageBg
