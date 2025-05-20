@@ -1,1 +1,9 @@
-https://apalion1493.github.io/1saleRX_P2P/dist/index.html
+https://apalion1493.github.io/1saleRX_P2P/dist/index.html <br>
+https://apalion1493.github.io/1saleRX_P2P/dist/404.html <br>
+https://apalion1493.github.io/1saleRX_P2P/dist/About.html <br>
+https://apalion1493.github.io/1saleRX_P2P/dist/Blog-post.html <br>
+https://apalion1493.github.io/1saleRX_P2P/dist/contact-us.html <br>
+https://apalion1493.github.io/1saleRX_P2P/dist/development.html <br>
+https://apalion1493.github.io/1saleRX_P2P/dist/How-Works.html <br>
+https://apalion1493.github.io/1saleRX_P2P/dist/shipping.html <br>
+https://apalion1493.github.io/1saleRX_P2P/dist/Terms.html <br>
