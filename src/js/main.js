@@ -137,15 +137,22 @@ window.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', function () {
     const burgerButton = document.getElementById('burger-button');
+    const closeMenuButton = document.getElementById('burger-button-close');
     const mobileMenu = document.getElementById('mobile-menu');
 
     const toggleMenu = () => {
         mobileMenu.classList.toggle('active');
-        document.body.classList.toggle('overflow-hidden');
         burgerButton.classList.toggle('open');
     };
 
+    const closeMenu = () => {
+        document.body.classList.toggle('overflow-hidden');
+        mobileMenu.classList.remove('active');
+        burgerButton.classList.remove('open');
+    }
+
     burgerButton?.addEventListener('click', toggleMenu);
+    closeMenuButton?.addEventListener('click', closeMenu);
 })
 
 document.addEventListener("DOMContentLoaded", function () {
