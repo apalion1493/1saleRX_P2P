@@ -2560,11 +2560,17 @@ html {
 .mb-5{
   margin-bottom: 1.25rem;
 }
+.mb-6{
+  margin-bottom: 1.5rem;
+}
 .mb-9{
   margin-bottom: 2.25rem;
 }
 .mb-\[10px\]{
   margin-bottom: 10px;
+}
+.mb-\[30px\]{
+  margin-bottom: 30px;
 }
 .mb-\[50px\]{
   margin-bottom: 50px;
@@ -2829,6 +2835,9 @@ html {
 }
 .max-w-\[536px\]{
   max-width: 536px;
+}
+.max-w-\[636px\]{
+  max-width: 636px;
 }
 .max-w-\[672px\]{
   max-width: 672px;
@@ -3157,6 +3166,10 @@ html {
   padding-left: 50px;
   padding-right: 50px;
 }
+.px-\[60px\]{
+  padding-left: 60px;
+  padding-right: 60px;
+}
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -3216,10 +3229,6 @@ html {
 .py-\[90px\]{
   padding-top: 90px;
   padding-bottom: 90px;
-}
-.px-\[60px\]{
-  padding-left: 60px;
-  padding-right: 60px;
 }
 .pb-14{
   padding-bottom: 3.5rem;
@@ -4052,6 +4061,17 @@ input[type=search]::-webkit-search-results-decoration {
   height: 20px;
   width: 20px;
   min-width: 20px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modal-icon {
+  background: url("../img/modal-icon.svg");
+  display: block;
+  height: 140px;
+  width: 140px;
+  min-width: 140px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -4939,6 +4959,10 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .hover\:bg-transparent:hover{
   background-color: transparent;
+}
+.hover\:bg-Green2:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 165 126 / var(--tw-bg-opacity, 1));
 }
 .hover\:text-Green1:hover{
   --tw-text-opacity: 1;

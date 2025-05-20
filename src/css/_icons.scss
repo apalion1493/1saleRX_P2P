@@ -147,3 +147,8 @@
   background: url("__IMAGE_PATH__fi-rs-paper-plane.svg");
   @apply block h-[20px] w-[20px] min-w-[20px] bg-100-auto bg-center bg-no-repeat;
 }
+
+.modal-icon {
+  background: url("__IMAGE_PATH__modal-icon.svg");
+  @apply block h-[140px] w-[140px] min-w-[140px] bg-100-auto bg-center bg-no-repeat;
+}
