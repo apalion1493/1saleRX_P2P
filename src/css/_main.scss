@@ -77,7 +77,22 @@
 
 // Checkbox Style Start
 
+.category-menu {
+  @apply transition-all duration-300;
 
+  @screen lg {
+    @apply fixed top-[85px] -left-[100%] w-[80vw] h-full min-h-screen bg-white z-50 flex flex-col p-6 overflow-y-auto;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+
+    &.active {
+      @apply left-0;
+    }
+  }
+}
+
+.filter-button {
+  @apply transition-all hover:bg-Green2;
+}
 
 // Checkbox Style End
 
@@ -634,6 +649,20 @@
 
 .no-underline {
   text-decoration: none !important;
+}
+
+.bottom-line {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 60px;
+    display: block;
+    border-bottom: 2px solid #58C19B;
+  }
 }
 
 .pagination-btn {

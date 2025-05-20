@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Blog - 1SaleRx'
+})
+
+<body class="">
+<main id="content" class="flex flex-col min-h-screen overflow-hidden bg-LightBlue">
+    <section class="">
+        <div class="container relative">
+            <span class="bg-1 absolute top-0 left-0"></span>
+        </div>
+        @@include('components/Header.html', {
+        'commonStyle': ' ',
+        })
+        <div class="container relative z-[1]">
+            <div class="row">
+                <div class="col-span-12">
+                    <nav class="text-sm font-medium text-slate-700" aria-label="breadcrumb">
+                        <ol class="flex flex-wrap items-center gap-x-[10px]">
+                            <li class="flex items-center uppercase text-body5 tracking-[2px] gap-x-[10px]">
+                                <a href="index.html" class="text-DarkGrey">home</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="3" viewBox="0 0 2 3"
+                                     fill="none">
+                                    <circle cx="1" cy="1.5" r="1" fill="#596D7F"/>
+                                </svg>
+                            </li>
+                            <li class="flex items-center uppercase text-body5 tracking-[2px] text-DarkGrey font-bold"
+                                aria-current="page">Category
+                            </li>
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+        <div class="container relative z-[1] mt-14 pb-[80px]">
+            <div class="row gap-x-6">
+                <div class="col-span-12 flex items-center">
+                    <div class="flex flex-col mx-auto text-DarkBlue100">
+                        @@include('components/Title-component.html', {
+                        'Style': 'items-center',
+                        'LineStyle': 'mt-10',
+                        'Title': 'Blog',
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container relative z-[1] pb-[60px]">
+            <div class="bg-white rounded-2xl overflow-hidden">
+                <div class="row gap-x-6">
+                    <div class="col-span-6">
+                        <img class="w-full h-full object-cover" src="__IMAGE_PATH__catagory-img.png" alt="">
+                    </div>
+                    <div class="col-span-6">
+                        <div class="flex gap-x-5 py-[30px] pr-[30px]">
+                            <div class="flex flex-col max-w-[524px]">
+                                <div class="flex items-center w-fit mb-5 bg-Green1 rounded-full px-[10px] py-[7px]">
+                                    <span class="text-white text-body4 uppercase font-bold">Diseases & Conditions</span>
+                                </div>
+                                <h2 class="text-Top4 text-DarkBlue100 font-extrabold">Should you be tested for inflammation?</h2>
+                                <span class="border-b-2 w-[60px] border-Green1 my-5"></span>
+                                <p class="line-clamp-4 text-base mb-5">Our understanding of how chronic inflammation can impair health has expanded dramatically in recent years, causing some people to wonder if there is a test to identify it, and if they should have it. There are ...</p>
+                                <div class="mt-auto flex items-center justify-between">
+                                    <div class="flex items-center gap-x-5">
+                                        <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
+                                             src="__IMAGE_PATH__avatar-5.png" alt="avatar">
+                                        <span class="text-body text-DarkGrey font-bold">Matthew Solan</span>
+                                    </div>
+                                    <div class="flex items-center gap-x-5">
+                                        <div class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full border border-LightBlue">
+                                            <i class="fi-rr-calendar-green"></i>
+                                        </div>
+                                        <time class="text-DarkGrey text-body font-extrabold" datetime="2025-05-01">May 1, 2025</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="ml-auto" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M18.6777 -7.91831e-09C19.23 -2.13005e-07 19.6777 0.447715 19.6777 1L19.6777 10C19.6777 10.5523 19.23 11 18.6777 11C18.1255 11 17.6777 10.5523 17.6777 10L17.6777 2L9.67773 2C9.12545 2 8.67773 1.55229 8.67773 1C8.67773 0.447718 9.12545 2.72598e-06 9.67773 2.56304e-06L18.6777 -7.91831e-09ZM1.70718 19.3848C1.31665 19.7753 0.683487 19.7753 0.292963 19.3848C-0.0975614 18.9943 -0.0975612 18.3611 0.292963 17.9706L1.70718 19.3848ZM18.6777 1L19.3848 1.70711L1.70718 19.3848L1.00007 18.6777L0.292963 17.9706L17.9706 0.292893L18.6777 1Z" fill="#E6ECEE"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-2">
+                    <div class="flex flex-col" x-data="{ isOpen: false }" @click.away="isOpen = false" x-init="$watch('isOpen', value => { if(value) { document.body.classList.add('overflow-hidden'); } else { document.body.classList.remove('overflow-hidden'); } })">
+                        <div class="flex items-center justify-between">
+                            <span class="text-DarkBlue100 font-bold">Categories</span>
+                            <button id="category-toggle-button" @click="isOpen = !isOpen" class="hidden lg:flex items-center justify-center w-8 h-8 rounded-full bg-Green1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M13 7H1M7 1V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="category-menu" class="category-menu" :class="{ 'active': isOpen }">
+                            <ul class="category-list mt-4 border-b border-Grey max-w-[150px]">
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category1" class="hidden" x-model="active">
+                                    <label for="category1" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Staying Healthy</label>
+                                </li>
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category2" class="hidden" x-model="active">
+                                    <label for="category2" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Mind & Mood</label>
+                                </li>
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category4" class="hidden" x-model="active">
+                                    <label for="category4" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Diseases & Conditions</label>
+                                </li>
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category5" class="hidden" x-model="active">
+                                    <label for="category5" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Child & Teen Health</label>
+                                </li>
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category6" class="hidden" x-model="active">
+                                    <label for="category6" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Exercise & Fitness</label>
+                                </li>
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category3" class="hidden" x-model="active">
+                                    <label for="category3" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Mind & Mood</label>
+                                </li>
+                            </ul>
+                            <button class="filter-button mt-4 hidden lg:flex w-full items-center justify-center py-2 px-4 bg-Green1 text-white rounded-full font-bold">
+                                Filter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-10">
+                    <div class="row gap-x-6 gap-y-5">
+                        <div class="col-span-6">
+                            @@include('components/Post-card.html', {
+                            'LINK_URL': '#',
+                            'COMMON_STYLE': '',
+                            'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
+                            'CATEGORY': 'Staying Healthy',
+                            'TITLE': 'Should you be sleepmaxxing to boost health and happiness?',
+                            'TEXT': 'Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...',
+                            'AUTHOR_AVATAR': '__IMAGE_PATH__avatar-5.png',
+                            'AUTHOR_NAME': 'Matthew Solan',
+                            })
+                        </div>
+                        <div class="col-span-6">
+                            @@include('components/Post-card.html', {
+                            'LINK_URL': '#',
+                            'COMMON_STYLE': '',
+                            'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
+                            'CATEGORY': 'Staying Healthy',
+                            'TITLE': 'Should you be sleepmaxxing to boost health and happiness?',
+                            'TEXT': 'Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...',
+                            'AUTHOR_AVATAR': '__IMAGE_PATH__avatar-5.png',
+                            'AUTHOR_NAME': 'Matthew Solan',
+                            })
+                        </div>
+                        <div class="col-span-6">
+                            @@include('components/Post-card.html', {
+                            'LINK_URL': '#',
+                            'COMMON_STYLE': '',
+                            'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
+                            'CATEGORY': 'Staying Healthy',
+                            'TITLE': 'Should you be sleepmaxxing to boost health and happiness?',
+                            'TEXT': 'Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...',
+                            'AUTHOR_AVATAR': '__IMAGE_PATH__avatar-5.png',
+                            'AUTHOR_NAME': 'Matthew Solan',
+                            })
+                        </div>
+                        <div class="col-span-6">
+                            @@include('components/Post-card.html', {
+                            'LINK_URL': '#',
+                            'COMMON_STYLE': '',
+                            'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
+                            'CATEGORY': 'Staying Healthy',
+                            'TITLE': 'Should you be sleepmaxxing to boost health and happiness?',
+                            'TEXT': 'Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...',
+                            'AUTHOR_AVATAR': '__IMAGE_PATH__avatar-5.png',
+                            'AUTHOR_NAME': 'Matthew Solan',
+                            })
+                        </div>
+                        <div class="col-span-6">
+                            @@include('components/Post-card.html', {
+                            'LINK_URL': '#',
+                            'COMMON_STYLE': '',
+                            'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
+                            'CATEGORY': 'Staying Healthy',
+                            'TITLE': 'Should you be sleepmaxxing to boost health and happiness?',
+                            'TEXT': 'Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...',
+                            'AUTHOR_AVATAR': '__IMAGE_PATH__avatar-5.png',
+                            'AUTHOR_NAME': 'Matthew Solan',
+                            })
+                        </div>
+                        <div class="col-span-6">
+                            @@include('components/Post-card.html', {
+                            'LINK_URL': '#',
+                            'COMMON_STYLE': '',
+                            'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
+                            'CATEGORY': 'Staying Healthy',
+                            'TITLE': 'Should you be sleepmaxxing to boost health and happiness?',
+                            'TEXT': 'Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...',
+                            'AUTHOR_AVATAR': '__IMAGE_PATH__avatar-5.png',
+                            'AUTHOR_NAME': 'Matthew Solan',
+                            })
+                        </div>
+                        <div class="col-span-6">
+                            @@include('components/Post-card.html', {
+                            'LINK_URL': '#',
+                            'COMMON_STYLE': '',
+                            'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
+                            'CATEGORY': 'Staying Healthy',
+                            'TITLE': 'Should you be sleepmaxxing to boost health and happiness?',
+                            'TEXT': 'Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...',
+                            'AUTHOR_AVATAR': '__IMAGE_PATH__avatar-5.png',
+                            'AUTHOR_NAME': 'Matthew Solan',
+                            })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-span-12">
+                            <div class="flex items-center gap-x-4 mx-auto justify-center mt-[60px]">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                        <g clip-path="url(#clip0_1_4109)">
+                                            <circle cx="25" cy="25" r="24.5" fill="white" stroke="#F1F7FC"/>
+                                            <path d="M16.4697 24.4697C16.1768 24.7626 16.1768 25.2374 16.4697 25.5303L21.2426 30.3033C21.5355 30.5962 22.0104 30.5962 22.3033 30.3033C22.5962 30.0104 22.5962 29.5355 22.3033 29.2426L18.0607 25L22.3033 20.7574C22.5962 20.4645 22.5962 19.9896 22.3033 19.6967C22.0104 19.4038 21.5355 19.4038 21.2426 19.6967L16.4697 24.4697ZM33 25.75C33.4142 25.75 33.75 25.4142 33.75 25C33.75 24.5858 33.4142 24.25 33 24.25V25.75ZM17 25V25.75H33V25V24.25H17V25Z" fill="#596D7F"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_4109">
+                                                <rect width="50" height="50" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <div class="flex items-center gap-x-4">
+                                    <button class="pagination-btn ">1</button>
+                                    <button class="pagination-btn active">2</button>
+                                    <button class="pagination-btn ">3</button>
+                                    <button class="pagination-btn ">...</button>
+                                    <button class="pagination-btn ">19</button>
+                                </div>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                        <g clip-path="url(#clip0_1_4127)">
+                                            <circle cx="25" cy="25" r="24.5" fill="white" stroke="#58C19B"/>
+                                            <path d="M33.5303 24.4697C33.8232 24.7626 33.8232 25.2374 33.5303 25.5303L28.7574 30.3033C28.4645 30.5962 27.9896 30.5962 27.6967 30.3033C27.4038 30.0104 27.4038 29.5355 27.6967 29.2426L31.9393 25L27.6967 20.7574C27.4038 20.4645 27.4038 19.9896 27.6967 19.6967C27.9896 19.4038 28.4645 19.4038 28.7574 19.6967L33.5303 24.4697ZM17 25.75C16.5858 25.75 16.25 25.4142 16.25 25C16.25 24.5858 16.5858 24.25 17 24.25V25.75ZM33 25V25.75H17V25V24.25H33V25Z" fill="#58C19B"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_4127">
+                                                <rect width="50" height="50" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
