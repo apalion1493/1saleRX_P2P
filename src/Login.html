@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Login - 1SaleRx'
+})
+
+<body class="">
+<main id="content" class="flex flex-col min-h-screen overflow-hidden bg-gradient-main-2">
+    <section class="">
+        @@include('components/Header.html', {
+        'commonStyle': ' ',
+        })
+        <div class="container mt-14 pb-20">
+            <div class="row">
+                <div class="col-span-12">
+                    <div class="max-w-[526px] mx-auto py-[60px] px-[55px] bg-white rounded-[15px] flex flex-col">
+                        <span class="text-body4 tracking-24 uppercase text-Green1 font-bold block">welcome back</span>
+                        <span class="text-Top4 lg:text-Top7 font-extrabold text-DarkBlue100">Login</span>
+                        <form id="form5" class="mt-[30px] flex flex-col gap-y-5 " action="">
+                            @@include('components/input.html', {
+                            'common-style': '',
+                            'StyleLabel': 'hidden',
+                            'idInput': 'EmailID',
+                            'label': 'Email',
+                            'styleInput': 'input-icon fi-rr-envelope-input error',
+                            'type': 'email',
+                            'placeholder': 'Enter your email ',
+                            'Name': 'email',
+                            'errorStyle': '',
+                            })
+
+                            @@include('components/input.html', {
+                            'common-style': '',
+                            'StyleLabel': 'hidden',
+                            'idInput': 'PasswordID',
+                            'label': 'Password',
+                            'styleInput': 'input-icon fi-rr-lock-input error',
+                            'type': 'password',
+                            'placeholder': 'Password',
+                            'Name': 'password',
+                            'errorStyle': '',
+                            })
+
+                            <div class="flex items-center gap-x-2 w-full">
+                                @@include('components/checkbox.html', {
+                                'styleText': '',
+                                'ID_Check': 'checkboxID',
+                                'text': 'Remember me',
+                                'errorStyle': 'hidden',
+                                'errorText': 'Error',
+                                })
+                                <a class="text-Green1 text-body2 font-medium text-right ml-auto" href="#">Forgot password?</a>
+                            </div>
+
+                            @@include('components/button.html', {
+                            'style': 'px-[60px] mx-auto w-full',
+                            'type': 'submit',
+                            'ariaLabel': 'Login',
+                            'title': 'Login',
+                            'Icon': '',
+                            })
+                        </form>
+
+                        <div class="flex items-center justify-center mt-[30px]">
+                            <p>Need a Free Account? <a class="text-Green1 font-semibold ml-1" href="#">Sign In</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>

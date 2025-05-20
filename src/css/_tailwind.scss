@@ -74,7 +74,7 @@ section {
   }
 
   &.input-icon {
-    @apply pl-[40px]
+    @apply pl-[55px]
   }
 
   &--radio {
@@ -87,6 +87,10 @@ section {
 
   &.success {
     @apply bg-Green3 border-Green1
+  }
+
+  &.error {
+    @apply bg-Error2 border-Error
   }
 
   &.textarea {
