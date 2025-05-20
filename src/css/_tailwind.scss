@@ -52,25 +52,26 @@ section {
 }
 
 .pr-10 {
-  padding-right: 2.5rem !important; /* 40px */;
+  padding-right: 2.5rem !important; /* 40px */
+;
 }
 
 .input::placeholder {
-	@apply text-DarkBlue50 md:text-body2
+  @apply text-Grey2 md:text-body2
 }
 
 .input {
-    &.bg-input-1 {
-      @apply bg-pageBg
-    }
+  &.bg-input-1 {
+    @apply bg-pageBg
+  }
 
-	&.active {
-		@apply border-blue100
-	}
+  &.active {
+    @apply border-blue100
+  }
 
-    &.input-icon {
-      @apply pl-[40px]
-    }
+  &.input-icon {
+    @apply pl-[40px]
+  }
 
   &--radio {
     label {
@@ -80,9 +81,17 @@ section {
     @apply text-DarkBlue50
   }
 
-  @apply p-3 bg-white flex items-center rounded-lg text-body2 h-[52px] md:h-[48px]
-  w-full text-Text border border-LightGrey transition-all focus:shadow-none
-  focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-blue100
+  &.success {
+    @apply bg-Green3 border-Green1
+  }
+
+  &.textarea {
+    @apply rounded-7xl h-[140px]
+  }
+
+  @apply py-4 px-5 bg-white flex items-center rounded-full text-body2 h-[55px] md:h-[48px]
+  w-full text-Text font-medium border border-Grey transition-all focus:shadow-none
+  focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-Grey2
 }
 
 .input-radio-block {
@@ -111,6 +120,7 @@ textarea.input {
     height: 120px !important;
     resize: none;
   }
+
   @apply h-[100px] p-3
 }
 
@@ -121,7 +131,7 @@ select.select {
   @apply text-DarkBlue50
 }
 
-.select option:first-child{
+.select option:first-child {
   color: red;
 }
 
@@ -162,9 +172,9 @@ input[type='search']::-webkit-search-results-decoration {
 
 .image-wrapper-1 {
   background: radial-gradient(
-      88.41% 99.23% at 0% 0%,
-      #F6FAFA 20.41%,
-      rgba(246, 250, 250, 0) 100%
+                  88.41% 99.23% at 0% 0%,
+                  #F6FAFA 20.41%,
+                  rgba(246, 250, 250, 0) 100%
   ),
   lightgray 50% / cover no-repeat,
   #F1F7FC;

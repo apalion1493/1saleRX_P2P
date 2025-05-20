@@ -114,6 +114,7 @@ module.exports = {
         Brown: 'rgba(221, 0, 0, 0.20)',
         Green1: '#58C19B',
         Green2: '#38A57E',
+        Green3: '#F9FFFD',
         Gradient1: 'radial-gradient(137.44% 141.05% at 0% 0%, #58C19B 0%, #225186 100%)',
       },
       letterSpacing: {
