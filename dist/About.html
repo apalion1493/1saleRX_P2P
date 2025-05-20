@@ -17,22 +17,37 @@
 <body class="">
 <main id="content" class="flex flex-col min-h-screen overflow-hidden">
   <section class="bg-gradient-main-2">
-    <header class="w-full py-6 lg:py-5 relative">
+    <header class="w-full py-5 relative">
     <div class="container">
-        <div class="flex justify-between items-center width-full gap-x-5 bg-white rounded-full">
+        <div class="flex justify-between items-center width-full gap-x-5 bg-white py-[15px] pr-[15px] pl-[30px] rounded-full">
             <a class="flex items-center" href="index.html">
                 <img width="108" height="38" src="img/Logo-1.svg" alt="Logo OneSaleRX">
             </a>
             <div id="mobile-menu" class="show-mobile-menu">
-                <div class="flex gap-x-6 items-center lg:items-start relative w-full lg:flex-col lg:gap-y-6">
-
-                </div>
-                <div class="show-mobile-menu__list lg:pb-[100px]">
-
-                </div>
+                <ul class="flex items-center gap-x-[30px]">
+                    <li class="flex items-center">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="About.html">About Us</a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="How-Works.html">How It Works</a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
             <div class="flex items-center">
-                <a class="button lg:hidden" href="#">
+                <a href="#" class="mr-4 w-[50px] h-[50px] min-w-[50px] flex items-center justify-center rounded-full
+                overflow-hidden bg-LightGrey2 ">
+                    <i class="fi-rr-user"></i>
+                </a>
+                <a class="button lg:hidden px-[30px] medium-btn" href="#">
     <span class="">Free Account</span>
 </a>
                 <button id="burger-button" class="minlg:hidden ml-5 flex gap-y-[6px] flex-col items-center justify-center group"
