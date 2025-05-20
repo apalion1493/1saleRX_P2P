@@ -222,7 +222,44 @@
                 </div>
             </div>
             <div class="row mt-[60px] gap-x-6">
-                <div class="col-span-6"></div>
+                <div class="col-span-6">
+                    <div class="flex flex-col ">
+  <h1 class="text-h1 font-extrabold">Smarter Sourcing. <br> Bigger Margins. <br> Less Waste.</h1>
+  <span class="border-b-2 w-[60px] border-Green1 mt-5"></span>
+</div>
+
+                    <div class="mt-12 p-10 bg-white rounded-7xl w-full flex flex-col">
+                        <span class="text-body4 tracking-24 uppercase text-Green1 font-bold block">Prefer a call?</span>
+                        <span class="text-Top4 font-extrabold text-DarkBlue100 block mb-5">Phone: 111-111-111</span>
+                        <p class="text-Top7 font-semibold text-Text">We’ll gladly schedule one</p>
+
+                        <form id="form2" action="" class="flex flex-col gap-y-4 mt-5 mb-[30px]">
+                            <div class="form-group flex flex-col items-start ">
+    <label class="mb-2 text-body md:text-body2 text-Text hidden" for="NameID">Name</label>
+    <input
+        class="input  "
+        type="text" id="NameID" placeholder="Name" name="name" required>
+    <small class="self-center text-body2 text-Error mt-1 hidden">Error</small>
+</div>
+
+                            <div class="form-group flex flex-col items-start ">
+    <label class="mb-2 text-body md:text-body2 text-Text hidden" for="EmailID">Email </label>
+    <input
+        class="input  "
+        type="email" id="EmailID" placeholder="Email" name="email" required>
+    <small class="self-center text-body2 text-Error mt-1 hidden">Error</small>
+</div>
+
+                            <button class="button px-[60px] mx-auto mt-[14px]" type="submit" aria-label="Schedule a Call">
+  <span>Schedule a Call</span>
+  <i class="ml-5 block fi-rr-phone-call-black"></i>
+</button>
+
+                        </form>
+
+                        <p class="text-base text-DarkGrey font-semibold">Whether you're just exploring or already on board, we’re here to make it easy.</p>
+                    </div>
+                </div>
                 <div class="col-span-6">
                     <img class="w-full object-cover" src="img/contact-us-img-2.png"
                          alt="Your Info Is Safe With Us">
@@ -440,11 +477,13 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const form = document.getElementById('form1');
+        const form1 = document.getElementById('form1');
+        const form2 = document.getElementById('form2');
         const modal = document.getElementById('formSubmitModal');
         const closeButtons = modal.querySelectorAll('.close-modal');
 
-        form.addEventListener('submit', function (e) {
+        // Handle form1 submission
+        form1.addEventListener('submit', function (e) {
             e.preventDefault();
 
             // Here you would typically send the form data to your server
@@ -454,7 +493,21 @@
             modal.classList.remove('hidden');
 
             // Reset the form
-            form.reset();
+            form1.reset();
+        });
+
+        // Handle form2 submission
+        form2.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Here you would typically send the form data to your server
+            // For now, we'll just show the success modal
+
+            // Show the modal
+            modal.classList.remove('hidden');
+
+            // Reset the form
+            form2.reset();
         });
 
         // Close modal when clicking close buttons

@@ -199,7 +199,54 @@
                 </div>
             </div>
             <div class="row mt-[60px] gap-x-6">
-                <div class="col-span-6"></div>
+                <div class="col-span-6">
+                    @@include('components/Title-component.html', {
+                    'Style': '',
+                    'LineStyle': 'mt-5',
+                    'Title': 'Smarter Sourcing. <br> Bigger Margins. <br> Less Waste.',
+                    })
+                    <div class="mt-12 p-10 bg-white rounded-7xl w-full flex flex-col">
+                        <span class="text-body4 tracking-24 uppercase text-Green1 font-bold block">Prefer a call?</span>
+                        <span class="text-Top4 font-extrabold text-DarkBlue100 block mb-5">Phone: 111-111-111</span>
+                        <p class="text-Top7 font-semibold text-Text">We’ll gladly schedule one</p>
+
+                        <form id="form2" action="" class="flex flex-col gap-y-4 mt-5 mb-[30px]">
+                            @@include('components/input.html', {
+                            'common-style': '',
+                            'StyleLabel': 'hidden',
+                            'idInput': 'NameID',
+                            'label': 'Name',
+                            'styleInput': '',
+                            'type': 'text',
+                            'placeholder': 'Name',
+                            'Name': 'name',
+                            'errorStyle': 'hidden',
+                            })
+
+                            @@include('components/input.html', {
+                            'common-style': '',
+                            'StyleLabel': 'hidden',
+                            'idInput': 'EmailID',
+                            'label': 'Email ',
+                            'styleInput': '',
+                            'type': 'email',
+                            'placeholder': 'Email',
+                            'Name': 'email',
+                            'errorStyle': 'hidden',
+                            })
+
+                            @@include('components/Button-image-right.html', {
+                            'style': 'px-[60px] mx-auto mt-[14px]',
+                            'type': 'submit',
+                            'ariaLabel': 'Schedule a Call',
+                            'title': 'Schedule a Call',
+                            'Icon': 'fi-rr-phone-call-black',
+                            })
+                        </form>
+
+                        <p class="text-base text-DarkGrey font-semibold">Whether you're just exploring or already on board, we’re here to make it easy.</p>
+                    </div>
+                </div>
                 <div class="col-span-6">
                     <img class="w-full object-cover" src="__IMAGE_PATH__contact-us-img-2.png"
                          alt="Your Info Is Safe With Us">
@@ -252,11 +299,13 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const form = document.getElementById('form1');
+        const form1 = document.getElementById('form1');
+        const form2 = document.getElementById('form2');
         const modal = document.getElementById('formSubmitModal');
         const closeButtons = modal.querySelectorAll('.close-modal');
 
-        form.addEventListener('submit', function (e) {
+        // Handle form1 submission
+        form1.addEventListener('submit', function (e) {
             e.preventDefault();
 
             // Here you would typically send the form data to your server
@@ -266,7 +315,21 @@
             modal.classList.remove('hidden');
 
             // Reset the form
-            form.reset();
+            form1.reset();
+        });
+
+        // Handle form2 submission
+        form2.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Here you would typically send the form data to your server
+            // For now, we'll just show the success modal
+
+            // Show the modal
+            modal.classList.remove('hidden');
+
+            // Reset the form
+            form2.reset();
         });
 
         // Close modal when clicking close buttons
