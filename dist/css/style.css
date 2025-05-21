@@ -2422,11 +2422,35 @@ html {
 .-bottom-\[100px\]{
   bottom: -100px;
 }
+.-bottom-\[240px\]{
+  bottom: -240px;
+}
+.-bottom-\[290px\]{
+  bottom: -290px;
+}
 .-left-9{
   left: -2.25rem;
 }
+.-left-\[250px\]{
+  left: -250px;
+}
+.-left-\[300px\]{
+  left: -300px;
+}
+.-right-\[250px\]{
+  right: -250px;
+}
+.-right-\[70px\]{
+  right: -70px;
+}
 .-top-5{
   top: -1.25rem;
+}
+.-top-\[230px\]{
+  top: -230px;
+}
+.-top-\[280px\]{
+  top: -280px;
 }
 .bottom-0{
   bottom: 0px;
@@ -2463,6 +2487,12 @@ html {
 }
 .top-\[50px\]{
   top: 50px;
+}
+.-top-\[210px\]{
+  top: -210px;
+}
+.-right-\[200px\]{
+  right: -200px;
 }
 .z-10{
   z-index: 10;
@@ -4163,6 +4193,61 @@ input[type=search]::-webkit-search-results-decoration {
   background-size: 20px 20px;
 }
 
+.img-tab-1 {
+  background: url("../img/img-tab-1.png");
+  display: block;
+  height: 628px;
+  width: 399px;
+  min-width: 399px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-2 {
+  background: url("../img/img-tab-2.png");
+  display: block;
+  height: 326px;
+  width: 226px;
+  min-width: 226px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-3 {
+  background: url("../img/img-tab-3.png");
+  display: block;
+  height: 269px;
+  width: 224px;
+  min-width: 224px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-4 {
+  background: url("../img/img-tab-4.png");
+  display: block;
+  height: 343px;
+  width: 259px;
+  min-width: 259px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-5 {
+  background: url("../img/img-tab-5.png");
+  display: block;
+  height: 411px;
+  width: 333px;
+  min-width: 333px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .swiper-blog-post{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -5188,6 +5273,9 @@ input[type=search]::-webkit-search-results-decoration {
   }
   .lg\:max-w-\[100px\]{
     max-width: 100px;
+  }
+  .lg\:max-w-\[500px\]{
+    max-width: 500px;
   }
   .lg\:-translate-x-1\/2{
     --tw-translate-x: -50%;
