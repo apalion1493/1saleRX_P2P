@@ -2443,9 +2443,6 @@ html {
 .-right-\[250px\]{
   right: -250px;
 }
-.-right-\[300px\]{
-  right: -300px;
-}
 .-right-\[70px\]{
   right: -70px;
 }
@@ -2473,11 +2470,17 @@ html {
 .bottom-\[50px\]{
   bottom: 50px;
 }
+.bottom-\[63px\]{
+  bottom: 63px;
+}
 .left-0{
   left: 0px;
 }
 .left-1\/2{
   left: 50%;
+}
+.left-\[80px\]{
+  left: 80px;
 }
 .right-0{
   right: 0px;
@@ -2494,6 +2497,9 @@ html {
 .right-\[30px\]{
   right: 30px;
 }
+.right-\[80px\]{
+  right: 80px;
+}
 .top-0{
   top: 0px;
 }
@@ -2506,11 +2512,20 @@ html {
 .top-\[50px\]{
   top: 50px;
 }
+.top-\[60px\]{
+  top: 60px;
+}
+.top-\[70px\]{
+  top: 70px;
+}
 .top-\[75px\]{
   top: 75px;
 }
-.bottom-\[63px\]{
-  bottom: 63px;
+.-bottom-10{
+  bottom: -2.5rem;
+}
+.-bottom-8{
+  bottom: -2rem;
 }
 .z-10{
   z-index: 10;
@@ -3355,6 +3370,9 @@ html {
 .pb-\[109px\]{
   padding-bottom: 109px;
 }
+.pb-\[200px\]{
+  padding-bottom: 200px;
+}
 .pb-\[20px\]{
   padding-bottom: 20px;
 }
@@ -3390,6 +3408,9 @@ html {
 }
 .pr-\[40px\]{
   padding-right: 40px;
+}
+.pt-\[150px\]{
+  padding-top: 150px;
 }
 .pt-\[50px\]{
   padding-top: 50px;
@@ -4368,6 +4389,50 @@ input[type=search]::-webkit-search-results-decoration {
   height: 235px;
   width: 235px;
   min-width: 235px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-14 {
+  background: url("../img/img-tab-14.png");
+  display: block;
+  height: 209px;
+  width: 172px;
+  min-width: 172px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-15 {
+  background: url("../img/img-tab-15.png");
+  display: block;
+  height: 269px;
+  width: 224px;
+  min-width: 224px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-16 {
+  background: url("../img/img-tab-16.png");
+  display: block;
+  height: 313px;
+  width: 260px;
+  min-width: 260px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-17 {
+  background: url("../img/img-tab-17.png");
+  display: block;
+  height: 203px;
+  width: 226px;
+  min-width: 226px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -5729,6 +5794,12 @@ input[type=search]::-webkit-search-results-decoration {
   }
   .lg\:pt-9{
     padding-top: 2.25rem;
+  }
+  .lg\:pt-\[60px\]{
+    padding-top: 60px;
+  }
+  .lg\:pb-\[70px\]{
+    padding-bottom: 70px;
   }
   .lg\:text-left{
     text-align: left;
