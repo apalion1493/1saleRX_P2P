@@ -16,11 +16,7 @@
 
 <body class="">
 <main id="content" class="flex flex-col min-h-screen overflow-hidden bg-LightBlue">
-  <section class="overflow-hidden">
-    <div class="container relative">
-      <span class="bg-1 absolute top-0 left-0"></span>
-    </div>
-    <header class="w-full py-5 relative">
+  <header class="w-full py-5 absolute z-10">
     <div class="container">
         <div class="flex justify-between items-center width-full gap-x-5 bg-white py-[15px] lg:p-[10px] pr-[15px] pl-[30px] rounded-full">
             <button id="burger-button" class="minlg:hidden flex items-center justify-center w-[50px] h-[50px] rounded-[50%] bg-LightGrey2"
@@ -93,6 +89,10 @@
     </div>
 </header>
 
+  <section class="overflow-hidden">
+    <div class="container relative pt-[120px] lg:pt-[110px]">
+      <span class="bg-1 absolute top-0 left-0"></span>
+    </div>
     <div class="container relative z-[1]">
       <div class="row">
         <div class="col-span-12">
@@ -364,7 +364,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="swiper-blog-post swiper-custom swiper" style="padding: 0 !important;">
+      <div class="swiper-blog-post swiper-custom swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">

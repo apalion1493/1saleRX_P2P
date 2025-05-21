@@ -7,11 +7,10 @@
 
 <body class="">
 <main id="content" class="flex flex-col min-h-screen overflow-hidden">
-  <section class="bg-gradient-main-3 overflow-hidden">
-    @@include('components/Header.html', {
-    'commonStyle': ' ',
-    })
-
+  @@include('components/Header.html', {
+  'commonStyle': ' ',
+  })
+  <section class="bg-gradient-main-3 overflow-hidden pt-[120px] lg:pt-[110px]">
     <div class="container">
       <div class="row">
         <div class="col-span-12">
@@ -178,8 +177,8 @@
           </div>
         </div>
       </div>
-      <div class="swiper swiper-custom how-work-slider mt-[30px]" style="padding: 0 !important;">
-        <div class="swiper-wrapper ">
+      <div class="swiper swiper-custom how-work-slider mt-[30px]">
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
             @@include('components/Benefit-card-2.html', {
             'Style': '',

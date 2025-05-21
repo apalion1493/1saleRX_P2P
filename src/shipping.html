@@ -7,13 +7,13 @@
 
 <body class="">
 <main id="content" class="flex flex-col min-h-screen overflow-hidden bg-LightBlue">
+  @@include('components/Header.html', {
+  'commonStyle': ' ',
+  })
   <section class="overflow-hidden">
-    <div class="container relative">
+    <div class="container relative pt-[120px] lg:pt-[110px]">
       <span class="bg-1 absolute top-0 left-0"></span>
     </div>
-    @@include('components/Header.html', {
-    'commonStyle': ' ',
-    })
     <div class="container relative z-[1]">
       <div class="row">
         <div class="col-span-12">
