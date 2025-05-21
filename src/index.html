@@ -217,20 +217,24 @@
           <div class="img-tab-3 absolute -bottom-[290px] -right-[250px] lg:hidden"></div>
         </div>
     </section>
-    <section class="section bg-LightGrey2">
+    <section class="section bg-LightGrey2 testimonials-section">
         <div class="container">
-            <div class="row gap-x-6">
-                <div class="col-span-4">
-                    <div class="flex flex-col relative pb-[264px]">
+            <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-9">
+                <div class="col-span-4 lg:col-span-12">
+                    <div class="flex flex-col h-full relative">
                         <div class="flex flex-col relative z-[1]">
                             <span class="text-body4 tracking-24 uppercase text-Green1 font-bold mb-1 block">Testimonials</span>
-                            <h3 class="text-Top4 lg:text-Top7 font-extrabold text-DarkBlue100">Trusted by <br> Independent <br> Pharmacies <br> Nationwide</h3>
+                            <h3 class="text-Top4 lg:text-Top7 font-extrabold text-DarkBlue100 max-w-[304px] lg:max-w-full">Trusted by Independent Pharmacies Nationwide</h3>
                         </div>
-                        <span class="World-img-1 absolute left-0 bottom-[29px] opacity-10"></span>
+                        <span class="World-img-1 absolute left-0 bottom-[29px] opacity-10 lg:hidden"></span>
+                      <div class="testimonials-section__swiper-btn-group mt-auto max-w-[140px] relative">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
                     </div>
                 </div>
-                <div class="col-span-8 relative z-[1]">
-                    <div class="swiper-main-block swiper">
+                <div class="col-span-8 lg:col-span-12 relative z-[1]">
+                    <div class="swiper-main-block swiper-custom swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 @@include('components/Testimonial-card.html', {
@@ -256,6 +260,9 @@
                                 'Position': 'Owner of Midtown Pharmacy',
                                 })
                             </div>
+                        </div>
+                        <div class="minlg:hidden">
+                          <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>

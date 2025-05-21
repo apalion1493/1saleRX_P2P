@@ -1,260 +1,171 @@
 window.addEventListener('DOMContentLoaded', () => {
-    console.log('Loaded Scripts')
+  console.log('Loaded Scripts')
 
-    const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        breakpoints: {
-            0: {
-                slidesPerView: 'auto',
-            },
-            769: {
-                slidesPerView: 'auto',
-            },
-            1025: {
-                slidesPerView: 3,
-            },
-            1346: {
-                slidesPerView: 4,
-            }
-        }
-    });
-
-    const swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 'auto',
-            },
-            769: {
-                slidesPerView: 'auto',
-            },
-            1025: {
-                slidesPerView: 3,
-            },
-            1346: {
-                slidesPerView: 4,
-            }
-        }
-    });
-
-    const swiper4 = new Swiper(".mySwiper4", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: false,
-        breakpoints: {
-            0: {
-                slidesPerView: 'auto',
-            },
-            769: {
-                slidesPerView: 'auto',
-            },
-            1025: {
-                slidesPerView: 3,
-            },
-            1346: {
-                slidesPerView: 3,
-            }
-        }
-    });
-
-    const swiper5 = new Swiper(".mySwiper5", {
+  // Testimonials slider
+  const testimonialSwiper = new Swiper(".swiper-main-block", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+    breakpoints: {
+      0: {
         slidesPerView: 1,
-        spaceBetween: 20,
-        loop: false,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    })
-
-    const swiper6 = new Swiper(".mySwiper6", {
+      },
+      769: {
+        slidesPerView: 1,
+      },
+      1025: {
         slidesPerView: 2,
-        spaceBetween: 20,
-        loop: false,
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            769: {
-                slidesPerView: 1,
-            },
-            1025: {
-                slidesPerView: 2,
-            },
-            1346: {
-                slidesPerView: 2,
-            }
-        }
-    });
-
-    // Testimonials slider
-    const testimonialSwiper = new Swiper(".swiper-main-block", {
+      },
+      1346: {
         slidesPerView: 2,
-        spaceBetween: 20,
-        loop: false,
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            769: {
-                slidesPerView: 1,
-            },
-            1025: {
-                slidesPerView: 2,
-            },
-            1346: {
-                slidesPerView: 2,
-            }
-        }
-    });
-})
-
-window.addEventListener('DOMContentLoaded', () => {
-    let swiper3;
-
-    function initSwiper() {
-        if (window.innerWidth < 1024) {
-            if (!swiper3) {
-                swiper3 = new Swiper(".mySwiper3", {
-                    loop: false,
-                    spaceBetween: 20,
-                    slidesPerView: 'auto',
-                    pagination: {
-                        el: ".swiper-pagination",
-                    },
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                });
-            }
-        } else {
-            if (swiper3) {
-                swiper3.destroy(true, true);
-                swiper3 = null;
-            }
-        }
+      }
     }
+  });
 
-    initSwiper();
-    window.addEventListener("resize", initSwiper);
+  const blogPostSwiper = new Swiper('.swiper-blog-post', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      1199: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        navigation: {
+          enabled: false,
+        },
+        pagination: {
+          enabled: false,
+        }
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+        navigation: {
+          enabled: false,
+        },
+        pagination: {
+          enabled: false,
+        }
+      }
+    }
+  });
 })
 
 document.addEventListener('DOMContentLoaded', function () {
-    const burgerButton = document.getElementById('burger-button');
-    const closeMenuButton = document.getElementById('burger-button-close');
-    const mobileMenu = document.getElementById('mobile-menu');
+  const burgerButton = document.getElementById('burger-button');
+  const closeMenuButton = document.getElementById('burger-button-close');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-    const toggleMenu = () => {
-        mobileMenu.classList.toggle('active');
-        burgerButton.classList.toggle('open');
-        document.body.classList.toggle('overflow-hidden');
-    };
+  const toggleMenu = () => {
+    mobileMenu.classList.toggle('active');
+    burgerButton.classList.toggle('open');
+    document.body.classList.toggle('overflow-hidden');
+  };
 
-    const closeMenu = () => {
-        document.body.classList.toggle('overflow-hidden');
-        mobileMenu.classList.remove('active');
-        burgerButton.classList.remove('open');
-    }
+  const closeMenu = () => {
+    document.body.classList.toggle('overflow-hidden');
+    mobileMenu.classList.remove('active');
+    burgerButton.classList.remove('open');
+  }
 
-    burgerButton?.addEventListener('click', toggleMenu);
-    closeMenuButton?.addEventListener('click', closeMenu);
+  burgerButton?.addEventListener('click', toggleMenu);
+  closeMenuButton?.addEventListener('click', closeMenu);
 })
 
 document.addEventListener("DOMContentLoaded", function () {
-    const wrapperForm = document.getElementById("wrapperFormSmall");
-    const form = wrapperForm.querySelector("form");
-    const thankYouMessage = document.getElementById("thankYouMessageSmall");
-    const resetButton = document.getElementById("resetFormButton_small");
+  const wrapperForm = document.getElementById("wrapperFormSmall");
+  const form = wrapperForm.querySelector("form");
+  const thankYouMessage = document.getElementById("thankYouMessageSmall");
+  const resetButton = document.getElementById("resetFormButton_small");
 
-    // Функция для отображения ошибки
-    function showError(input, message) {
-        const errorText = input.closest(".form-group").querySelector("small");
-        errorText.textContent = message;
-        errorText.classList.remove("hidden");
+  // Функция для отображения ошибки
+  function showError(input, message) {
+    const errorText = input.closest(".form-group").querySelector("small");
+    errorText.textContent = message;
+    errorText.classList.remove("hidden");
+  }
+
+  // Функция для очистки ошибки
+  function clearError(input) {
+    const errorText = input.closest(".form-group").querySelector("small");
+    errorText.classList.add("hidden");
+  }
+
+  // Функция для валидации формы
+  function validateForm() {
+    let isValid = true;
+
+    const fullName = document.getElementById("nameID_small");
+    const email = document.getElementById("mailID_small");
+    const consent = form.querySelector("input[name='consent']");
+
+    // Проверка поля "Full name"
+    if (fullName.value.trim() === "") {
+      showError(fullName, "Full name is required");
+      isValid = false;
+    } else {
+      clearError(fullName);
     }
 
-    // Функция для очистки ошибки
-    function clearError(input) {
-        const errorText = input.closest(".form-group").querySelector("small");
-        errorText.classList.add("hidden");
+    // Проверка email
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(email.value.trim())) {
+      showError(email, "Enter a valid email");
+      isValid = false;
+    } else {
+      clearError(email);
     }
 
-    // Функция для валидации формы
-    function validateForm() {
-        let isValid = true;
-
-        const fullName = document.getElementById("nameID_small");
-        const email = document.getElementById("mailID_small");
-        const consent = form.querySelector("input[name='consent']");
-
-        // Проверка поля "Full name"
-        if (fullName.value.trim() === "") {
-            showError(fullName, "Full name is required");
-            isValid = false;
-        } else {
-            clearError(fullName);
-        }
-
-        // Проверка email
-        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!emailPattern.test(email.value.trim())) {
-            showError(email, "Enter a valid email");
-            isValid = false;
-        } else {
-            clearError(email);
-        }
-
-        // Проверка согласия
-        if (!consent.checked) {
-            showError(consent, "You must accept the terms");
-            isValid = false;
-        } else {
-            clearError(consent);
-        }
-
-        return isValid;
+    // Проверка согласия
+    if (!consent.checked) {
+      showError(consent, "You must accept the terms");
+      isValid = false;
+    } else {
+      clearError(consent);
     }
 
-    // Обработчик отправки формы
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
+    return isValid;
+  }
 
-        if (!validateForm()) return;
+  // Обработчик отправки формы
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-        const formData = new FormData(form);
+    if (!validateForm()) return;
 
-        axios.post("http://localhost:3000/send-form", formData)
-            .then(response => {
-                console.log("Success:", response.data);
-                form.reset();
-                wrapperForm.classList.add("hidden");
-                thankYouMessage.classList.remove("hidden");
-            })
-            .catch(error => {
-                console.error("Error:", error.response?.data || error.message);
-            });
-    });
+    const formData = new FormData(form);
 
-    // Обработчик кнопки "Return to the Form"
-    resetButton.addEventListener("click", function () {
-        thankYouMessage.classList.add("hidden");
-        wrapperForm.classList.remove("hidden");
-    });
+    axios.post("http://localhost:3000/send-form", formData)
+      .then(response => {
+        console.log("Success:", response.data);
+        form.reset();
+        wrapperForm.classList.add("hidden");
+        thankYouMessage.classList.remove("hidden");
+      })
+      .catch(error => {
+        console.error("Error:", error.response?.data || error.message);
+      });
+  });
+
+  // Обработчик кнопки "Return to the Form"
+  resetButton.addEventListener("click", function () {
+    thankYouMessage.classList.add("hidden");
+    wrapperForm.classList.remove("hidden");
+  });
 });

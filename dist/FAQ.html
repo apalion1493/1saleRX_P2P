@@ -473,49 +473,6 @@
         Alpine.data('data', () => ({
         }))
     })
-
-    function clearInput() {
-        document.getElementById('inputField').value = '';
-    }
-
-    // Initialize Swiper for blog posts
-    document.addEventListener('DOMContentLoaded', function() {
-        const blogPostSwiper = new Swiper('.swiper-blog-post', {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                dynamicBullets: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                1199: {
-                    slidesPerView: 3,
-                    spaceBetween: 24,
-                    navigation: {
-                        enabled: false,
-                    },
-                    pagination: {
-                        enabled: false,
-                    }
-                },
-                1024: {
-                    slidesPerView: 2,
-                    spaceBetween: 24,
-                    navigation: {
-                        enabled: false,
-                    },
-                    pagination: {
-                        enabled: false,
-                    }
-                }
-            }
-        });
-    });
 </script>
 
 </body>
