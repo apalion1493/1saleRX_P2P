@@ -5399,6 +5399,10 @@ input[type=search]::-webkit-search-results-decoration {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
   }
+  .lg\:my-10{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
   .lg\:mb-10{
     margin-bottom: 2.5rem;
   }
