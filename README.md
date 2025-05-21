@@ -12,3 +12,4 @@ https://apalion1493.github.io/1saleRX_P2P/dist/Blog.html <br>
 https://apalion1493.github.io/1saleRX_P2P/dist/contact-us-small.html <br>
 https://apalion1493.github.io/1saleRX_P2P/dist/FAQ.html <br>
 https://apalion1493.github.io/1saleRX_P2P/dist/Single-Category.html <br>
+https://apalion1493.github.io/1saleRX_P2P/dist/Login.html <br>
