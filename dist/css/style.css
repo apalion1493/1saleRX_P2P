@@ -2443,6 +2443,9 @@ html {
 .-right-\[250px\]{
   right: -250px;
 }
+.-right-\[300px\]{
+  right: -300px;
+}
 .-right-\[70px\]{
   right: -70px;
 }
@@ -2467,6 +2470,9 @@ html {
 .bottom-\[29px\]{
   bottom: 29px;
 }
+.bottom-\[50px\]{
+  bottom: 50px;
+}
 .left-0{
   left: 0px;
 }
@@ -2478,6 +2484,9 @@ html {
 }
 .right-10{
   right: 2.5rem;
+}
+.right-16{
+  right: 4rem;
 }
 .right-5{
   right: 1.25rem;
@@ -2499,6 +2508,9 @@ html {
 }
 .top-\[75px\]{
   top: 75px;
+}
+.bottom-\[63px\]{
+  bottom: 63px;
 }
 .z-10{
   z-index: 10;
@@ -2746,9 +2758,6 @@ html {
 .h-6{
   height: 1.5rem;
 }
-.h-8{
-  height: 2rem;
-}
 .h-\[150px\]{
   height: 150px;
 }
@@ -2817,9 +2826,6 @@ html {
 }
 .w-6{
   width: 1.5rem;
-}
-.w-8{
-  width: 2rem;
 }
 .w-\[150px\]{
   width: 150px;
@@ -2988,6 +2994,10 @@ html {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
+.gap-x-3{
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
 .gap-x-4{
   -moz-column-gap: 1rem;
        column-gap: 1rem;
@@ -3067,6 +3077,9 @@ html {
 }
 .rounded-\[20px\]{
   border-radius: 20px;
+}
+.rounded-\[4px\]{
+  border-radius: 4px;
 }
 .rounded-\[50\%\]{
   border-radius: 50%;
@@ -4316,6 +4329,50 @@ input[type=search]::-webkit-search-results-decoration {
   background-repeat: no-repeat;
 }
 
+.img-tab-10 {
+  background: url("../img/img-tab-10.png");
+  display: block;
+  height: 266px;
+  width: 229px;
+  min-width: 229px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-11 {
+  background: url("../img/img-tab-11.png");
+  display: block;
+  height: 251px;
+  width: 225px;
+  min-width: 225px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-12 {
+  background: url("../img/img-tab-12.png");
+  display: block;
+  height: 385px;
+  width: 290px;
+  min-width: 290px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-13 {
+  background: url("../img/img-tab-13.png");
+  display: block;
+  height: 235px;
+  width: 235px;
+  min-width: 235px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .swiper-blog-post{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -4448,7 +4505,7 @@ input[type=search]::-webkit-search-results-decoration {
 @media (max-width: 1023px) {
   .category-menu{
     position: fixed;
-    top: 85px;
+    top: 0px;
     left: -100%;
     z-index: 50;
     display: flex;

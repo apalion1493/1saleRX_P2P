@@ -16,7 +16,10 @@
 
 <body class="">
 <main id="content" class="flex flex-col min-h-screen overflow-hidden">
-    <section class="bg-gradient-main-2 overflow-hidden">
+    <section class="bg-gradient-main-2 overflow-hidden relative">
+      <div class="img-tab-10 absolute top-0 left-0 xl:hidden"></div>
+      <div class="img-tab-11 absolute top-0 right-16 xl:hidden"></div>
+      <div class="img-tab-13 absolute bottom-[63px] right-0 xl:hidden"></div>
         <header class="w-full py-5 relative">
     <div class="container">
         <div class="flex justify-between items-center width-full gap-x-5 bg-white py-[15px] lg:p-[10px] pr-[15px] pl-[30px] rounded-full">
@@ -91,10 +94,11 @@
 </header>
 
 
-        <div class="container mt-10 pb-[109px]">
+        <div class="container mt-10 pb-[109px] relative z-[1]">
+          <div class="img-tab-12 absolute bottom-[50px] -left-[300px] xl:hidden"></div>
             <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-8">
                 <div class="col-span-6 lg:col-span-12">
-                  <div class="flex flex-col text-white max-w-[526px] lg:max-w-full">
+                  <div class="flex flex-col h-full text-white max-w-[526px] lg:max-w-full">
                     <div class="flex flex-col ">
   <h1 class="text-h1 lg:text-Top4 font-extrabold">Contact Us</h1>
   <span class="border-b-2 w-[60px] border-Green1 my-10 lg:my-6"></span>
@@ -105,12 +109,11 @@
                       better prices, sell excess inventory, and optimize purchasing — all in one simple, secure
                       platform.</p>
                     <br>
-                    <p class="text-Top7 lg:text-body font-bold">We’re built for busy pharmacy teams that want more control, more
+                    <p class="text-Top7 lg:text-body font-bold mb-5">We’re built for busy pharmacy teams that want more control, more
                       savings, and less
                       hassle.</p>
-                    <span class="w-full border-b border-Green1 mt-[30px] mb-[50px] lg:my-8"></span>
-                    <div class="w-full flex flex-col gap-y-4">
-                      <span class="text-body4 lg:text-body5 tracking-24 uppercase text-Green1 font-bold block">1SaleRx LLC</span>
+
+                    <div class="w-full flex flex-col gap-y-4 mt-auto">
                       <div class="flex items-center gap-x-4">
                                   <span class="w-5 h-5 min-w-5 flex justify-center items-center mr-2">
                                     <i class="fi-rs-marker"></i>

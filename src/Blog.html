@@ -99,16 +99,34 @@
             <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-8">
                 <div class="col-span-2 lg:col-span-12">
                     <div class="flex flex-col" x-data="{ isOpen: false }" @click.away="isOpen = false" x-init="$watch('isOpen', value => { if(value) { document.body.classList.add('overflow-hidden'); } else { document.body.classList.remove('overflow-hidden'); } })">
-                        <div class="flex items-center justify-between">
-                            <span class="text-DarkBlue100 font-bold">Categories</span>
-                            <button id="category-toggle-button" @click="isOpen = !isOpen" class="hidden lg:flex items-center justify-center w-8 h-8 rounded-full bg-Green1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                    <path d="M13 7H1M7 1V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                        <div class="flex items-center justify-between w-full gap-x-3">
+                          <div class="flex items-center minlg:hidden w-full gap-x-2 px-3 py-2 rounded bg-LightGrey2 border-LightBlue border">
+                            <span class="text-DarkBlue100 font-bold">Categories:</span>
+                            <span>Men's Health</span>
+                          </div>
+                            <button id="category-toggle-button" @click="isOpen = !isOpen" class="hidden lg:flex items-center justify-center w-10 min-w-10 h-10 rounded-[4px] bg-Green1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                <path d="M4 12.5C4.27614 12.5 4.5 12.7239 4.5 13V17C4.5 17.2761 4.27614 17.5 4 17.5C3.72386 17.5 3.5 17.2761 3.5 17V15.5H1C0.723858 15.5 0.5 15.2761 0.5 15C0.5 14.7239 0.723858 14.5 1 14.5H3.5V13C3.5 12.7239 3.72386 12.5 4 12.5ZM8 14.5H19C19.2761 14.5 19.5 14.7239 19.5 15C19.5 15.2761 19.2761 15.5 19 15.5H8C7.72386 15.5 7.5 15.2761 7.5 15C7.5 14.7239 7.72386 14.5 8 14.5ZM14 6.51172C14.276 6.51172 14.4998 6.73571 14.5 7.01172V11C14.5 11.2761 14.2761 11.5 14 11.5C13.7239 11.5 13.5 11.2761 13.5 11V9.5H1C0.723858 9.5 0.5 9.27614 0.5 9C0.5 8.72386 0.723858 8.5 1 8.5H13.5V7.01172C13.5002 6.73571 13.724 6.51172 14 6.51172ZM18 8.5H19C19.2761 8.5 19.5 8.72386 19.5 9C19.5 9.27614 19.2761 9.5 19 9.5H18C17.7239 9.5 17.5 9.27614 17.5 9C17.5 8.72386 17.7239 8.5 18 8.5ZM8 0.5C8.27614 0.5 8.5 0.723857 8.5 1V5C8.5 5.27614 8.27614 5.5 8 5.5C7.72386 5.5 7.5 5.27614 7.5 5V3.5H1C0.723858 3.5 0.5 3.27614 0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H7.5V1C7.5 0.723858 7.72386 0.5 8 0.5ZM12 2.5H19C19.2761 2.5 19.5 2.72386 19.5 3C19.5 3.27614 19.2761 3.5 19 3.5H12C11.7239 3.5 11.5 3.27614 11.5 3C11.5 2.72386 11.7239 2.5 12 2.5Z" fill="white" stroke="white"/>
+                              </svg>
                             </button>
                         </div>
                         <div id="category-menu" class="category-menu" :class="{ 'active': isOpen }">
-                            <ul class="category-list mt-4 border-b border-Grey max-w-[150px]">
+                          <div class="flex items-center justify-between">
+                            <span class="text-DarkBlue100 font-bold">Categories</span>
+                            <button @click="isOpen = !isOpen" class="hidden lg:flex w-10 h-10 bg-LightGrey2 rounded-full justify-center items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <g clip-path="url(#clip0_97_3839)">
+                                  <path d="M15.8045 0.195191C15.6795 0.0702103 15.51 0 15.3332 0C15.1564 0 14.9869 0.0702103 14.8619 0.195191L7.99986 7.05719L1.13786 0.195191C1.01284 0.0702103 0.8433 0 0.666524 0C0.489748 0 0.320209 0.0702103 0.195191 0.195191C0.0702103 0.320209 0 0.489748 0 0.666524C0 0.8433 0.0702103 1.01284 0.195191 1.13786L7.05719 7.99986L0.195191 14.8619C0.0702103 14.9869 0 15.1564 0 15.3332C0 15.51 0.0702103 15.6795 0.195191 15.8045C0.320209 15.9295 0.489748 15.9997 0.666524 15.9997C0.8433 15.9997 1.01284 15.9295 1.13786 15.8045L7.99986 8.94252L14.8619 15.8045C14.9869 15.9295 15.1564 15.9997 15.3332 15.9997C15.51 15.9997 15.6795 15.9295 15.8045 15.8045C15.9295 15.6795 15.9997 15.51 15.9997 15.3332C15.9997 15.1564 15.9295 14.9869 15.8045 14.8619L8.94252 7.99986L15.8045 1.13786C15.9295 1.01284 15.9997 0.8433 15.9997 0.666524C15.9997 0.489748 15.9295 0.320209 15.8045 0.195191Z" fill="#0E2B4C"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_97_3839">
+                                    <rect width="16" height="16" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                          </div>
+                            <ul class="category-list mt-4 mb-4 border-b border-Grey max-w-[150px] lg:max-w-full">
                                 <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
                                     <input type="checkbox" id="category1" class="hidden" x-model="active">
                                     <label for="category1" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Staying Healthy</label>
@@ -134,7 +152,7 @@
                                     <label for="category3" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Mind & Mood</label>
                                 </li>
                             </ul>
-                            <button class="filter-button mt-4 hidden lg:flex w-full items-center justify-center py-2 px-4 bg-Green1 text-white rounded-full font-bold">
+                            <button class="filter-button mt-auto hidden lg:flex w-full items-center justify-center py-2 px-4 bg-Green1 text-white rounded-full font-bold">
                                 Filter
                             </button>
                         </div>
