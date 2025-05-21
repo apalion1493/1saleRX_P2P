@@ -2437,6 +2437,9 @@ html {
 .-left-\[300px\]{
   left: -300px;
 }
+.-right-\[200px\]{
+  right: -200px;
+}
 .-right-\[250px\]{
   right: -250px;
 }
@@ -2446,6 +2449,9 @@ html {
 .-top-5{
   top: -1.25rem;
 }
+.-top-\[210px\]{
+  top: -210px;
+}
 .-top-\[230px\]{
   top: -230px;
 }
@@ -2454,6 +2460,9 @@ html {
 }
 .bottom-0{
   bottom: 0px;
+}
+.bottom-10{
+  bottom: 2.5rem;
 }
 .bottom-\[29px\]{
   bottom: 29px;
@@ -2488,11 +2497,8 @@ html {
 .top-\[50px\]{
   top: 50px;
 }
-.-top-\[210px\]{
-  top: -210px;
-}
-.-right-\[200px\]{
-  right: -200px;
+.top-\[75px\]{
+  top: 75px;
 }
 .z-10{
   z-index: 10;
@@ -4248,6 +4254,50 @@ input[type=search]::-webkit-search-results-decoration {
   background-repeat: no-repeat;
 }
 
+.img-tab-6 {
+  background: url("../img/img-tab-6.png");
+  display: block;
+  height: 255px;
+  width: 363px;
+  min-width: 363px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-7 {
+  background: url("../img/img-tab-7.png");
+  display: block;
+  height: 247px;
+  width: 345px;
+  min-width: 345px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-8 {
+  background: url("../img/img-tab-8.png");
+  display: block;
+  height: 125px;
+  width: 177px;
+  min-width: 177px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-tab-9 {
+  background: url("../img/img-tab-9.png");
+  display: block;
+  height: 171px;
+  width: 164px;
+  min-width: 164px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .swiper-blog-post{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -5223,6 +5273,11 @@ input[type=search]::-webkit-search-results-decoration {
 .group:hover .group-hover\:fill-white{
   fill: #fff;
 }
+@media (max-width: 1312px){
+  .xl\:hidden{
+    display: none;
+  }
+}
 @media (max-width: 1023px){
   .lg\:-bottom-\[50px\]{
     bottom: -50px;
@@ -5365,6 +5420,12 @@ input[type=search]::-webkit-search-results-decoration {
   .md\:mb-7{
     margin-bottom: 1.75rem;
   }
+  .md\:mt-\[170px\]{
+    margin-top: 170px;
+  }
+  .md\:mt-\[110px\]{
+    margin-top: 110px;
+  }
   .md\:flex{
     display: flex;
   }
@@ -5393,6 +5454,9 @@ input[type=search]::-webkit-search-results-decoration {
   .md\:p-5{
     padding: 1.25rem;
   }
+  .md\:pb-\[170px\]{
+    padding-bottom: 170px;
+  }
   .md\:text-body2{
     font-size: 14px;
     line-height: 120%;
@@ -5419,6 +5483,11 @@ input[type=search]::-webkit-search-results-decoration {
 }
 @media (min-width: 1024px){
   .minlg\:hidden{
+    display: none;
+  }
+}
+@media (min-width: 1345px){
+  .minxl\:hidden{
     display: none;
   }
 }

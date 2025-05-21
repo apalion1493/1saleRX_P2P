@@ -7,12 +7,18 @@
 
 <body class="">
 <main id="content" class="flex flex-col min-h-screen overflow-hidden">
-  <section class="bg-gradient-main-2">
+  <section class="bg-gradient-main-2 relative">
+    <div class="img-tab-6 absolute left-0 top-6 xl:hidden"></div>
+    <div class="img-tab-7 absolute right-0 bottom-0 xl:hidden"></div>
+    <div class="img-tab-8 absolute left-0 bottom-10 minxl:hidden"></div>
+    <div class="img-tab-9 absolute right-0 top-[75px] minxl:hidden"></div>
+
+
     @@include('components/Header.html', {
     'commonStyle': ' ',
     })
 
-    <div class="container mt-20 pb-20">
+    <div class="container mt-20 pb-20 md:pb-[170px] md:mt-[110px]">
       <div class="row gap-x-6">
         <div class="col-span-12 flex items-center">
           <div class="flex flex-col mx-auto text-white">
