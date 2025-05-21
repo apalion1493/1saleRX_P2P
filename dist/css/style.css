@@ -4323,14 +4323,6 @@ input[type=search]::-webkit-search-results-decoration {
 .swiper-blog-post .swiper-slide {
   height: auto;
 }
-.swiper-blog-post .swiper-pagination{
-  margin-top: 1.5rem;
-}
-@media (max-width: 1023px) {
-  .swiper-blog-post .swiper-pagination{
-    display: none;
-  }
-}
 .swiper-blog-post .swiper-button-next,
 .swiper-blog-post .swiper-button-prev{
   --tw-text-opacity: 1;

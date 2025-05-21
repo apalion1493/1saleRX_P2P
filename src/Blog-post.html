@@ -285,7 +285,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="swiper-blog-post swiper">
+      <div class="swiper-blog-post swiper-custom swiper" style="padding: 0 !important;">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             @@include('components/Post-card.html', {
@@ -324,11 +324,11 @@
             })
           </div>
         </div>
-        <!-- Add pagination for mobile -->
-        <div class="swiper-pagination"></div>
-        <!-- Add navigation arrows for mobile -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="minlg:hidden flex items-center justify-between mt-5">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination pg1 w-130"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
     </div>
   </section>

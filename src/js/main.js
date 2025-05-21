@@ -74,22 +74,10 @@ window.addEventListener('DOMContentLoaded', () => {
       1199: {
         slidesPerView: 3,
         spaceBetween: 24,
-        navigation: {
-          enabled: false,
-        },
-        pagination: {
-          enabled: false,
-        }
       },
       1024: {
         slidesPerView: 2,
         spaceBetween: 24,
-        navigation: {
-          enabled: false,
-        },
-        pagination: {
-          enabled: false,
-        }
       }
     }
   });
