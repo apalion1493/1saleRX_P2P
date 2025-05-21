@@ -51,11 +51,11 @@
         </div>
         <div class="col-span-6">
           <div class="flex items-center max-w-[536px] justify-between">
-            <div class="flex items-center gap-x-5">
+            <a href="Author-page.html" class="flex items-center gap-x-5">
               <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
                    src="__IMAGE_PATH__avatar-5.png" alt="avatar">
               <span class="text-body text-DarkBlue100 font-bold">Matthew Solan</span>
-            </div>
+            </a>
             <div class="flex items-center gap-x-5">
               <div
                 class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full border border-Grey2">
@@ -67,9 +67,9 @@
         </div>
         <div class="col-span-6">
           <div class="flex h-full items-center w-full justify-end">
-            <div class="ml-auto px-[10px] py-[7px] border flex items-center justify-center border-Green1 rounded-full">
+            <a href="Single-Category.html" class="ml-auto px-[10px] py-[7px] border flex items-center justify-center border-Green1 rounded-full">
               <span class="text-Green1 font-bold text-body4 uppercase leading-normal">Diseases & Conditions</span>
-            </div>
+            </a>
           </div>
         </div>
         <div class="col-span-12">
@@ -232,7 +232,7 @@
                 </div>
                 @@include('components/Link-arrow.html', {
                 'STYLE_LINK': 'px-[20px] medium-btn text-white ml-auto',
-                'URL_LINK': '#',
+                'URL_LINK': 'Author-page.html',
                 'TITLE_LINK': 'View all posts'
                 })
               </div>
@@ -286,7 +286,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             @@include('components/Post-card.html', {
-            'LINK_URL': '#',
+            'LINK_URL': 'Blog-post.html',
             'COMMON_STYLE': '',
             'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
             'CATEGORY': 'Staying Healthy',
@@ -298,7 +298,7 @@
           </div>
           <div class="swiper-slide">
             @@include('components/Post-card.html', {
-            'LINK_URL': '#',
+            'LINK_URL': 'Blog-post.html',
             'COMMON_STYLE': '',
             'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
             'CATEGORY': 'Staying Healthy',
@@ -310,7 +310,7 @@
           </div>
           <div class="swiper-slide">
             @@include('components/Post-card.html', {
-            'LINK_URL': '#',
+            'LINK_URL': 'Blog-post.html',
             'COMMON_STYLE': '',
             'IMAGE_URL': '__IMAGE_PATH__post-img-1.png',
             'CATEGORY': 'Mind & Mood',

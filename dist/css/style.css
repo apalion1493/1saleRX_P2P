@@ -5139,17 +5139,14 @@ input[type=search]::-webkit-search-results-decoration {
   fill: #fff;
 }
 @media (max-width: 1023px){
+  .lg\:-bottom-\[50px\]{
+    bottom: -50px;
+  }
   .lg\:left-1\/2{
     left: 50%;
   }
-  .lg\:bottom-0{
-    bottom: 0px;
-  }
   .lg\:top-auto{
     top: auto;
-  }
-  .lg\:-bottom-\[50px\]{
-    bottom: -50px;
   }
   .lg\:order-1{
     order: 1;
@@ -5163,11 +5160,11 @@ input[type=search]::-webkit-search-results-decoration {
   .lg\:col-span-12{
     grid-column: span 12 / span 12;
   }
-  .lg\:col-span-6{
-    grid-column: span 6 / span 6;
-  }
   .lg\:col-span-4{
     grid-column: span 4 / span 4;
+  }
+  .lg\:col-span-6{
+    grid-column: span 6 / span 6;
   }
   .lg\:mx-auto{
     margin-left: auto;
@@ -5209,11 +5206,11 @@ input[type=search]::-webkit-search-results-decoration {
   .lg\:gap-y-5{
     row-gap: 1.25rem;
   }
-  .lg\:gap-y-\[30px\]{
-    row-gap: 30px;
-  }
   .lg\:gap-y-\[10px\]{
     row-gap: 10px;
+  }
+  .lg\:gap-y-\[30px\]{
+    row-gap: 30px;
   }
   .lg\:rounded-7xl{
     border-radius: 10px;
@@ -5250,9 +5247,6 @@ input[type=search]::-webkit-search-results-decoration {
   .lg\:pl-0{
     padding-left: 0px;
   }
-  .lg\:pb-24{
-    padding-bottom: 6rem;
-  }
   .lg\:text-Top3{
     font-size: 20px;
     line-height: 130%;
@@ -5279,10 +5273,6 @@ input[type=search]::-webkit-search-results-decoration {
   }
   .md\:col-span-12{
     grid-column: span 12 / span 12;
-  }
-  .md\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
   }
   .md\:mb-7{
     margin-bottom: 1.75rem;
