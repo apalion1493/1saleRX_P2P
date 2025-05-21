@@ -5442,6 +5442,12 @@ input[type=search]::-webkit-search-results-decoration {
   .lg\:mb-0{
     margin-bottom: 0px;
   }
+  .lg\:mt-0{
+    margin-top: 0px;
+  }
+  .lg\:mt-8{
+    margin-top: 2rem;
+  }
   .lg\:line-clamp-5{
     overflow: hidden;
     display: -webkit-box;
@@ -5649,6 +5655,10 @@ input[type=search]::-webkit-search-results-decoration {
   .lg\:text-body5{
     font-size: 10px;
     line-height: normal;
+  }
+  .lg\:text-Top5{
+    font-size: 28px;
+    line-height: 100%;
   }
   .lg\:uppercase{
     text-transform: uppercase;
