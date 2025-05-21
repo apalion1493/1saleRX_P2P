@@ -685,3 +685,9 @@
 
   @apply hover:bg-Green1 hover:text-white transition-all w-[50px] min-w-[50px] h-[50px] rounded-full flex items-center justify-center border border-LightBlue lg:text-none lg:w-4 lg:h-4 lg:min-w-4 lg:bg-Grey
 }
+
+.collapse-block {
+  a {
+    @apply text-DarkGrey
+  }
+}
