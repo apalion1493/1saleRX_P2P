@@ -5410,6 +5410,9 @@ input[type=search]::-webkit-search-results-decoration {
   .lg\:mt-6{
     margin-top: 1.5rem;
   }
+  .lg\:mt-4{
+    margin-top: 1rem;
+  }
   .lg\:line-clamp-5{
     overflow: hidden;
     display: -webkit-box;
@@ -5466,6 +5469,9 @@ input[type=search]::-webkit-search-results-decoration {
   }
   .lg\:flex-col{
     flex-direction: column;
+  }
+  .lg\:justify-start{
+    justify-content: flex-start;
   }
   .lg\:justify-center{
     justify-content: center;
@@ -5646,6 +5652,9 @@ input[type=search]::-webkit-search-results-decoration {
   }
   .md\:flex-col{
     flex-direction: column;
+  }
+  .md\:items-start{
+    align-items: flex-start;
   }
   .md\:justify-center{
     justify-content: center;
