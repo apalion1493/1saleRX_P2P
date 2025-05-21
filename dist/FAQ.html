@@ -93,13 +93,13 @@
     </div>
 </header>
 
-    <div class="container relative z-[1] mt-14 pb-20">
+    <div class="container relative z-[1] mt-14 pb-20 lg:pb-10">
       <div class="row">
         <div class="col-span-12 flex items-center">
           <div class="flex flex-col mx-auto text-DarkBlue100">
             <div class="flex flex-col items-center">
   <h1 class="text-h1 lg:text-Top4 font-extrabold">FAQ</h1>
-  <span class="border-b-2 w-[60px] border-Green1 mt-10"></span>
+  <span class="border-b-2 w-[60px] border-Green1 mt-10 lg:mt-5"></span>
 </div>
 
           </div>
@@ -108,28 +108,28 @@
     </div>
   </section>
 
-  <section class="pb-[90px]">
+  <section class="pb-[90px] lg:pb-10">
     <div class="container">
-      <div class="row bg-white rounded-2xl py-[70px]">
-        <div class="col-span-1"></div>
-        <div class="col-span-10">
+      <div class="row gap-x-6 lg:gap-x-0 bg-white rounded-2xl py-[70px] lg:px-4 lg:py-6">
+        <div class="col-span-1 lg:hidden"></div>
+        <div class="col-span-10 lg:col-span-12">
           <div class="w-full flex flex-col gap-y-4">
             <div x-data="{ isExpanded: false }" class="rounded-7xl transition-all border "
                  x-bind:class="isExpanded ? 'bg-LightGrey2 border-transparent'  : 'border-LightBlue'">
               <button id="controlsAccordionItemOne" type="button"
-                      class="text-base font-semibold text-Text flex w-full items-center p-[10px]"
+                      class="text-base lg:text-body lg:text-left font-semibold text-Text flex w-full items-center p-[10px] lg:px-2 lg:py-3"
                       aria-controls="accordionItemOne" x-on:click="isExpanded = ! isExpanded"
                       x-bind:aria-expanded="isExpanded ? 'true' : 'false'">
-                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] mr-5">
-                  <span class="text-Top7 outlined-text font-bold">01</span>
+                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] lg:w-8 lg:h-8 lg:min-w-8 lg:mr-2 mr-5">
+                  <span class="text-Top7 lg:text-base outlined-text font-bold">01</span>
                 </span>
                 Who is 1SaleRX?
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37M25 13L25 37" stroke="#58C19B" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
                 </svg>
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37" stroke="#0E2B4C" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
@@ -137,8 +137,8 @@
               </button>
               <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region"
                    aria-labelledby="controlsAccordionItemOne" x-collapse>
-                <div class="flex flex-col gap-y-4 px-20 pb-9">
-                  <p class="text-body text-Text leading-[24px]">1SaleRX offers prescription and nonprescription
+                <div class="flex flex-col gap-y-4 px-20 pb-9 lg:px-2 lg:pb-3">
+                  <p class="text-body text-Text leading-[24px] lg:text-body2">1SaleRX offers prescription and nonprescription
                     medications at unbeatable prices, focusing on affordability and quality. We provide trusted brands
                     and generics, ensuring hassle-free ordering and exceptional customer service. Our goal is to make
                     medication more affordable and keep customers satisfied.</p>
@@ -148,19 +148,19 @@
             <div x-data="{ isExpanded: false }" class="rounded-7xl transition-all border "
                  x-bind:class="isExpanded ? 'bg-LightGrey2 border-transparent'  : 'border-LightBlue'">
               <button id="controlsAccordionItem2" type="button"
-                      class="text-base font-semibold text-Text flex w-full items-center p-[10px]"
+                      class="text-base lg:text-body lg:text-left font-semibold text-Text flex w-full items-center p-[10px] lg:px-2 lg:py-3"
                       aria-controls="accordionItem2" x-on:click="isExpanded = ! isExpanded"
                       x-bind:aria-expanded="isExpanded ? 'true' : 'false'">
-                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] mr-5">
-                  <span class="text-Top7 outlined-text font-bold">02</span>
+                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] lg:w-8 lg:h-8 lg:min-w-8 lg:mr-2 mr-5">
+                  <span class="text-Top7 lg:text-base outlined-text font-bold">02</span>
                 </span>
                 How do I place an order?
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37M25 13L25 37" stroke="#58C19B" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
                 </svg>
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37" stroke="#0E2B4C" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
@@ -168,8 +168,8 @@
               </button>
               <div x-cloak x-show="isExpanded" id="accordionItem2" role="region"
                    aria-labelledby="controlsAccordionItem2" x-collapse>
-                <div class="flex flex-col gap-y-4 px-20 pb-9">
-                  <p class="text-body text-Text leading-[24px]">1SaleRX offers prescription and nonprescription
+                <div class="flex flex-col gap-y-4 px-20 pb-9 lg:px-2 lg:pb-3">
+                  <p class="text-body text-Text leading-[24px] lg:text-body2">1SaleRX offers prescription and nonprescription
                     medications at unbeatable prices, focusing on affordability and quality. We provide trusted brands
                     and generics, ensuring hassle-free ordering and exceptional customer service. Our goal is to make
                     medication more affordable and keep customers satisfied.</p>
@@ -179,19 +179,19 @@
             <div x-data="{ isExpanded: false }" class="rounded-7xl transition-all border "
                  x-bind:class="isExpanded ? 'bg-LightGrey2 border-transparent'  : 'border-LightBlue'">
               <button id="controlsAccordionItem3" type="button"
-                      class="text-base font-semibold text-Text flex w-full items-center p-[10px]"
+                      class="text-base lg:text-body lg:text-left font-semibold text-Text flex w-full items-center p-[10px] lg:px-2 lg:py-3"
                       aria-controls="accordionItem3" x-on:click="isExpanded = ! isExpanded"
                       x-bind:aria-expanded="isExpanded ? 'true' : 'false'">
-                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] mr-5">
-                  <span class="text-Top7 outlined-text font-bold">03</span>
+                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] lg:w-8 lg:h-8 lg:min-w-8 lg:mr-2 mr-5">
+                  <span class="text-Top7 lg:text-base outlined-text font-bold">03</span>
                 </span>
                 Do I need a doctor’s prescription to order products?
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37M25 13L25 37" stroke="#58C19B" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
                 </svg>
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37" stroke="#0E2B4C" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
@@ -199,8 +199,8 @@
               </button>
               <div x-cloak x-show="isExpanded" id="accordionItem3" role="region"
                    aria-labelledby="controlsAccordionItem3" x-collapse>
-                <div class="flex flex-col gap-y-4 px-20 pb-9">
-                  <p class="text-body text-Text leading-[24px]">1SaleRX offers prescription and nonprescription
+                <div class="flex flex-col gap-y-4 px-20 pb-9 lg:px-2 lg:pb-3">
+                  <p class="text-body text-Text leading-[24px] lg:text-body2">1SaleRX offers prescription and nonprescription
                     medications at unbeatable prices, focusing on affordability and quality. We provide trusted brands
                     and generics, ensuring hassle-free ordering and exceptional customer service. Our goal is to make
                     medication more affordable and keep customers satisfied.</p>
@@ -210,19 +210,19 @@
             <div x-data="{ isExpanded: false }" class="rounded-7xl transition-all border "
                  x-bind:class="isExpanded ? 'bg-LightGrey2 border-transparent'  : 'border-LightBlue'">
               <button id="controlsAccordionItem4" type="button"
-                      class="text-base font-semibold text-Text flex w-full items-center p-[10px]"
+                      class="text-base lg:text-body lg:text-left font-semibold text-Text flex w-full items-center p-[10px] lg:px-2 lg:py-3"
                       aria-controls="accordionItem4" x-on:click="isExpanded = ! isExpanded"
                       x-bind:aria-expanded="isExpanded ? 'true' : 'false'">
-                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] mr-5">
-                  <span class="text-Top7 outlined-text font-bold">04</span>
+                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] lg:w-8 lg:h-8 lg:min-w-8 lg:mr-2 mr-5">
+                  <span class="text-Top7 lg:text-base outlined-text font-bold">04</span>
                 </span>
                 What are your delivery costs?
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37M25 13L25 37" stroke="#58C19B" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
                 </svg>
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37" stroke="#0E2B4C" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
@@ -230,8 +230,8 @@
               </button>
               <div x-cloak x-show="isExpanded" id="accordionItem4" role="region"
                    aria-labelledby="controlsAccordionItem4" x-collapse>
-                <div class="flex flex-col gap-y-4 px-20 pb-9">
-                  <p class="text-body text-Text leading-[24px]">1SaleRX offers prescription and nonprescription
+                <div class="flex flex-col gap-y-4 px-20 pb-9 lg:px-2 lg:pb-3">
+                  <p class="text-body text-Text leading-[24px] lg:text-body2">1SaleRX offers prescription and nonprescription
                     medications at unbeatable prices, focusing on affordability and quality. We provide trusted brands
                     and generics, ensuring hassle-free ordering and exceptional customer service. Our goal is to make
                     medication more affordable and keep customers satisfied.</p>
@@ -241,19 +241,19 @@
             <div x-data="{ isExpanded: false }" class="rounded-7xl transition-all border "
                  x-bind:class="isExpanded ? 'bg-LightGrey2 border-transparent'  : 'border-LightBlue'">
               <button id="controlsAccordionItem5" type="button"
-                      class="text-base font-semibold text-Text flex w-full items-center p-[10px]"
+                      class="text-base lg:text-body lg:text-left font-semibold text-Text flex w-full items-center p-[10px] lg:px-2 lg:py-3"
                       aria-controls="accordionItem5" x-on:click="isExpanded = ! isExpanded"
                       x-bind:aria-expanded="isExpanded ? 'true' : 'false'">
-                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] mr-5">
-                  <span class="text-Top7 outlined-text font-bold">05</span>
+                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] lg:w-8 lg:h-8 lg:min-w-8 lg:mr-2 mr-5">
+                  <span class="text-Top7 lg:text-base outlined-text font-bold">05</span>
                 </span>
                 How long will it take to receive my order?
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37M25 13L25 37" stroke="#58C19B" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
                 </svg>
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37" stroke="#0E2B4C" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
@@ -261,8 +261,8 @@
               </button>
               <div x-cloak x-show="isExpanded" id="accordionItem5" role="region"
                    aria-labelledby="controlsAccordionItem5" x-collapse>
-                <div class="flex flex-col gap-y-4 px-20 pb-9">
-                  <p class="text-body text-Text leading-[24px]">1SaleRX offers prescription and nonprescription
+                <div class="flex flex-col gap-y-4 px-20 pb-9 lg:px-2 lg:pb-3">
+                  <p class="text-body text-Text leading-[24px] lg:text-body2">1SaleRX offers prescription and nonprescription
                     medications at unbeatable prices, focusing on affordability and quality. We provide trusted brands
                     and generics, ensuring hassle-free ordering and exceptional customer service. Our goal is to make
                     medication more affordable and keep customers satisfied.</p>
@@ -272,19 +272,19 @@
             <div x-data="{ isExpanded: false }" class="rounded-7xl transition-all border "
                  x-bind:class="isExpanded ? 'bg-LightGrey2 border-transparent'  : 'border-LightBlue'">
               <button id="controlsAccordionItem6" type="button"
-                      class="text-base font-semibold text-Text flex w-full items-center p-[10px]"
+                      class="text-base lg:text-body lg:text-left font-semibold text-Text flex w-full items-center p-[10px] lg:px-2 lg:py-3"
                       aria-controls="accordionItem6" x-on:click="isExpanded = ! isExpanded"
                       x-bind:aria-expanded="isExpanded ? 'true' : 'false'">
-                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] mr-5">
-                  <span class="text-Top7 outlined-text font-bold">06</span>
+                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] lg:w-8 lg:h-8 lg:min-w-8 lg:mr-2 mr-5">
+                  <span class="text-Top7 lg:text-base outlined-text font-bold">06</span>
                 </span>
                 Do you sell branded medications?
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37M25 13L25 37" stroke="#58C19B" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
                 </svg>
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37" stroke="#0E2B4C" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
@@ -292,8 +292,8 @@
               </button>
               <div x-cloak x-show="isExpanded" id="accordionItem6" role="region"
                    aria-labelledby="controlsAccordionItem6" x-collapse>
-                <div class="flex flex-col gap-y-4 px-20 pb-9">
-                  <p class="text-body text-Text leading-[24px]">1SaleRX offers prescription and nonprescription
+                <div class="flex flex-col gap-y-4 px-20 pb-9 lg:px-2 lg:pb-3">
+                  <p class="text-body text-Text leading-[24px] lg:text-body2">1SaleRX offers prescription and nonprescription
                     medications at unbeatable prices, focusing on affordability and quality. We provide trusted brands
                     and generics, ensuring hassle-free ordering and exceptional customer service. Our goal is to make
                     medication more affordable and keep customers satisfied.</p>
@@ -303,19 +303,19 @@
             <div x-data="{ isExpanded: false }" class="rounded-7xl transition-all border "
                  x-bind:class="isExpanded ? 'bg-LightGrey2 border-transparent'  : 'border-LightBlue'">
               <button id="controlsAccordionItem7" type="button"
-                      class="text-base font-semibold text-Text flex w-full items-center p-[10px]"
+                      class="text-base lg:text-body lg:text-left font-semibold text-Text flex w-full items-center p-[10px] lg:px-2 lg:py-3"
                       aria-controls="accordionItem7" x-on:click="isExpanded = ! isExpanded"
                       x-bind:aria-expanded="isExpanded ? 'true' : 'false'">
-                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] mr-5">
-                  <span class="text-Top7 outlined-text font-bold">07</span>
+                <span class="flex items-center justify-center w-[50px] min-w-[50px] h-[50px] lg:w-8 lg:h-8 lg:min-w-8 lg:mr-2 mr-5">
+                  <span class="text-Top7 lg:text-base outlined-text font-bold">07</span>
                 </span>
                 How can I update or cancel my order once it's placed?
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  'hidden'  :  ''" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37M25 13L25 37" stroke="#58C19B" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
                 </svg>
-                <svg class="ml-auto" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
+                <svg class="ml-auto min-w-[50px] lg:w-[28px] lg:min-w-[28px]" x-bind:class="isExpanded  ?  ''  :  'hidden'" xmlns="http://www.w3.org/2000/svg"
                      width="50" height="50" viewBox="0 0 50 50" fill="none">
                   <path d="M13 25H37" stroke="#0E2B4C" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
@@ -323,8 +323,8 @@
               </button>
               <div x-cloak x-show="isExpanded" id="accordionItem7" role="region"
                    aria-labelledby="controlsAccordionItem7" x-collapse>
-                <div class="flex flex-col gap-y-4 px-20 pb-9">
-                  <p class="text-body text-Text leading-[24px]">1SaleRX offers prescription and nonprescription
+                <div class="flex flex-col gap-y-4 px-20 pb-9 lg:px-2 lg:pb-3">
+                  <p class="text-body text-Text leading-[24px] lg:text-body2">1SaleRX offers prescription and nonprescription
                     medications at unbeatable prices, focusing on affordability and quality. We provide trusted brands
                     and generics, ensuring hassle-free ordering and exceptional customer service. Our goal is to make
                     medication more affordable and keep customers satisfied.</p>
@@ -333,7 +333,7 @@
             </div>
           </div>
         </div>
-        <div class="col-span-1"></div>
+        <div class="col-span-1 lg:hidden"></div>
       </div>
     </div>
   </section>

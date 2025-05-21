@@ -5448,6 +5448,9 @@ input[type=search]::-webkit-search-results-decoration {
   .lg\:mt-8{
     margin-top: 2rem;
   }
+  .lg\:mr-2{
+    margin-right: 0.5rem;
+  }
   .lg\:line-clamp-5{
     overflow: hidden;
     display: -webkit-box;
@@ -5475,8 +5478,23 @@ input[type=search]::-webkit-search-results-decoration {
   .lg\:h-\[194px\]{
     height: 194px;
   }
+  .lg\:h-8{
+    height: 2rem;
+  }
   .lg\:w-full{
     width: 100%;
+  }
+  .lg\:w-8{
+    width: 2rem;
+  }
+  .lg\:w-\[28px\]{
+    width: 28px;
+  }
+  .lg\:min-w-8{
+    min-width: 2rem;
+  }
+  .lg\:min-w-\[28px\]{
+    min-width: 28px;
   }
   .lg\:max-w-\[100px\]{
     max-width: 100px;
@@ -5605,6 +5623,18 @@ input[type=search]::-webkit-search-results-decoration {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .lg\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .lg\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .lg\:pb-10{
     padding-bottom: 2.5rem;
   }
@@ -5616,6 +5646,15 @@ input[type=search]::-webkit-search-results-decoration {
   }
   .lg\:pt-9{
     padding-top: 2.25rem;
+  }
+  .lg\:pb-0{
+    padding-bottom: 0px;
+  }
+  .lg\:pb-3{
+    padding-bottom: 0.75rem;
+  }
+  .lg\:text-left{
+    text-align: left;
   }
   .lg\:text-center{
     text-align: center;
