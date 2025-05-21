@@ -42,7 +42,7 @@ module.exports = {
       Top1: ['24px', '130%'],
       Top2: ['22px', '130%'],
       Top3: ['20px', '130%'],
-      Top4: ['36px', 'normal'],
+      Top4: ['35px', 'normal'],
       Top5: ['28px', '100%'],
       Top6: ['60px', '100%'],
       Top7: ['25px', 'normal'],
