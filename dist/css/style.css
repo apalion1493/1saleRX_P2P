@@ -5445,6 +5445,9 @@ input[type=search]::-webkit-search-results-decoration {
   .lg\:gap-y-\[30px\]{
     row-gap: 30px;
   }
+  .lg\:gap-y-8{
+    row-gap: 2rem;
+  }
   .lg\:rounded-7xl{
     border-radius: 10px;
   }
