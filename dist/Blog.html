@@ -114,13 +114,13 @@
                 </div>
             </div>
         </div>
-        <div class="container relative z-[1] mt-14 pb-[80px]">
+        <div class="container relative z-[1] mt-14 pb-20 lg:pb-10">
             <div class="row gap-x-6">
                 <div class="col-span-12 flex items-center">
                     <div class="flex flex-col mx-auto text-DarkBlue100">
                         <div class="flex flex-col items-center">
   <h1 class="text-h1 lg:text-Top4 font-extrabold">Blog</h1>
-  <span class="border-b-2 w-[60px] border-Green1 mt-10"></span>
+  <span class="border-b-2 w-[60px] border-Green1 mt-10 lg:mt-6"></span>
 </div>
 
                     </div>
@@ -129,26 +129,32 @@
         </div>
         <div class="container relative z-[1] pb-[60px]">
             <div class="bg-white rounded-2xl overflow-hidden">
-                <div class="row gap-x-6">
-                    <div class="col-span-6">
-                        <img class="w-full h-full object-cover" src="img/catagory-img.png" alt="">
+                <div class="row gap-x-6 lg:gap-x-0">
+                    <div class="col-span-6 lg:col-span-12">
+                        <img class="w-full object-cover h-[413px] lg:h-[193px]" src="img/catagory-img.png" alt="">
                     </div>
-                    <div class="col-span-6">
-                        <div class="flex gap-x-5 py-[30px] pr-[30px]">
-                            <div class="flex flex-col max-w-[524px]">
+                    <div class="col-span-6 lg:col-span-12">
+                        <div class="flex gap-x-5 py-[30px] pr-[30px] lg:px-4 lg:py-5">
+                            <div class="flex flex-col max-w-[524px] lg:max-w-full">
                                 <div class="flex items-center w-fit mb-5 bg-Green1 rounded-full px-[10px] py-[7px]">
                                     <span class="text-white text-body4 uppercase font-bold">Diseases & Conditions</span>
                                 </div>
-                                <h2 class="text-Top4 text-DarkBlue100 font-extrabold">Should you be tested for inflammation?</h2>
-                                <span class="border-b-2 w-[60px] border-Green1 my-5"></span>
-                                <p class="line-clamp-4 text-base mb-5">Our understanding of how chronic inflammation can impair health has expanded dramatically in recent years, causing some people to wonder if there is a test to identify it, and if they should have it. There are ...</p>
+                                <h2 class="text-Top4 lg:text-Top7 text-DarkBlue100 font-extrabold">Should you be tested for inflammation?</h2>
+                                <div class="flex items-center gap-x-5 minlg:hidden mt-4">
+                                  <div class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full border border-LightBlue">
+                                    <i class="fi-rr-calendar-green"></i>
+                                  </div>
+                                  <time class="text-DarkGrey text-body lg:text-body2 font-extrabold" datetime="2025-05-01">May 1, 2025</time>
+                                </div>
+                                <span class="border-b-2 w-[60px] border-Green1 my-5 lg:my-4"></span>
+                                <p class="line-clamp-4 text-base lg:text-base lg:line-clamp-6 mb-5">Our understanding of how chronic inflammation can impair health has expanded dramatically in recent years, causing some people to wonder if there is a test to identify it, and if they should have it. There are ...</p>
                                 <div class="mt-auto flex items-center justify-between">
                                     <a href="Author-page.html" class="flex items-center gap-x-5">
                                         <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
                                              src="img/avatar-5.png" alt="avatar">
                                         <span class="text-body text-DarkGrey font-bold">Matthew Solan</span>
                                     </a>
-                                    <div class="flex items-center gap-x-5">
+                                    <div class="flex items-center gap-x-5 lg:hidden">
                                         <div class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full border border-LightBlue">
                                             <i class="fi-rr-calendar-green"></i>
                                         </div>
@@ -156,7 +162,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="ml-auto" href="#">
+                            <a class="ml-auto lg:hidden" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M18.6777 -7.91831e-09C19.23 -2.13005e-07 19.6777 0.447715 19.6777 1L19.6777 10C19.6777 10.5523 19.23 11 18.6777 11C18.1255 11 17.6777 10.5523 17.6777 10L17.6777 2L9.67773 2C9.12545 2 8.67773 1.55229 8.67773 1C8.67773 0.447718 9.12545 2.72598e-06 9.67773 2.56304e-06L18.6777 -7.91831e-09ZM1.70718 19.3848C1.31665 19.7753 0.683487 19.7753 0.292963 19.3848C-0.0975614 18.9943 -0.0975612 18.3611 0.292963 17.9706L1.70718 19.3848ZM18.6777 1L19.3848 1.70711L1.70718 19.3848L1.00007 18.6777L0.292963 17.9706L17.9706 0.292893L18.6777 1Z" fill="#E6ECEE"/>
                                 </svg>
@@ -169,8 +175,8 @@
     </section>
     <section class="section bg-white">
         <div class="container">
-            <div class="row">
-                <div class="col-span-2">
+            <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-8">
+                <div class="col-span-2 lg:col-span-12">
                     <div class="flex flex-col" x-data="{ isOpen: false }" @click.away="isOpen = false" x-init="$watch('isOpen', value => { if(value) { document.body.classList.add('overflow-hidden'); } else { document.body.classList.remove('overflow-hidden'); } })">
                         <div class="flex items-center justify-between">
                             <span class="text-DarkBlue100 font-bold">Categories</span>
@@ -213,164 +219,118 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-10">
-                    <div class="row gap-x-6 gap-y-5">
-                        <div class="col-span-6">
+                <div class="col-span-10 lg:col-span-12">
+                    <div class="row gap-x-6 lg:gap-x-0 gap-y-5">
+                        <div class="col-span-6 lg:col-span-12">
                             <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
-  <a href="Blog-post.html" class="h-[270px] w-full flex items-center justify-center">
+  <a href="Blog-post.html" class="h-[270px] lg:h-[200px] w-full flex items-center justify-center">
     <img class="w-full h-full object-cover" src="img/post-img-1.png" alt="">
   </a>
-  <div class="flex flex-col gap-y-4 p-5 h-full">
+  <div class="flex flex-col gap-y-4 p-5 lg:px-4 lg:py-6 h-full">
     <div class="flex items-center justify-between">
       <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
       <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
     </div>
     <div class="flex flex-col gap-y-[10px]">
       <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
-      <p class="line-clamp-4 text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+      <p class="line-clamp-4 lg:line-clamp-5 lg:text-body text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
     </div>
     <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
       <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
            src="img/avatar-5.png" alt="avatar">
-      <span class="text-body text-Grey2 font-bold">Matthew Solan</span>
+      <span class="text-body lg:text-body2 text-Grey2 font-bold">Matthew Solan</span>
     </a>
   </div>
 </div>
 
                         </div>
-                        <div class="col-span-6">
-                            <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
-  <a href="Blog-post.html" class="h-[270px] w-full flex items-center justify-center">
+                        <div class="col-span-6 lg:col-span-12">
+                          <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
+  <a href="Blog-post.html" class="h-[270px] lg:h-[200px] w-full flex items-center justify-center">
     <img class="w-full h-full object-cover" src="img/post-img-1.png" alt="">
   </a>
-  <div class="flex flex-col gap-y-4 p-5 h-full">
+  <div class="flex flex-col gap-y-4 p-5 lg:px-4 lg:py-6 h-full">
     <div class="flex items-center justify-between">
       <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
       <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
     </div>
     <div class="flex flex-col gap-y-[10px]">
       <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
-      <p class="line-clamp-4 text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+      <p class="line-clamp-4 lg:line-clamp-5 lg:text-body text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
     </div>
     <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
       <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
            src="img/avatar-5.png" alt="avatar">
-      <span class="text-body text-Grey2 font-bold">Matthew Solan</span>
+      <span class="text-body lg:text-body2 text-Grey2 font-bold">Matthew Solan</span>
     </a>
   </div>
 </div>
 
                         </div>
-                        <div class="col-span-6">
-                            <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
-  <a href="Blog-post.html" class="h-[270px] w-full flex items-center justify-center">
+                        <div class="col-span-6 lg:col-span-12">
+                          <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
+  <a href="Blog-post.html" class="h-[270px] lg:h-[200px] w-full flex items-center justify-center">
     <img class="w-full h-full object-cover" src="img/post-img-1.png" alt="">
   </a>
-  <div class="flex flex-col gap-y-4 p-5 h-full">
+  <div class="flex flex-col gap-y-4 p-5 lg:px-4 lg:py-6 h-full">
     <div class="flex items-center justify-between">
       <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
       <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
     </div>
     <div class="flex flex-col gap-y-[10px]">
       <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
-      <p class="line-clamp-4 text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+      <p class="line-clamp-4 lg:line-clamp-5 lg:text-body text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
     </div>
     <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
       <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
            src="img/avatar-5.png" alt="avatar">
-      <span class="text-body text-Grey2 font-bold">Matthew Solan</span>
+      <span class="text-body lg:text-body2 text-Grey2 font-bold">Matthew Solan</span>
     </a>
   </div>
 </div>
 
                         </div>
-                        <div class="col-span-6">
-                            <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
-  <a href="Blog-post.html" class="h-[270px] w-full flex items-center justify-center">
+                        <div class="col-span-6 lg:col-span-12">
+                          <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
+  <a href="Blog-post.html" class="h-[270px] lg:h-[200px] w-full flex items-center justify-center">
     <img class="w-full h-full object-cover" src="img/post-img-1.png" alt="">
   </a>
-  <div class="flex flex-col gap-y-4 p-5 h-full">
+  <div class="flex flex-col gap-y-4 p-5 lg:px-4 lg:py-6 h-full">
     <div class="flex items-center justify-between">
       <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
       <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
     </div>
     <div class="flex flex-col gap-y-[10px]">
       <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
-      <p class="line-clamp-4 text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+      <p class="line-clamp-4 lg:line-clamp-5 lg:text-body text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
     </div>
     <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
       <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
            src="img/avatar-5.png" alt="avatar">
-      <span class="text-body text-Grey2 font-bold">Matthew Solan</span>
+      <span class="text-body lg:text-body2 text-Grey2 font-bold">Matthew Solan</span>
     </a>
   </div>
 </div>
 
                         </div>
-                        <div class="col-span-6">
-                            <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
-  <a href="Blog-post.html" class="h-[270px] w-full flex items-center justify-center">
+                        <div class="col-span-6 lg:col-span-12">
+                          <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
+  <a href="Blog-post.html" class="h-[270px] lg:h-[200px] w-full flex items-center justify-center">
     <img class="w-full h-full object-cover" src="img/post-img-1.png" alt="">
   </a>
-  <div class="flex flex-col gap-y-4 p-5 h-full">
+  <div class="flex flex-col gap-y-4 p-5 lg:px-4 lg:py-6 h-full">
     <div class="flex items-center justify-between">
       <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
       <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
     </div>
     <div class="flex flex-col gap-y-[10px]">
       <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
-      <p class="line-clamp-4 text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+      <p class="line-clamp-4 lg:line-clamp-5 lg:text-body text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
     </div>
     <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
       <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
            src="img/avatar-5.png" alt="avatar">
-      <span class="text-body text-Grey2 font-bold">Matthew Solan</span>
-    </a>
-  </div>
-</div>
-
-                        </div>
-                        <div class="col-span-6">
-                            <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
-  <a href="Blog-post.html" class="h-[270px] w-full flex items-center justify-center">
-    <img class="w-full h-full object-cover" src="img/post-img-1.png" alt="">
-  </a>
-  <div class="flex flex-col gap-y-4 p-5 h-full">
-    <div class="flex items-center justify-between">
-      <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
-      <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
-    </div>
-    <div class="flex flex-col gap-y-[10px]">
-      <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
-      <p class="line-clamp-4 text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
-    </div>
-    <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
-      <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
-           src="img/avatar-5.png" alt="avatar">
-      <span class="text-body text-Grey2 font-bold">Matthew Solan</span>
-    </a>
-  </div>
-</div>
-
-                        </div>
-                        <div class="col-span-6">
-                            <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
-  <a href="Blog-post.html" class="h-[270px] w-full flex items-center justify-center">
-    <img class="w-full h-full object-cover" src="img/post-img-1.png" alt="">
-  </a>
-  <div class="flex flex-col gap-y-4 p-5 h-full">
-    <div class="flex items-center justify-between">
-      <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
-      <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
-    </div>
-    <div class="flex flex-col gap-y-[10px]">
-      <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
-      <p class="line-clamp-4 text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
-    </div>
-    <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
-      <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
-           src="img/avatar-5.png" alt="avatar">
-      <span class="text-body text-Grey2 font-bold">Matthew Solan</span>
+      <span class="text-body lg:text-body2 text-Grey2 font-bold">Matthew Solan</span>
     </a>
   </div>
 </div>
@@ -379,7 +339,7 @@
                     </div>
                     <div class="row">
                         <div class="col-span-12">
-                            <div class="flex items-center gap-x-4 mx-auto justify-center mt-[60px]">
+                            <div class="flex items-center gap-x-4 mx-auto justify-center lg:justify-between mt-[60px]">
                                 <button>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                                         <g clip-path="url(#clip0_1_4109)">
@@ -393,7 +353,7 @@
                                         </defs>
                                     </svg>
                                 </button>
-                                <div class="flex items-center gap-x-4">
+                                <div class="flex items-center gap-x-4 lg:gap-x-[6px]">
                                     <button class="pagination-btn ">1</button>
                                     <button class="pagination-btn active">2</button>
                                     <button class="pagination-btn ">3</button>

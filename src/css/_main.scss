@@ -639,11 +639,14 @@
 
 .bg-1 {
   background: url("__IMAGE_PATH__bg-1.png") no-repeat center bottom;
-  background-size: contain;
+  background-size: cover;
   max-width: 100%;
   width: 100%;
+  min-width: 440px;
   height: 230px;
   display: block;
+
+  @apply lg:h-[155px]
 }
 
 .bg-2 {
@@ -677,8 +680,8 @@
 .pagination-btn {
 
   &.active {
-    @apply bg-Green1 text-white
+    @apply bg-Green1 text-white lg:w-6 lg:min-w-6
   }
 
-  @apply hover:bg-Green1 hover:text-white transition-all w-[50px] min-w-[50px] h-[50px] rounded-full flex items-center justify-center border border-LightBlue
+  @apply hover:bg-Green1 hover:text-white transition-all w-[50px] min-w-[50px] h-[50px] rounded-full flex items-center justify-center border border-LightBlue lg:text-none lg:w-4 lg:h-4 lg:min-w-4 lg:bg-Grey
 }
