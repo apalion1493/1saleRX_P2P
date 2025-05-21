@@ -3323,6 +3323,10 @@ html {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.py-\[45px\]{
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
 .pb-14{
   padding-bottom: 3.5rem;
 }
