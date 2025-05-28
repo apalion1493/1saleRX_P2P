@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>About 1SaleRx</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+
+
+<body class="">
+<main id="content" class="flex flex-col min-h-screen overflow-hidden">
+  <header class="w-full py-5 absolute z-10">
+    <div class="container">
+        <div class="flex justify-between items-center width-full gap-x-5 bg-white py-[15px] lg:p-[10px] pr-[15px] pl-[30px] rounded-full">
+            <button id="burger-button" class="minlg:hidden flex items-center justify-center w-[50px] h-[50px] rounded-[50%] bg-LightGrey2"
+                    aria-label="Mobile Burger Button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M19.1667 9.16602H0.833333C0.373096 9.16602 0 9.53911 0 9.99935C0 10.4596 0.373096 10.8327 0.833333 10.8327H19.1667C19.6269 10.8327 20 10.4596 20 9.99935C20 9.53911 19.6269 9.16602 19.1667 9.16602Z" fill="#0E2B4C"/>
+                    <path d="M19.1667 3.33398H0.833333C0.373096 3.33398 0 3.70708 0 4.16732C0 4.62755 0.373096 5.00065 0.833333 5.00065H19.1667C19.6269 5.00065 20 4.62755 20 4.16732C20 3.70708 19.6269 3.33398 19.1667 3.33398Z" fill="#0E2B4C"/>
+                    <path d="M19.1667 15H0.833333C0.373096 15 0 15.3731 0 15.8333C0 16.2936 0.373096 16.6667 0.833333 16.6667H19.1667C19.6269 16.6667 20 16.2936 20 15.8333C20 15.3731 19.6269 15 19.1667 15Z" fill="#0E2B4C"/>
+                </svg>
+            </button>
+            <a class="flex items-center lg:mx-auto" href="index.html">
+                <img class="lg:max-w-[100px]" width="108" height="38" src="__IMAGE_PATH__Logo-1.svg" alt="Logo OneSaleRX">
+            </a>
+            <div id="mobile-menu" class="show-mobile-menu">
+                <div class=" relative z-[1] minlg:hidden flex items-center">
+                    <button id="burger-button-close" class="minlg:hidden flex items-center justify-center w-[50px] h-[50px] rounded-[50%] bg-LightGrey2"
+                            aria-label="Mobile Burger Button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1_5885)">
+                                <path d="M19.7561 0.243989C19.5999 0.0877628 19.3879 0 19.167 0C18.946 0 18.7341 0.0877628 18.5778 0.243989L10.0003 8.82149L1.42281 0.243989C1.26654 0.0877628 1.05461 0 0.833644 0C0.612674 0 0.40075 0.0877628 0.244477 0.243989C0.0882511 0.400262 0.000488281 0.612185 0.000488281 0.833155C0.000488281 1.05413 0.0882511 1.26605 0.244477 1.42232L8.82198 9.99982L0.244477 18.5773C0.0882511 18.7336 0.000488281 18.9455 0.000488281 19.1665C0.000488281 19.3875 0.0882511 19.5994 0.244477 19.7557C0.40075 19.9119 0.612674 19.9996 0.833644 19.9996C1.05461 19.9996 1.26654 19.9119 1.42281 19.7557L10.0003 11.1782L18.5778 19.7557C18.7341 19.9119 18.946 19.9996 19.167 19.9996C19.3879 19.9996 19.5999 19.9119 19.7561 19.7557C19.9124 19.5994 20.0001 19.3875 20.0001 19.1665C20.0001 18.9455 19.9124 18.7336 19.7561 18.5773L11.1786 9.99982L19.7561 1.42232C19.9124 1.26605 20.0001 1.05413 20.0001 0.833155C20.0001 0.612185 19.9124 0.400262 19.7561 0.243989Z" fill="#0E2B4C"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_5885">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="flex items-center lg:mx-auto" href="index.html">
+                        <img class="lg:max-w-[100px]" width="108" height="38" src="__IMAGE_PATH__Logo-1.svg" alt="Logo OneSaleRX">
+                    </a>
+                    <a href="Login.html" class="w-[50px] h-[50px] min-w-[50px] flex items-center justify-center rounded-full
+                overflow-hidden bg-LightGrey2">
+                        <i class="fi-rr-user"></i>
+                    </a>
+                </div>
+                <ul class=" relative z-[1] flex items-center gap-x-[30px]">
+                    <li class="flex items-center lg:px-[10px] lg:py-4 lg:bg-LightGrey2 lg:w-full lg:rounded-7xl">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="About.html">About Us</a>
+                    </li>
+                    <li class="flex items-center lg:px-[10px] lg:py-4 lg:bg-LightGrey2 lg:w-full lg:rounded-7xl">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="How-Works.html">How It Works</a>
+                    </li>
+                    <li class="flex items-center lg:px-[10px] lg:py-4 lg:bg-LightGrey2 lg:w-full lg:rounded-7xl">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="flex items-center lg:px-[10px] lg:py-4 lg:bg-LightGrey2 lg:w-full lg:rounded-7xl">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="flex items-center lg:px-[10px] lg:py-4 lg:bg-LightGrey2 lg:w-full lg:rounded-7xl">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <a class="button minlg:hidden px-5 w-full relative z-[1] " href="#">
+    <span class="">Free Account</span>
+</a>
+
+                <div class="bg-icon-1 absolute bottom-0 left-1/2 -translate-x-1/2 minlg:hidden"></div>
+            </div>
+            <div class="flex items-center">
+                <a href="Login.html" class="w-[50px] h-[50px] min-w-[50px] flex items-center justify-center rounded-full
+                overflow-hidden bg-LightGrey2">
+                    <i class="fi-rr-user"></i>
+                </a>
+                <a class="button lg:hidden px-[30px] medium-btn ml-4" href="#">
+    <span class="">Free Account</span>
+</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+  <section class="bg-gradient-main-2 relative overflow-hidden pt-[120px] lg:pt-[110px]">
+    <div class="img-tab-6 absolute left-0 top-6 xl:hidden"></div>
+    <div class="img-tab-7 absolute right-0 bottom-0 xl:hidden"></div>
+    <div class="img-tab-8 absolute left-0 bottom-10 minxl:hidden"></div>
+    <div class="img-tab-9 absolute right-0 top-[75px] minxl:hidden"></div>
+
+    <div class="container mt-20 pb-20 md:pb-[170px] md:mt-[110px]">
+      <div class="row gap-x-6">
+        <div class="col-span-12 flex items-center">
+          <div class="flex flex-col mx-auto text-white">
+            <div class="flex flex-col items-center">
+  <h1 class="text-h1 lg:text-Top4 font-extrabold">About 1SaleRx</h1>
+  <span class="border-b-2 w-[60px] border-Green1 mt-10"></span>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section bg-LightBlue">
+    <div class="container mb-14 lg:mb-10">
+      <div class="row gap-x-6 md:gap-x-0 md:gap-y-8">
+        <div class="col-span-4 md:col-span-12 flex items-center">
+          <div class="flex flex-col">
+            <h2 class="text-Top4 lg:text-Top7 font-extrabold text-DarkBlue100">Revolutionizing the Way Independent
+              Pharmacies Thrive</h2>
+            <span class="border-b-2 w-[60px] border-Green1 my-5"></span>
+            <p class="text-Text text-base">At 1SaleRx, we believe independent pharmacies deserve the tools and
+              technology to compete — and win — in today’s fast-changing healthcare market.</p>
+            <br>
+            <p class="text-Text text-base">We’re not just another platform. We’re your partner in profitability,
+              efficiency, and smarter sourcing.</p>
+          </div>
+        </div>
+        <div class="col-span-1 md:hidden"></div>
+        <div class="col-span-7 md:col-span-12">
+          <img class="mx-auto object-cover md:max-w-[450px] md:mx-auto w-full" width="674"
+               src="__IMAGE_PATH__About-1SaleRx-hero-img.png" alt="About 1SaleRx">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row gap-x-6 bg-white rounded-2xl py-[90px] lg:px-4 lg:py-8">
+        <div class="col-span-1 lg:hidden"></div>
+        <div class="col-span-10 lg:col-span-12">
+          <div class="flex flex-col w-full">
+            <div
+              class="relative z-[1] max-w-[416px] lg:max-w-full p-[30px] lg:p-4 flex flex-col rounded-7xl overflow-hidden bg-LightGrey">
+              <span class="text-Top4 lg:text-Top7 font-extrabold text-DarkBlue100">Why We Exist</span>
+              <span class="border-b-2 w-[60px] border-Green1 my-5"></span>
+              <p class="text-Text text-base">The pharmaceutical supply chain is broken — inflated costs, limited
+                visibility, and mountains of unsold inventory.</p>
+              <br>
+              <p class="text-base text-DarkBlue100 font-semibold">We created 1SaleRx to solve exactly that.</p>
+            </div>
+            <div class="py-[30px] lg:py-0 relative">
+              <img
+                class="absolute lg:mx-auto lg:relative lg:top-auto lg:left-auto lg:translate-x-0 lg:translate-y-0 top-[150%] left-1/2 -translate-x-1/2 -translate-y-1/2"
+                width="636" src="__IMAGE_PATH__image-8.png" alt="">
+            </div>
+            <div
+              class="relative z-[1] max-w-[416px] lg:max-w-full p-[30px] lg:p-4 flex flex-col rounded-7xl overflow-hidden bg-Green1 text-white self-end">
+              <span class="text-Top4 lg:text-Top7 font-extrabold">Our mission is simple:</span>
+              <span class="border-b-2 w-[60px] border-DarkBlue100 my-5"></span>
+              <p class="text-base">To empower pharmacies to buy smarter, sell faster, and waste less.</p>
+              <br>
+              <p class="text-base">We do that by connecting you directly to licensed wholesalers and other pharmacies —
+                giving you the freedom to choose, compare, and control your inventory like never before.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 lg:hidden"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row gap-x-6 gap-y-5 md:gap-x-0">
+        <div class="col-span-4 lg:col-span-6 md:col-span-12">
+          <div class="flex flex-col">
+            <h3 class="text-Top4 lg:text-Top7 font-extrabold text-DarkBlue100">What Makes Us Different</h3>
+            <span class="border-b-2 w-[60px] border-Green1 my-5"></span>
+            <p class="text-Top7 lg:text-Top3 text-DarkBlue100">Lightning-fast search. Mobile-ready. No steep learning
+              curve. Just log in and get to work.</p>
+          </div>
+        </div>
+        <div class="col-span-4 lg:col-span-6 md:col-span-12">
+          <div
+            class="flex flex-col justify-end h-[300px] md:h-auto md:p-4 p-[30px] w-full bg-LightBlue relative rounded-[10px] overflow-hidden">
+            <div class="flex flex-col mb-auto gap-y-[10px]">
+              <div class="bg-white w-[50px] h-[50px] rounded-[50%] flex items-center justify-center">
+                <i class="stopwatch"></i>
+              </div>
+              <p class="text-Top3 font-bold text-DarkBlue100">Dispute? Resolved.</p>
+              <p class="text-Text text-body leading-[24px]">Things happen — we get it. Our platform includes built-in
+                dispute resolution tools to quickly and fairly resolve any issues between buyers and sellers. We’re here
+                to make sure every transaction goes smoothly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-4 lg:col-span-6 md:col-span-12">
+          <div
+            class="flex flex-col justify-end h-[300px] md:h-auto md:p-4 p-[30px] w-full bg-white border border-LightBlue relative rounded-[10px] overflow-hidden">
+            <div class="flex flex-col mb-auto gap-y-[10px]">
+              <div class="bg-LightBlue w-[50px] h-[50px] rounded-[50%] flex items-center justify-center">
+                <i class="security"></i>
+              </div>
+              <p class="text-Top3 font-bold text-DarkBlue100">Buy & Sell in One Place</p>
+              <p class="text-Text text-body leading-[24px]">Source from wholesalers or other pharmacies, and resell
+                overstock — all from one intuitive platform.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-4 lg:col-span-6 md:col-span-12">
+          <div
+            class="flex flex-col justify-end h-[300px] md:h-auto md:p-4 p-[30px] w-full bg-white border border-LightBlue relative rounded-[10px] overflow-hidden">
+            <div class="flex flex-col mb-auto gap-y-[10px]">
+              <div class="bg-LightBlue w-[50px] h-[50px] rounded-[50%] flex items-center justify-center">
+                <i class="pie-chart-003"></i>
+              </div>
+              <p class="text-Top3 font-bold text-DarkBlue100">Lowest Fees in the Market</p>
+              <p class="text-Text text-body leading-[24px]">We believe your profits should stay with you — that’s why we
+                offer one of the lowest commission rates in the industry. No inflated cuts. No hidden charges. Just
+                honest pricing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-4 lg:col-span-6 md:col-span-12">
+          <div
+            class="flex flex-col justify-end h-[300px] md:h-auto md:p-4 p-[30px] w-full bg-Green1 relative rounded-[10px] overflow-hidden">
+            <div class="flex flex-col mb-auto gap-y-[10px]">
+              <div class="bg-white w-[50px] h-[50px] rounded-[50%] flex items-center justify-center">
+                <i class="info-traced"></i>
+              </div>
+              <p class="text-Top3 font-bold text-white">Safe. Verified. Compliant.</p>
+              <p class="text-white text-body leading-[24px]">From license verification to DSCSA compliance, we go the
+                extra mile to protect every transaction. You’re not just using a marketplace — you’re joining a secure,
+                pharmacy-only network you can trust.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-4 lg:col-span-6 md:col-span-12">
+          <div
+            class="flex flex-col justify-end h-[300px] md:h-auto md:p-4 p-[30px] w-full bg-LightBlue relative rounded-[10px] overflow-hidden">
+            <div class="flex flex-col mb-auto gap-y-[10px]">
+              <div class="bg-white w-[50px] h-[50px] rounded-[50%] flex items-center justify-center">
+                <i class="recycling-container"></i>
+              </div>
+              <p class="text-Top3 font-bold text-DarkBlue100">Real-Time Insights</p>
+              <p class="text-Text text-body leading-[24px]">Stay one step ahead with live pricing, availability, and
+                demand tracking — right from your dashboard. Lightning-fast search. Mobile-ready. No steep learning
+                curve. Just log in and get to work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section bg-LightGrey2 overflow-hidden">
+    <div class="container">
+      <div class="row gap-x-6 lg:gap-x-0">
+        <div class="col-span-5 lg:col-span-12">
+          <div class="flex flex-col relative z-[1]">
+            <h3 class="text-Top4 lg:text-Top7 font-extrabold text-DarkBlue100">Built By Experts, Inspired By Pharmacy
+              Owners</h3>
+            <span class="border-b-2 w-[60px] border-Green1 my-5"></span>
+            <p class="text-base lg:text-body text-Text">We’re a team of healthcare innovators, tech engineers, and
+              business strategists — but most importantly, we listen to you.</p>
+            <br>
+            <p class="text-base lg:text-body text-Text">1SaleRx was built after years of speaking with independent
+              pharmacy owners who said the same thing:</p>
+
+            <div
+              class="mt-5 mb-11 bg-white rounded-6xl lg:px-4 lg:pb-5 py-[50px] pl-[46px] pr-[35px] flex flex-col relative overflow-hidden">
+              <span class="border-b-2 w-[60px] border-Green1 mb-5"></span>
+              <p class="text-Top7 lg:text-Top3 text-Text font-medium">We need a better way to source and manage
+                meds.</p>
+              <svg class="absolute top-0 right-5 lg:max-w-[124px] lg:-top-4" xmlns="http://www.w3.org/2000/svg"
+                   width="170" height="80" viewBox="0 0 170 80" fill="none">
+                <path
+                  d="M39.7451 -39.4922C64.5896 -39.9894 80.9794 -20.0712 80.9795 -0.162109C80.9795 34.6994 62.1734 64.8429 30.2354 79.4043L19.5303 69.3359C30.8817 62.6114 40.2714 53.5654 44.3135 40.6143L44.5391 39.8906L43.7842 39.9678C42.4528 40.1046 41.1012 40.1758 39.7334 40.1758C34.0599 40.1757 28.6689 38.9682 23.8008 36.7969L22.834 36.3506C9.62425 30.0208 0.500095 16.5015 0.5 0.84668C0.5 -20.2916 18.8933 -38.9934 39.7461 -39.4912L39.7451 -39.4922ZM128.266 -39.4922C153.11 -39.9895 169.5 -20.0713 169.5 -0.162109C169.5 34.6995 150.694 64.8429 118.756 79.4043L108.051 69.3359C119.402 62.6114 128.792 53.5655 132.834 40.6143L133.06 39.8906L132.306 39.9678C130.974 40.1046 129.623 40.1758 128.255 40.1758C122.581 40.1758 117.19 38.9683 112.321 36.7969L111.355 36.3506C98.1456 30.0208 89.0206 16.5015 89.0205 0.84668C89.0205 -20.2916 107.414 -38.9934 128.267 -39.4912L128.266 -39.4922Z"
+                  stroke="#58C19B"/>
+              </svg>
+            </div>
+
+            <span class="text-Green1 text-base lg:text-body4 lg:uppercase lg:tracking-24 font-semibold block mb-1">So we built it.</span>
+            <p class="text-Top7 lg:text-Top3 text-DarkBlue100 font-extrabold">For independents. By people <br> who
+              believe in them.</p>
+          </div>
+        </div>
+        <div class="col-span-7 lg:col-span-12">
+          <div class="relative h-full">
+            <img
+              class="absolute lg:relative lg:-bottom-10 right-0 -bottom-24 max-w-none xl:max-w-full lg:max-w-[400px] mx-auto w-full"
+              width="857" src="__IMAGE_PATH__image-7.png" alt="Built By Experts, Inspired By Pharmacy Owners">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-gradient-1 text-white section">
+    <div class="container">
+      <div class="row gap-x-6 lg:gap-x-0">
+        <div class="col-span-6 lg:col-span-12 flex items-center">
+          <div class="flex flex-col">
+            <h3 class="text-Top6 lg:text-Top4 font-extrabold block">Let’s Grow Together</h3>
+            <span class="border-b-2 w-[60px] border-Green1 my-10 lg:my-4"></span>
+            <p class="text-Top3 lg:text-base text-LightBlue">1SaleRx is rapidly expanding across the U.S., growing a trusted
+              community of pharmacies that work smarter — together.</p>
+            <br>
+            <p class="text-Top3 lg:text-base text-LightBlue">Our vision is to become the 1 sourcing and resale platform for
+              independent pharmacies nationwide.</p>
+            <br>
+            <p class="text-Top3 lg:text-base text-LightBlue">Whether you’re a single-store operator or part of a small regional
+              group, 1SaleRx is here to help you take control of your business.</p>
+            <img class="w-full mx-auto my-5 object-cover minlg:hidden max-w-[400px]"
+                 src="__IMAGE_PATH__Let’s-Grow-Together-img.png" alt="Ready to Transform Your Pharmacy?">
+            <p class="text-LightBlue text-Top3 lg:text-base font-bold mt-10 lg:m-0">We’re more than a marketplace — we’re your strategic
+              advantage.</p>
+
+            <div class="flex items-center gap-x-5 mt-10 lg:flex-col lg:gap-y-4 lg:gap-x-0">
+              <a class="button px-[30px] sm:px-4 sm:w-full" href="#">
+    <span class="">Create a Free Account</span>
+</a>
+
+              <a class="button btn-white px-[30px] sm:px-4 sm:w-full" href="#">
+    <span class="">Talk to Our Team</span>
+</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-6 lg:hidden">
+          <img class="max-w-full object-cover" src="__IMAGE_PATH__Let’s-Grow-Together-img.png"
+               alt="Ready to Transform Your Pharmacy?">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="w-full mt-auto overflow-hidden bg-white border-t border-LightBlue">
+  <div class="container">
+    <div class="row gap-x-6 lg:gap-y-[10px] pt-[50px] pb-[60px]">
+      <div class="col-span-3 lg:col-span-4 md:col-span-12">
+        <a class="md:flex md:justify-center md:mb-7" href="index.html">
+          <img src="__IMAGE_PATH__Logo-1.svg" alt="Logo OneSaleRX">
+        </a>
+      </div>
+      <div class="col-span-2 lg:col-span-4 md:col-span-12">
+        <ul class="flex flex-col gap-y-4">
+          <li class="flex items-center">
+            <a class="text-DarkBlue100 hover:text-Green1 transition-colors" href="About.html">About Us</a>
+          </li>
+          <li class="flex items-center">
+            <a class="text-DarkBlue100 hover:text-Green1 transition-colors" href="contact-us-small.html">Contact Us</a>
+          </li>
+          <li class="flex items-center">
+            <a class="text-DarkBlue100 hover:text-Green1 transition-colors" href="How-Works.html">How It Works</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-2 lg:col-span-4 md:col-span-12">
+        <ul class="flex flex-col gap-y-4">
+          <li class="flex items-center">
+            <a class="text-DarkBlue100 hover:text-Green1 transition-colors" href="Blog.html">Blog</a>
+          </li>
+          <li class="flex items-center">
+            <a class="text-DarkBlue100 hover:text-Green1 transition-colors" href="FAQ.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-2 lg:col-span-12 lg:mt-10">
+        <p class="text-Top3 lg:text-base lg:text-center font-extrabold text-DarkBlue100">Subscribe to Our Newsletter!</p>
+      </div>
+      <div class="col-span-3 lg:col-span-12">
+        <form class="w-full flex items-center h-[50px] px-5 border border-LightGrey2 rounded-full" action="">
+          <label class="w-full">
+            <input placeholder="Your email" required class="input-solo w-full px-0 pr-2 border-none focus:shadow-none focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-inherit" type="email">
+          </label>
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M1.20341 5.55757C0.92437 5.6373 0.670988 5.78851 0.468331 5.99623C0.265675 6.20395 0.120768 6.46098 0.04795 6.7419C-0.0248682 7.02282 -0.0230741 7.31788 0.0531547 7.59789C0.129384 7.87791 0.277405 8.13316 0.482573 8.3384L3.32591 11.1784V16.6667H8.82007L11.6826 19.5251C11.8362 19.68 12.019 19.8031 12.2203 19.8872C12.4217 19.9713 12.6377 20.0147 12.8559 20.0151C12.9993 20.0148 13.1421 19.9963 13.2809 19.9601C13.5617 19.8893 13.8189 19.7459 14.0267 19.5441C14.2344 19.3424 14.3853 19.0895 14.4642 18.8109L19.9926 0.0175781L1.20341 5.55757ZM1.66674 7.16007L15.8567 2.97674L4.99424 13.8217V10.4884L1.66674 7.16007ZM12.8667 18.3467L9.51091 15.0001H6.17757L17.0384 4.14841L12.8667 18.3467Z" fill="#58C19B"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-Grey overflow-hidden">
+    <div class="container">
+      <div class="py-5 lg:py-10">
+        <div class="row gap-x-5 lg:gap-x-0 lg:gap-y-10">
+          <div class="col-span-4 lg:col-span-12 lg:justify-center lg:order-3 flex justify-start">
+            <div class="flex items-center relative">
+              <i class="image-1 absolute -top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 lg:-bottom-[50px] lg:top-auto"></i>
+              <p class="text-body2 text-Grey2 font-medium pl-[100px] lg:pl-0 lg:pb-10">2025 © Copyright by 1SaleRx, llc.</p>
+            </div>
+          </div>
+          <div class="col-span-4 lg:col-span-12 lg:justify-center lg:order-2 flex justify-center">
+            <ul class="flex items-center gap-x-5">
+              <li class="flex items-center">
+                <a href="#" target="_blank"
+                   class="text-none w-10 min-w-10 h-10 flex items-center justify-center rounded-full bg-LightBlue hover:bg-Green1 transition-all group">
+                  Instagram
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path class="group-hover:fill-white transition-all"
+                          d="M9.99984 5.68208C7.5902 5.68208 5.68257 7.58971 5.68257 9.99935C5.68257 12.409 7.5902 14.3166 9.99984 14.3166C12.4095 14.3166 14.3171 12.409 14.3171 9.99935C14.3171 7.58971 12.4095 5.68208 9.99984 5.68208ZM9.99984 12.8106C8.49381 12.8106 7.18859 11.6058 7.18859 9.99935C7.18859 8.49333 8.39341 7.1881 9.99984 7.1881C11.5059 7.1881 12.8111 8.39292 12.8111 9.99935C12.8111 11.5054 11.5059 12.8106 9.99984 12.8106Z"
+                          fill="#596D7F"/>
+                    <path class="group-hover:fill-white transition-all"
+                          d="M14.4175 6.5855C14.972 6.5855 15.4215 6.136 15.4215 5.58148C15.4215 5.02696 14.972 4.57747 14.4175 4.57747C13.863 4.57747 13.4135 5.02696 13.4135 5.58148C13.4135 6.136 13.863 6.5855 14.4175 6.5855Z"
+                          fill="#596D7F"/>
+                    <path class="group-hover:fill-white transition-all" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.99984 1.66602H6.58618C5.68257 1.66602 5.08016 1.86682 4.57815 2.06762C4.07614 2.26843 3.57413 2.56963 3.07213 3.07164C2.57012 3.57365 2.36932 3.97525 2.06811 4.57766C1.86731 5.07967 1.76691 5.68208 1.6665 6.5857V9.99935V13.413C1.6665 14.3166 1.86731 14.919 2.06811 15.421C2.26891 15.923 2.57012 16.4251 3.07213 16.9271C3.57413 17.4291 3.97574 17.6299 4.57815 17.9311C5.08016 18.1319 5.68257 18.2323 6.58618 18.3327H9.99984H13.4135C14.3171 18.3327 14.9195 18.1319 15.4215 17.9311C15.9235 17.7303 16.4255 17.4291 16.9275 16.9271C17.4296 16.4251 17.6304 16.0234 17.9316 15.421C18.1324 14.919 18.2328 14.3166 18.3332 13.413V9.99935V6.5857C18.3332 5.68208 18.1324 5.07967 17.9316 4.57766C17.7308 4.07565 17.4296 3.57365 16.9275 3.07164C16.4255 2.56963 16.0239 2.36883 15.4215 2.06762C14.9195 1.86682 14.3171 1.76642 13.4135 1.66602H9.99984ZM13.4135 3.17204H9.99984H6.58618C5.78297 3.27244 5.38136 3.37284 5.08016 3.47324C4.67855 3.57365 4.37735 3.77445 4.07614 4.07565C3.77494 4.37686 3.67454 4.67806 3.47373 5.07967C3.37333 5.38088 3.17253 5.78248 3.17253 6.5857V9.99935V13.413C3.27293 14.2162 3.37333 14.6178 3.47373 14.919C3.57413 15.3206 3.77494 15.6218 4.07614 15.923C4.37735 16.2242 4.67855 16.3246 5.08016 16.5255C5.38136 16.6259 5.78297 16.8267 6.58618 16.8267H9.99984H13.4135C14.2167 16.7263 14.6183 16.6259 14.9195 16.5255C15.3211 16.4251 15.6223 16.2242 15.9235 15.923C16.2247 15.6218 16.3251 15.3206 16.5259 14.919C16.6263 14.6178 16.8271 14.2162 16.8271 13.413V9.99935V6.5857C16.7267 5.78248 16.6263 5.38088 16.5259 5.07967C16.4255 4.67806 16.2247 4.37686 15.9235 4.07565C15.6223 3.77445 15.3211 3.67405 14.9195 3.47324C14.6183 3.37284 14.2167 3.17204 13.4135 3.17204Z"
+                          fill="#596D7F"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="flex items-center">
+                <a href="#" target="_blank"
+                   class="text-none w-10 min-w-10 h-10 flex items-center justify-center rounded-full bg-LightBlue hover:bg-Green1 transition-all group">
+                  Facebook
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path class="group-hover:fill-white transition-all"
+                          d="M7.7085 11.4089V18.3327H11.6356V11.4089H14.564L15.1733 8.22526H11.6356V7.09896C11.6356 5.41602 12.3228 4.77148 14.0968 4.77148C14.6486 4.77148 15.0921 4.78451 15.3494 4.81055V1.92318C14.8653 1.79622 13.6804 1.66602 12.9965 1.66602C9.37751 1.66602 7.7085 3.3099 7.7085 6.85482V8.22526H5.47412V11.4089H7.7085Z"
+                          fill="#596D7F"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-4 lg:col-span-12 lg:justify-center lg:order-1 flex justify-end">
+            <ul class="flex items-center md:flex-col md:gap-y-[15px] md:gap-x-0 gap-x-4">
+              <li class="flex items-center">
+                <a class="text-body2 font-medium text-DarkBlue100 hover:text-Green1 transition-colors" href="Terms.html">
+                  Terms of Use
+                </a>
+              </li>
+              <li class="flex items-center md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12" fill="none">
+                  <path d="M1 0L0.999999 12" stroke="#A9B1B3" stroke-linejoin="round"/>
+                </svg>
+              </li>
+              <li class="flex items-center">
+                <a class="text-body2 font-medium text-DarkBlue100 hover:text-Green1 transition-colors" href="Terms.html">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="flex items-center md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12" fill="none">
+                  <path d="M1 0L0.999999 12" stroke="#A9B1B3" stroke-linejoin="round"/>
+                </svg>
+              </li>
+              <li class="flex items-center">
+                <a class="text-body2 font-medium text-DarkBlue100 hover:text-Green1 transition-colors" href="Terms.html">
+                  Disclaimer
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="./js/scripts.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+        }))
+    })
+</script>
+
+</body>
+
+</html>

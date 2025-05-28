@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Blog - 1SaleRx</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+
+
+<body class="">
+<main id="content" class="flex flex-col min-h-screen overflow-hidden bg-LightBlue">
+  <header class="w-full py-5 absolute z-10">
+    <div class="container">
+        <div class="flex justify-between items-center width-full gap-x-5 bg-white py-[15px] lg:p-[10px] pr-[15px] pl-[30px] rounded-full">
+            <button id="burger-button" class="minlg:hidden flex items-center justify-center w-[50px] h-[50px] rounded-[50%] bg-LightGrey2"
+                    aria-label="Mobile Burger Button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M19.1667 9.16602H0.833333C0.373096 9.16602 0 9.53911 0 9.99935C0 10.4596 0.373096 10.8327 0.833333 10.8327H19.1667C19.6269 10.8327 20 10.4596 20 9.99935C20 9.53911 19.6269 9.16602 19.1667 9.16602Z" fill="#0E2B4C"/>
+                    <path d="M19.1667 3.33398H0.833333C0.373096 3.33398 0 3.70708 0 4.16732C0 4.62755 0.373096 5.00065 0.833333 5.00065H19.1667C19.6269 5.00065 20 4.62755 20 4.16732C20 3.70708 19.6269 3.33398 19.1667 3.33398Z" fill="#0E2B4C"/>
+                    <path d="M19.1667 15H0.833333C0.373096 15 0 15.3731 0 15.8333C0 16.2936 0.373096 16.6667 0.833333 16.6667H19.1667C19.6269 16.6667 20 16.2936 20 15.8333C20 15.3731 19.6269 15 19.1667 15Z" fill="#0E2B4C"/>
+                </svg>
+            </button>
+            <a class="flex items-center lg:mx-auto" href="index.html">
+                <img class="lg:max-w-[100px]" width="108" height="38" src="__IMAGE_PATH__Logo-1.svg" alt="Logo OneSaleRX">
+            </a>
+            <div id="mobile-menu" class="show-mobile-menu">
+                <div class=" relative z-[1] minlg:hidden flex items-center">
+                    <button id="burger-button-close" class="minlg:hidden flex items-center justify-center w-[50px] h-[50px] rounded-[50%] bg-LightGrey2"
+                            aria-label="Mobile Burger Button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_1_5885)">
+                                <path d="M19.7561 0.243989C19.5999 0.0877628 19.3879 0 19.167 0C18.946 0 18.7341 0.0877628 18.5778 0.243989L10.0003 8.82149L1.42281 0.243989C1.26654 0.0877628 1.05461 0 0.833644 0C0.612674 0 0.40075 0.0877628 0.244477 0.243989C0.0882511 0.400262 0.000488281 0.612185 0.000488281 0.833155C0.000488281 1.05413 0.0882511 1.26605 0.244477 1.42232L8.82198 9.99982L0.244477 18.5773C0.0882511 18.7336 0.000488281 18.9455 0.000488281 19.1665C0.000488281 19.3875 0.0882511 19.5994 0.244477 19.7557C0.40075 19.9119 0.612674 19.9996 0.833644 19.9996C1.05461 19.9996 1.26654 19.9119 1.42281 19.7557L10.0003 11.1782L18.5778 19.7557C18.7341 19.9119 18.946 19.9996 19.167 19.9996C19.3879 19.9996 19.5999 19.9119 19.7561 19.7557C19.9124 19.5994 20.0001 19.3875 20.0001 19.1665C20.0001 18.9455 19.9124 18.7336 19.7561 18.5773L11.1786 9.99982L19.7561 1.42232C19.9124 1.26605 20.0001 1.05413 20.0001 0.833155C20.0001 0.612185 19.9124 0.400262 19.7561 0.243989Z" fill="#0E2B4C"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_5885">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="flex items-center lg:mx-auto" href="index.html">
+                        <img class="lg:max-w-[100px]" width="108" height="38" src="__IMAGE_PATH__Logo-1.svg" alt="Logo OneSaleRX">
+                    </a>
+                    <a href="Login.html" class="w-[50px] h-[50px] min-w-[50px] flex items-center justify-center rounded-full
+                overflow-hidden bg-LightGrey2">
+                        <i class="fi-rr-user"></i>
+                    </a>
+                </div>
+                <ul class=" relative z-[1] flex items-center gap-x-[30px]">
+                    <li class="flex items-center lg:px-[10px] lg:py-4 lg:bg-LightGrey2 lg:w-full lg:rounded-7xl">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="About.html">About Us</a>
+                    </li>
+                    <li class="flex items-center lg:px-[10px] lg:py-4 lg:bg-LightGrey2 lg:w-full lg:rounded-7xl">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="How-Works.html">How It Works</a>
+                    </li>
+                    <li class="flex items-center lg:px-[10px] lg:py-4 lg:bg-LightGrey2 lg:w-full lg:rounded-7xl">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="flex items-center lg:px-[10px] lg:py-4 lg:bg-LightGrey2 lg:w-full lg:rounded-7xl">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="flex items-center lg:px-[10px] lg:py-4 lg:bg-LightGrey2 lg:w-full lg:rounded-7xl">
+                        <a class="text-body text-DarkBlue100 hover:text-Green1 transition-all" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <a class="button minlg:hidden px-5 w-full relative z-[1] " href="#">
+    <span class="">Free Account</span>
+</a>
+
+                <div class="bg-icon-1 absolute bottom-0 left-1/2 -translate-x-1/2 minlg:hidden"></div>
+            </div>
+            <div class="flex items-center">
+                <a href="Login.html" class="w-[50px] h-[50px] min-w-[50px] flex items-center justify-center rounded-full
+                overflow-hidden bg-LightGrey2">
+                    <i class="fi-rr-user"></i>
+                </a>
+                <a class="button lg:hidden px-[30px] medium-btn ml-4" href="#">
+    <span class="">Free Account</span>
+</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+  <section class="overflow-hidden">
+        <div class="container relative pt-[120px] lg:pt-[110px]">
+            <span class="bg-1 absolute top-0 left-0"></span>
+        </div>
+        <div class="container relative z-[1]">
+            <div class="row">
+                <div class="col-span-12">
+                    <nav class="text-sm font-medium text-slate-700" aria-label="breadcrumb">
+                        <ol class="flex flex-wrap items-center gap-x-[10px]">
+                            <li class="flex items-center uppercase text-body5 tracking-[2px] gap-x-[10px]">
+                                <a href="index.html" class="text-DarkGrey">home</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="3" viewBox="0 0 2 3"
+                                     fill="none">
+                                    <circle cx="1" cy="1.5" r="1" fill="#596D7F"/>
+                                </svg>
+                            </li>
+                            <li class="flex items-center uppercase text-body5 tracking-[2px] text-DarkGrey font-bold"
+                                aria-current="page">Category
+                            </li>
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+        <div class="container relative z-[1] mt-14 pb-20 lg:pb-10">
+            <div class="row gap-x-6">
+                <div class="col-span-12 flex items-center">
+                    <div class="flex flex-col mx-auto text-DarkBlue100">
+                        <div class="flex flex-col items-center">
+  <h1 class="text-h1 lg:text-Top4 font-extrabold">Blog</h1>
+  <span class="border-b-2 w-[60px] border-Green1 mt-10 lg:mt-6"></span>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container relative z-[1] pb-[60px]">
+            <div class="bg-white rounded-2xl overflow-hidden">
+                <div class="row gap-x-6 lg:gap-x-0">
+                    <div class="col-span-6 lg:col-span-12">
+                        <img class="w-full object-cover h-[413px] lg:h-[193px]" src="__IMAGE_PATH__catagory-img.png" alt="">
+                    </div>
+                    <div class="col-span-6 lg:col-span-12">
+                        <div class="flex gap-x-5 py-[30px] pr-[30px] lg:px-4 lg:py-5">
+                            <div class="flex flex-col max-w-[524px] lg:max-w-full">
+                                <div class="flex items-center w-fit mb-5 bg-Green1 rounded-full px-[10px] py-[7px]">
+                                    <span class="text-white text-body4 uppercase font-bold">Diseases & Conditions</span>
+                                </div>
+                                <h2 class="text-Top4 lg:text-Top7 text-DarkBlue100 font-extrabold">Should you be tested for inflammation?</h2>
+                                <div class="flex items-center gap-x-5 minlg:hidden mt-4">
+                                  <div class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full border border-LightBlue">
+                                    <i class="fi-rr-calendar-green"></i>
+                                  </div>
+                                  <time class="text-DarkGrey text-body lg:text-body2 font-extrabold" datetime="2025-05-01">May 1, 2025</time>
+                                </div>
+                                <span class="border-b-2 w-[60px] border-Green1 my-5 lg:my-4"></span>
+                                <p class="line-clamp-4 text-base lg:text-base lg:line-clamp-6 mb-5">Our understanding of how chronic inflammation can impair health has expanded dramatically in recent years, causing some people to wonder if there is a test to identify it, and if they should have it. There are ...</p>
+                                <div class="mt-auto flex items-center justify-between">
+                                    <a href="Author-page.html" class="flex items-center gap-x-5">
+                                        <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
+                                             src="__IMAGE_PATH__avatar-5.png" alt="avatar">
+                                        <span class="text-body text-DarkGrey font-bold">Matthew Solan</span>
+                                    </a>
+                                    <div class="flex items-center gap-x-5 lg:hidden">
+                                        <div class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full border border-LightBlue">
+                                            <i class="fi-rr-calendar-green"></i>
+                                        </div>
+                                        <time class="text-DarkGrey text-body font-extrabold" datetime="2025-05-01">May 1, 2025</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="ml-auto lg:hidden" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M18.6777 -7.91831e-09C19.23 -2.13005e-07 19.6777 0.447715 19.6777 1L19.6777 10C19.6777 10.5523 19.23 11 18.6777 11C18.1255 11 17.6777 10.5523 17.6777 10L17.6777 2L9.67773 2C9.12545 2 8.67773 1.55229 8.67773 1C8.67773 0.447718 9.12545 2.72598e-06 9.67773 2.56304e-06L18.6777 -7.91831e-09ZM1.70718 19.3848C1.31665 19.7753 0.683487 19.7753 0.292963 19.3848C-0.0975614 18.9943 -0.0975612 18.3611 0.292963 17.9706L1.70718 19.3848ZM18.6777 1L19.3848 1.70711L1.70718 19.3848L1.00007 18.6777L0.292963 17.9706L17.9706 0.292893L18.6777 1Z" fill="#E6ECEE"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-white">
+        <div class="container">
+            <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-8">
+                <div class="col-span-2 lg:col-span-12">
+                    <div class="flex flex-col" x-data="{ isOpen: false }" @click.away="isOpen = false" x-init="$watch('isOpen', value => { if(value) { document.body.classList.add('overflow-hidden'); } else { document.body.classList.remove('overflow-hidden'); } })">
+                        <div class="flex items-center justify-between w-full gap-x-3">
+                          <div class="flex items-center minlg:hidden w-full gap-x-2 px-3 py-2 rounded bg-LightGrey2 border-LightBlue border">
+                            <span class="text-DarkBlue100 font-bold">Categories:</span>
+                            <span>Men's Health</span>
+                          </div>
+                            <button id="category-toggle-button" @click="isOpen = !isOpen" class="hidden lg:flex items-center justify-center w-10 min-w-10 h-10 rounded-[4px] bg-Green1">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                <path d="M4 12.5C4.27614 12.5 4.5 12.7239 4.5 13V17C4.5 17.2761 4.27614 17.5 4 17.5C3.72386 17.5 3.5 17.2761 3.5 17V15.5H1C0.723858 15.5 0.5 15.2761 0.5 15C0.5 14.7239 0.723858 14.5 1 14.5H3.5V13C3.5 12.7239 3.72386 12.5 4 12.5ZM8 14.5H19C19.2761 14.5 19.5 14.7239 19.5 15C19.5 15.2761 19.2761 15.5 19 15.5H8C7.72386 15.5 7.5 15.2761 7.5 15C7.5 14.7239 7.72386 14.5 8 14.5ZM14 6.51172C14.276 6.51172 14.4998 6.73571 14.5 7.01172V11C14.5 11.2761 14.2761 11.5 14 11.5C13.7239 11.5 13.5 11.2761 13.5 11V9.5H1C0.723858 9.5 0.5 9.27614 0.5 9C0.5 8.72386 0.723858 8.5 1 8.5H13.5V7.01172C13.5002 6.73571 13.724 6.51172 14 6.51172ZM18 8.5H19C19.2761 8.5 19.5 8.72386 19.5 9C19.5 9.27614 19.2761 9.5 19 9.5H18C17.7239 9.5 17.5 9.27614 17.5 9C17.5 8.72386 17.7239 8.5 18 8.5ZM8 0.5C8.27614 0.5 8.5 0.723857 8.5 1V5C8.5 5.27614 8.27614 5.5 8 5.5C7.72386 5.5 7.5 5.27614 7.5 5V3.5H1C0.723858 3.5 0.5 3.27614 0.5 3C0.5 2.72386 0.723858 2.5 1 2.5H7.5V1C7.5 0.723858 7.72386 0.5 8 0.5ZM12 2.5H19C19.2761 2.5 19.5 2.72386 19.5 3C19.5 3.27614 19.2761 3.5 19 3.5H12C11.7239 3.5 11.5 3.27614 11.5 3C11.5 2.72386 11.7239 2.5 12 2.5Z" fill="white" stroke="white"/>
+                              </svg>
+                            </button>
+                        </div>
+                        <div id="category-menu" class="category-menu" :class="{ 'active': isOpen }">
+                          <div class="flex items-center justify-between">
+                            <span class="text-DarkBlue100 font-bold">Categories</span>
+                            <button @click="isOpen = !isOpen" class="hidden lg:flex w-10 h-10 bg-LightGrey2 rounded-full justify-center items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <g clip-path="url(#clip0_97_3839)">
+                                  <path d="M15.8045 0.195191C15.6795 0.0702103 15.51 0 15.3332 0C15.1564 0 14.9869 0.0702103 14.8619 0.195191L7.99986 7.05719L1.13786 0.195191C1.01284 0.0702103 0.8433 0 0.666524 0C0.489748 0 0.320209 0.0702103 0.195191 0.195191C0.0702103 0.320209 0 0.489748 0 0.666524C0 0.8433 0.0702103 1.01284 0.195191 1.13786L7.05719 7.99986L0.195191 14.8619C0.0702103 14.9869 0 15.1564 0 15.3332C0 15.51 0.0702103 15.6795 0.195191 15.8045C0.320209 15.9295 0.489748 15.9997 0.666524 15.9997C0.8433 15.9997 1.01284 15.9295 1.13786 15.8045L7.99986 8.94252L14.8619 15.8045C14.9869 15.9295 15.1564 15.9997 15.3332 15.9997C15.51 15.9997 15.6795 15.9295 15.8045 15.8045C15.9295 15.6795 15.9997 15.51 15.9997 15.3332C15.9997 15.1564 15.9295 14.9869 15.8045 14.8619L8.94252 7.99986L15.8045 1.13786C15.9295 1.01284 15.9997 0.8433 15.9997 0.666524C15.9997 0.489748 15.9295 0.320209 15.8045 0.195191Z" fill="#0E2B4C"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_97_3839">
+                                    <rect width="16" height="16" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                          </div>
+                            <ul class="category-list mt-4 mb-4 border-b border-Grey max-w-[150px] lg:max-w-full">
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category1" class="hidden" x-model="active">
+                                    <label for="category1" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Staying Healthy</label>
+                                </li>
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category2" class="hidden" x-model="active">
+                                    <label for="category2" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Mind & Mood</label>
+                                </li>
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category4" class="hidden" x-model="active">
+                                    <label for="category4" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Diseases & Conditions</label>
+                                </li>
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category5" class="hidden" x-model="active">
+                                    <label for="category5" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Child & Teen Health</label>
+                                </li>
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category6" class="hidden" x-model="active">
+                                    <label for="category6" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Exercise & Fitness</label>
+                                </li>
+                                <li x-data="{ active: false }" class="flex items-center py-4 relative text-body2 text-DarkGrey border-t border-Grey">
+                                    <input type="checkbox" id="category3" class="hidden" x-model="active">
+                                    <label for="category3" class="text-DarkGrey cursor-pointer" :class="{ 'bottom-line': active }">Mind & Mood</label>
+                                </li>
+                            </ul>
+                            <button class="filter-button mt-auto hidden lg:flex w-full items-center justify-center py-2 px-4 bg-Green1 text-white rounded-full font-bold">
+                                Filter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-10 lg:col-span-12">
+                    <div class="row gap-x-6 lg:gap-x-0 gap-y-5">
+                        <div class="col-span-6 lg:col-span-12">
+                            <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
+  <a href="Blog-post.html" class="h-[270px] lg:h-[200px] w-full flex items-center justify-center">
+    <img class="w-full h-full object-cover" src="__IMAGE_PATH__post-img-1.png" alt="">
+  </a>
+  <div class="flex flex-col gap-y-4 p-5 lg:px-4 lg:py-6 h-full">
+    <div class="flex items-center justify-between">
+      <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
+      <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
+    </div>
+    <div class="flex flex-col gap-y-[10px]">
+      <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
+      <p class="line-clamp-4 lg:line-clamp-5 lg:text-body text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+    </div>
+    <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
+      <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
+           src="__IMAGE_PATH__avatar-5.png" alt="avatar">
+      <span class="text-body lg:text-body2 text-Grey2 font-bold">Matthew Solan</span>
+    </a>
+  </div>
+</div>
+
+                        </div>
+                        <div class="col-span-6 lg:col-span-12">
+                          <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
+  <a href="Blog-post.html" class="h-[270px] lg:h-[200px] w-full flex items-center justify-center">
+    <img class="w-full h-full object-cover" src="__IMAGE_PATH__post-img-1.png" alt="">
+  </a>
+  <div class="flex flex-col gap-y-4 p-5 lg:px-4 lg:py-6 h-full">
+    <div class="flex items-center justify-between">
+      <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
+      <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
+    </div>
+    <div class="flex flex-col gap-y-[10px]">
+      <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
+      <p class="line-clamp-4 lg:line-clamp-5 lg:text-body text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+    </div>
+    <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
+      <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
+           src="__IMAGE_PATH__avatar-5.png" alt="avatar">
+      <span class="text-body lg:text-body2 text-Grey2 font-bold">Matthew Solan</span>
+    </a>
+  </div>
+</div>
+
+                        </div>
+                        <div class="col-span-6 lg:col-span-12">
+                          <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
+  <a href="Blog-post.html" class="h-[270px] lg:h-[200px] w-full flex items-center justify-center">
+    <img class="w-full h-full object-cover" src="__IMAGE_PATH__post-img-1.png" alt="">
+  </a>
+  <div class="flex flex-col gap-y-4 p-5 lg:px-4 lg:py-6 h-full">
+    <div class="flex items-center justify-between">
+      <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
+      <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
+    </div>
+    <div class="flex flex-col gap-y-[10px]">
+      <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
+      <p class="line-clamp-4 lg:line-clamp-5 lg:text-body text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+    </div>
+    <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
+      <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
+           src="__IMAGE_PATH__avatar-5.png" alt="avatar">
+      <span class="text-body lg:text-body2 text-Grey2 font-bold">Matthew Solan</span>
+    </a>
+  </div>
+</div>
+
+                        </div>
+                        <div class="col-span-6 lg:col-span-12">
+                          <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
+  <a href="Blog-post.html" class="h-[270px] lg:h-[200px] w-full flex items-center justify-center">
+    <img class="w-full h-full object-cover" src="__IMAGE_PATH__post-img-1.png" alt="">
+  </a>
+  <div class="flex flex-col gap-y-4 p-5 lg:px-4 lg:py-6 h-full">
+    <div class="flex items-center justify-between">
+      <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
+      <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
+    </div>
+    <div class="flex flex-col gap-y-[10px]">
+      <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
+      <p class="line-clamp-4 lg:line-clamp-5 lg:text-body text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+    </div>
+    <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
+      <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
+           src="__IMAGE_PATH__avatar-5.png" alt="avatar">
+      <span class="text-body lg:text-body2 text-Grey2 font-bold">Matthew Solan</span>
+    </a>
+  </div>
+</div>
+
+                        </div>
+                        <div class="col-span-6 lg:col-span-12">
+                          <div class="w-full h-full max-h-[540px] flex flex-col border border-LightBlue bg-white rounded-2xl overflow-hidden ">
+  <a href="Blog-post.html" class="h-[270px] lg:h-[200px] w-full flex items-center justify-center">
+    <img class="w-full h-full object-cover" src="__IMAGE_PATH__post-img-1.png" alt="">
+  </a>
+  <div class="flex flex-col gap-y-4 p-5 lg:px-4 lg:py-6 h-full">
+    <div class="flex items-center justify-between">
+      <a href="Single-Category.html" class="text-body4 uppercase text-Green1 font-bold">Staying Healthy</a>
+      <time class="text-body4 uppercase text-Grey2 font-bold" datetime="2025-05-01">Mar 12, 2025</time>
+    </div>
+    <div class="flex flex-col gap-y-[10px]">
+      <a href="Blog-post.html" class="text-base font-bold text-DarkBlue100">Should you be sleepmaxxing to boost health and happiness?</a>
+      <p class="line-clamp-4 lg:line-clamp-5 lg:text-body text-Text">Sleep is a key pillar of health, and countless influencers on social media are touting a concept called sleepmaxxing. But what exactly is it? And how likely is ...</p>
+    </div>
+    <a href="Author-page.html" class="flex items-center gap-x-[10px] mt-auto">
+      <img class="w-[50px] min-w-[50px] h-[50px] flex items-center justify-center rounded-full"
+           src="__IMAGE_PATH__avatar-5.png" alt="avatar">
+      <span class="text-body lg:text-body2 text-Grey2 font-bold">Matthew Solan</span>
+    </a>
+  </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-span-12">
+                            <div class="flex items-center gap-x-4 mx-auto justify-center lg:justify-between mt-[60px]">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                        <g clip-path="url(#clip0_1_4109)">
+                                            <circle cx="25" cy="25" r="24.5" fill="white" stroke="#F1F7FC"/>
+                                            <path d="M16.4697 24.4697C16.1768 24.7626 16.1768 25.2374 16.4697 25.5303L21.2426 30.3033C21.5355 30.5962 22.0104 30.5962 22.3033 30.3033C22.5962 30.0104 22.5962 29.5355 22.3033 29.2426L18.0607 25L22.3033 20.7574C22.5962 20.4645 22.5962 19.9896 22.3033 19.6967C22.0104 19.4038 21.5355 19.4038 21.2426 19.6967L16.4697 24.4697ZM33 25.75C33.4142 25.75 33.75 25.4142 33.75 25C33.75 24.5858 33.4142 24.25 33 24.25V25.75ZM17 25V25.75H33V25V24.25H17V25Z" fill="#596D7F"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_4109">
+                                                <rect width="50" height="50" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <div class="flex items-center gap-x-4 lg:gap-x-[6px]">
+                                    <button class="pagination-btn ">1</button>
+                                    <button class="pagination-btn active">2</button>
+                                    <button class="pagination-btn ">3</button>
+                                    <button class="pagination-btn ">...</button>
+                                    <button class="pagination-btn ">19</button>
+                                </div>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                        <g clip-path="url(#clip0_1_4127)">
+                                            <circle cx="25" cy="25" r="24.5" fill="white" stroke="#58C19B"/>
+                                            <path d="M33.5303 24.4697C33.8232 24.7626 33.8232 25.2374 33.5303 25.5303L28.7574 30.3033C28.4645 30.5962 27.9896 30.5962 27.6967 30.3033C27.4038 30.0104 27.4038 29.5355 27.6967 29.2426L31.9393 25L27.6967 20.7574C27.4038 20.4645 27.4038 19.9896 27.6967 19.6967C27.9896 19.4038 28.4645 19.4038 28.7574 19.6967L33.5303 24.4697ZM17 25.75C16.5858 25.75 16.25 25.4142 16.25 25C16.25 24.5858 16.5858 24.25 17 24.25V25.75ZM33 25V25.75H17V25V24.25H33V25Z" fill="#58C19B"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_4127">
+                                                <rect width="50" height="50" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full mt-auto overflow-hidden bg-white border-t border-LightBlue">
+  <div class="container">
+    <div class="row gap-x-6 lg:gap-y-[10px] pt-[50px] pb-[60px]">
+      <div class="col-span-3 lg:col-span-4 md:col-span-12">
+        <a class="md:flex md:justify-center md:mb-7" href="index.html">
+          <img src="__IMAGE_PATH__Logo-1.svg" alt="Logo OneSaleRX">
+        </a>
+      </div>
+      <div class="col-span-2 lg:col-span-4 md:col-span-12">
+        <ul class="flex flex-col gap-y-4">
+          <li class="flex items-center">
+            <a class="text-DarkBlue100 hover:text-Green1 transition-colors" href="About.html">About Us</a>
+          </li>
+          <li class="flex items-center">
+            <a class="text-DarkBlue100 hover:text-Green1 transition-colors" href="contact-us-small.html">Contact Us</a>
+          </li>
+          <li class="flex items-center">
+            <a class="text-DarkBlue100 hover:text-Green1 transition-colors" href="How-Works.html">How It Works</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-2 lg:col-span-4 md:col-span-12">
+        <ul class="flex flex-col gap-y-4">
+          <li class="flex items-center">
+            <a class="text-DarkBlue100 hover:text-Green1 transition-colors" href="Blog.html">Blog</a>
+          </li>
+          <li class="flex items-center">
+            <a class="text-DarkBlue100 hover:text-Green1 transition-colors" href="FAQ.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-2 lg:col-span-12 lg:mt-10">
+        <p class="text-Top3 lg:text-base lg:text-center font-extrabold text-DarkBlue100">Subscribe to Our Newsletter!</p>
+      </div>
+      <div class="col-span-3 lg:col-span-12">
+        <form class="w-full flex items-center h-[50px] px-5 border border-LightGrey2 rounded-full" action="">
+          <label class="w-full">
+            <input placeholder="Your email" required class="input-solo w-full px-0 pr-2 border-none focus:shadow-none focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-inherit" type="email">
+          </label>
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M1.20341 5.55757C0.92437 5.6373 0.670988 5.78851 0.468331 5.99623C0.265675 6.20395 0.120768 6.46098 0.04795 6.7419C-0.0248682 7.02282 -0.0230741 7.31788 0.0531547 7.59789C0.129384 7.87791 0.277405 8.13316 0.482573 8.3384L3.32591 11.1784V16.6667H8.82007L11.6826 19.5251C11.8362 19.68 12.019 19.8031 12.2203 19.8872C12.4217 19.9713 12.6377 20.0147 12.8559 20.0151C12.9993 20.0148 13.1421 19.9963 13.2809 19.9601C13.5617 19.8893 13.8189 19.7459 14.0267 19.5441C14.2344 19.3424 14.3853 19.0895 14.4642 18.8109L19.9926 0.0175781L1.20341 5.55757ZM1.66674 7.16007L15.8567 2.97674L4.99424 13.8217V10.4884L1.66674 7.16007ZM12.8667 18.3467L9.51091 15.0001H6.17757L17.0384 4.14841L12.8667 18.3467Z" fill="#58C19B"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-Grey overflow-hidden">
+    <div class="container">
+      <div class="py-5 lg:py-10">
+        <div class="row gap-x-5 lg:gap-x-0 lg:gap-y-10">
+          <div class="col-span-4 lg:col-span-12 lg:justify-center lg:order-3 flex justify-start">
+            <div class="flex items-center relative">
+              <i class="image-1 absolute -top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 lg:-bottom-[50px] lg:top-auto"></i>
+              <p class="text-body2 text-Grey2 font-medium pl-[100px] lg:pl-0 lg:pb-10">2025 © Copyright by 1SaleRx, llc.</p>
+            </div>
+          </div>
+          <div class="col-span-4 lg:col-span-12 lg:justify-center lg:order-2 flex justify-center">
+            <ul class="flex items-center gap-x-5">
+              <li class="flex items-center">
+                <a href="#" target="_blank"
+                   class="text-none w-10 min-w-10 h-10 flex items-center justify-center rounded-full bg-LightBlue hover:bg-Green1 transition-all group">
+                  Instagram
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path class="group-hover:fill-white transition-all"
+                          d="M9.99984 5.68208C7.5902 5.68208 5.68257 7.58971 5.68257 9.99935C5.68257 12.409 7.5902 14.3166 9.99984 14.3166C12.4095 14.3166 14.3171 12.409 14.3171 9.99935C14.3171 7.58971 12.4095 5.68208 9.99984 5.68208ZM9.99984 12.8106C8.49381 12.8106 7.18859 11.6058 7.18859 9.99935C7.18859 8.49333 8.39341 7.1881 9.99984 7.1881C11.5059 7.1881 12.8111 8.39292 12.8111 9.99935C12.8111 11.5054 11.5059 12.8106 9.99984 12.8106Z"
+                          fill="#596D7F"/>
+                    <path class="group-hover:fill-white transition-all"
+                          d="M14.4175 6.5855C14.972 6.5855 15.4215 6.136 15.4215 5.58148C15.4215 5.02696 14.972 4.57747 14.4175 4.57747C13.863 4.57747 13.4135 5.02696 13.4135 5.58148C13.4135 6.136 13.863 6.5855 14.4175 6.5855Z"
+                          fill="#596D7F"/>
+                    <path class="group-hover:fill-white transition-all" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.99984 1.66602H6.58618C5.68257 1.66602 5.08016 1.86682 4.57815 2.06762C4.07614 2.26843 3.57413 2.56963 3.07213 3.07164C2.57012 3.57365 2.36932 3.97525 2.06811 4.57766C1.86731 5.07967 1.76691 5.68208 1.6665 6.5857V9.99935V13.413C1.6665 14.3166 1.86731 14.919 2.06811 15.421C2.26891 15.923 2.57012 16.4251 3.07213 16.9271C3.57413 17.4291 3.97574 17.6299 4.57815 17.9311C5.08016 18.1319 5.68257 18.2323 6.58618 18.3327H9.99984H13.4135C14.3171 18.3327 14.9195 18.1319 15.4215 17.9311C15.9235 17.7303 16.4255 17.4291 16.9275 16.9271C17.4296 16.4251 17.6304 16.0234 17.9316 15.421C18.1324 14.919 18.2328 14.3166 18.3332 13.413V9.99935V6.5857C18.3332 5.68208 18.1324 5.07967 17.9316 4.57766C17.7308 4.07565 17.4296 3.57365 16.9275 3.07164C16.4255 2.56963 16.0239 2.36883 15.4215 2.06762C14.9195 1.86682 14.3171 1.76642 13.4135 1.66602H9.99984ZM13.4135 3.17204H9.99984H6.58618C5.78297 3.27244 5.38136 3.37284 5.08016 3.47324C4.67855 3.57365 4.37735 3.77445 4.07614 4.07565C3.77494 4.37686 3.67454 4.67806 3.47373 5.07967C3.37333 5.38088 3.17253 5.78248 3.17253 6.5857V9.99935V13.413C3.27293 14.2162 3.37333 14.6178 3.47373 14.919C3.57413 15.3206 3.77494 15.6218 4.07614 15.923C4.37735 16.2242 4.67855 16.3246 5.08016 16.5255C5.38136 16.6259 5.78297 16.8267 6.58618 16.8267H9.99984H13.4135C14.2167 16.7263 14.6183 16.6259 14.9195 16.5255C15.3211 16.4251 15.6223 16.2242 15.9235 15.923C16.2247 15.6218 16.3251 15.3206 16.5259 14.919C16.6263 14.6178 16.8271 14.2162 16.8271 13.413V9.99935V6.5857C16.7267 5.78248 16.6263 5.38088 16.5259 5.07967C16.4255 4.67806 16.2247 4.37686 15.9235 4.07565C15.6223 3.77445 15.3211 3.67405 14.9195 3.47324C14.6183 3.37284 14.2167 3.17204 13.4135 3.17204Z"
+                          fill="#596D7F"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="flex items-center">
+                <a href="#" target="_blank"
+                   class="text-none w-10 min-w-10 h-10 flex items-center justify-center rounded-full bg-LightBlue hover:bg-Green1 transition-all group">
+                  Facebook
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path class="group-hover:fill-white transition-all"
+                          d="M7.7085 11.4089V18.3327H11.6356V11.4089H14.564L15.1733 8.22526H11.6356V7.09896C11.6356 5.41602 12.3228 4.77148 14.0968 4.77148C14.6486 4.77148 15.0921 4.78451 15.3494 4.81055V1.92318C14.8653 1.79622 13.6804 1.66602 12.9965 1.66602C9.37751 1.66602 7.7085 3.3099 7.7085 6.85482V8.22526H5.47412V11.4089H7.7085Z"
+                          fill="#596D7F"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-4 lg:col-span-12 lg:justify-center lg:order-1 flex justify-end">
+            <ul class="flex items-center md:flex-col md:gap-y-[15px] md:gap-x-0 gap-x-4">
+              <li class="flex items-center">
+                <a class="text-body2 font-medium text-DarkBlue100 hover:text-Green1 transition-colors" href="Terms.html">
+                  Terms of Use
+                </a>
+              </li>
+              <li class="flex items-center md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12" fill="none">
+                  <path d="M1 0L0.999999 12" stroke="#A9B1B3" stroke-linejoin="round"/>
+                </svg>
+              </li>
+              <li class="flex items-center">
+                <a class="text-body2 font-medium text-DarkBlue100 hover:text-Green1 transition-colors" href="Terms.html">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="flex items-center md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12" fill="none">
+                  <path d="M1 0L0.999999 12" stroke="#A9B1B3" stroke-linejoin="round"/>
+                </svg>
+              </li>
+              <li class="flex items-center">
+                <a class="text-body2 font-medium text-DarkBlue100 hover:text-Green1 transition-colors" href="Terms.html">
+                  Disclaimer
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="./js/scripts.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+        }))
+    })
+</script>
+
+</body>
+
+</html>
