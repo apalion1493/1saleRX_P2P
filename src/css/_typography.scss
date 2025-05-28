@@ -44,7 +44,7 @@ p {
   }
 
   h4, .h4 {
-    @apply text-Top3 md:text-base
+    @apply text-base md:text-body
   }
 
   h5, .h5 {
@@ -56,7 +56,7 @@ p {
   }
 
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    @apply font-extrabold leading-normal
+    @apply font-extrabold leading-normal text-Text my-3
   }
 
   a {
@@ -64,7 +64,15 @@ p {
   }
 
   ul {
-    @apply list-disc pl-6 text-body text-Text leading-[24px]
+    @apply list-disc pl-6 text-body text-Text leading-[24px] flex flex-col gap-y-[10px]
+  }
+
+  ol {
+    li {
+      @apply pl-2
+    }
+
+    @apply flex flex-col gap-y-4 text-body text-Text list-image-[url(__IMAGE_PATH__list-icon-check30.svg)] pl-6 leading-[24px]
   }
 
   p {

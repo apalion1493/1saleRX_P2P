@@ -1535,13 +1535,13 @@ p{
   }
 }
 .text-block h4, .text-block .h4{
-  font-size: 20px;
+  font-size: 18px;
   line-height: 130%;
 }
 @media (max-width: 767px){
   .text-block h4, .text-block .h4{
-    font-size: 18px;
-    line-height: 130%;
+    font-size: 16px;
+    line-height: 120%;
   }
 }
 .text-block h5, .text-block .h5{
@@ -1553,8 +1553,12 @@ p{
   line-height: 120%;
 }
 .text-block h1, .text-block h2, .text-block h3, .text-block h4, .text-block h5, .text-block h6, .text-block .h1, .text-block .h2, .text-block .h3, .text-block .h4, .text-block .h5, .text-block .h6{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   font-weight: 800;
   line-height: 1.5;
+  --tw-text-opacity: 1;
+  color: rgb(32 32 32 / var(--tw-text-opacity, 1));
 }
 .text-block a{
   --tw-text-opacity: 1;
@@ -1568,13 +1572,31 @@ p{
   color: rgb(56 165 126 / var(--tw-text-opacity, 1));
 }
 .text-block ul{
+  display: flex;
   list-style-type: disc;
+  flex-direction: column;
+  row-gap: 10px;
   padding-left: 1.5rem;
   font-size: 16px;
   line-height: 120%;
   line-height: 24px;
   --tw-text-opacity: 1;
   color: rgb(32 32 32 / var(--tw-text-opacity, 1));
+}
+.text-block ol{
+  display: flex;
+  list-style-image: url(../img/list-icon-check30.svg);
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-left: 1.5rem;
+  font-size: 16px;
+  line-height: 120%;
+  line-height: 24px;
+  --tw-text-opacity: 1;
+  color: rgb(32 32 32 / var(--tw-text-opacity, 1));
+}
+.text-block ol li{
+  padding-left: 0.5rem;
 }
 .text-block p{
   margin-bottom: 0px;
