@@ -78,6 +78,22 @@ p {
   p {
     @apply text-body text-Text leading-[24px] mb-0
   }
+
+  blockquote {
+    &:before {
+      content: '';
+      @apply border-b-2 w-[50px] border-Green1 mb-5 absolute top-[50px] left-10 lg:left-4 lg:top-[37px]
+    }
+
+    &:after {
+      content: '';
+      background: url("__IMAGE_PATH__sqw.svg") no-repeat center;
+      background-size: contain;
+      @apply absolute top-0 right-[30px] lg:max-w-[124px] lg:-top-7 block w-[170px] h-[80px]
+    }
+
+    @apply flex flex-col gap-y-4 pt-[82px] px-10 py-[50px] relative bg-LightGrey2 rounded-7xl lg:px-4 lg:py-5 lg:pt-[50px] overflow-hidden
+  }
 }
 
 .text-block2 {
