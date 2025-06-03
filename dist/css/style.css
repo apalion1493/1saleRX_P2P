@@ -5495,6 +5495,26 @@ input[type=search]::-webkit-search-results-decoration {
   transform: none !important;
 }
 
+.text-block ol {
+  list-style: none !important;
+}
+.text-block ol li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.text-block ol li:before {
+  content: "";
+  position: absolute;
+  background: url("../img/list-icon-check30.svg") no-repeat center;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  top: -3px;
+  left: -25px;
+  display: block;
+}
+
 @media (max-width: 1023px){
   .lg\:w-full {
     width: 100% !important;

@@ -730,3 +730,24 @@
   top: auto !important;
   transform: none !important;
 }
+
+.text-block ol {
+  list-style: none !important;
+
+  li {
+    position: relative;
+    padding-left: 20px;
+  }
+}
+
+.text-block ol li:before {
+  content: '';
+  position: absolute;
+  background: url("__IMAGE_PATH__list-icon-check30.svg") no-repeat center;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  top: -3px;
+  left: -25px;
+  display: block;
+}
